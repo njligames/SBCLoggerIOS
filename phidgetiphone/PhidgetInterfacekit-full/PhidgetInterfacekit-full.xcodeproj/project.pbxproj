@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		491071A013A27E420094895B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4910719F13A27E420094895B /* UIKit.framework */; };
+		491071A213A27E420094895B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491071A113A27E420094895B /* Foundation.framework */; };
+		491071A413A27E420094895B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491071A313A27E420094895B /* CoreGraphics.framework */; };
+		491071AA13A27E420094895B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 491071A813A27E420094895B /* InfoPlist.strings */; };
+		491071AD13A27E420094895B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 491071AC13A27E420094895B /* main.m */; };
+		491071B013A27E420094895B /* PhidgetInterfacekit_fullAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 491071AF13A27E420094895B /* PhidgetInterfacekit_fullAppDelegate.m */; };
+		491071B313A27E420094895B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 491071B113A27E420094895B /* MainWindow.xib */; };
+		491071C913A27EF40094895B /* DigitalInputsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491071C713A27EF30094895B /* DigitalInputsController.m */; };
+		491071CA13A27EF40094895B /* DigitalInputsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 491071C813A27EF40094895B /* DigitalInputsController.xib */; };
+		491071CE13A27F150094895B /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491071CC13A27F140094895B /* HomeController.m */; };
+		491071CF13A27F150094895B /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 491071CD13A27F140094895B /* HomeController.xib */; };
+		491071D313A27F280094895B /* DigitalOutputsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491071D113A27F270094895B /* DigitalOutputsController.m */; };
+		491071D413A27F280094895B /* DigitalOutputsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 491071D213A27F280094895B /* DigitalOutputsController.xib */; };
+		491071D813A27F420094895B /* AnalogInputsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491071D613A27F420094895B /* AnalogInputsController.m */; };
+		491071D913A27F420094895B /* AnalogInputsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 491071D713A27F420094895B /* AnalogInputsController.xib */; };
+		491071EC13A283CC0094895B /* 1019.png in Resources */ = {isa = PBXBuildFile; fileRef = 491071EB13A283CC0094895B /* 1019.png */; };
+		493323E013A6972700114654 /* ServerDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493323DE13A6972600114654 /* ServerDetailsController.m */; };
+		493323E113A6972700114654 /* ServerDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493323DF13A6972700114654 /* ServerDetailsController.xib */; };
+		49D6B17C13AA87F500FFC9E7 /* AnalogIn.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D6B17713AA87F500FFC9E7 /* AnalogIn.png */; };
+		49D6B17D13AA87F500FFC9E7 /* DigitalIn.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D6B17813AA87F500FFC9E7 /* DigitalIn.png */; };
+		49D6B17E13AA87F500FFC9E7 /* DigitalOut.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D6B17913AA87F500FFC9E7 /* DigitalOut.png */; };
+		49D6B17F13AA87F500FFC9E7 /* PhidgetInterfaceKit.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D6B17A13AA87F500FFC9E7 /* PhidgetInterfaceKit.png */; };
+		49D6B18013AA87F500FFC9E7 /* Server.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D6B17B13AA87F500FFC9E7 /* Server.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4910719B13A27E420094895B /* InterfaceKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterfaceKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4910719F13A27E420094895B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		491071A113A27E420094895B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		491071A313A27E420094895B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		491071A713A27E420094895B /* PhidgetInterfacekit-full-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhidgetInterfacekit-full-Info.plist"; sourceTree = "<group>"; };
+		491071A913A27E420094895B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		491071AB13A27E420094895B /* PhidgetInterfacekit-full-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhidgetInterfacekit-full-Prefix.pch"; sourceTree = "<group>"; };
+		491071AC13A27E420094895B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		491071AE13A27E420094895B /* PhidgetInterfacekit_fullAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhidgetInterfacekit_fullAppDelegate.h; sourceTree = "<group>"; };
+		491071AF13A27E420094895B /* PhidgetInterfacekit_fullAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhidgetInterfacekit_fullAppDelegate.m; sourceTree = "<group>"; };
+		491071B213A27E420094895B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		491071C613A27EF30094895B /* DigitalInputsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitalInputsController.h; sourceTree = "<group>"; };
+		491071C713A27EF30094895B /* DigitalInputsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitalInputsController.m; sourceTree = "<group>"; };
+		491071C813A27EF40094895B /* DigitalInputsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DigitalInputsController.xib; sourceTree = "<group>"; };
+		491071CB13A27F140094895B /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		491071CC13A27F140094895B /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		491071CD13A27F140094895B /* HomeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
+		491071D013A27F270094895B /* DigitalOutputsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitalOutputsController.h; sourceTree = "<group>"; };
+		491071D113A27F270094895B /* DigitalOutputsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitalOutputsController.m; sourceTree = "<group>"; };
+		491071D213A27F280094895B /* DigitalOutputsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DigitalOutputsController.xib; sourceTree = "<group>"; };
+		491071D513A27F420094895B /* AnalogInputsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalogInputsController.h; sourceTree = "<group>"; };
+		491071D613A27F420094895B /* AnalogInputsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalogInputsController.m; sourceTree = "<group>"; };
+		491071D713A27F420094895B /* AnalogInputsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnalogInputsController.xib; sourceTree = "<group>"; };
+		491071EB13A283CC0094895B /* 1019.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1019.png; path = Images/1019.png; sourceTree = "<group>"; };
+		493323DD13A6972600114654 /* ServerDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerDetailsController.h; sourceTree = "<group>"; };
+		493323DE13A6972600114654 /* ServerDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerDetailsController.m; sourceTree = "<group>"; };
+		493323DF13A6972700114654 /* ServerDetailsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerDetailsController.xib; sourceTree = "<group>"; };
+		49D6B17713AA87F500FFC9E7 /* AnalogIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AnalogIn.png; path = Images/AnalogIn.png; sourceTree = "<group>"; };
+		49D6B17813AA87F500FFC9E7 /* DigitalIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DigitalIn.png; path = Images/DigitalIn.png; sourceTree = "<group>"; };
+		49D6B17913AA87F500FFC9E7 /* DigitalOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DigitalOut.png; path = Images/DigitalOut.png; sourceTree = "<group>"; };
+		49D6B17A13AA87F500FFC9E7 /* PhidgetInterfaceKit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PhidgetInterfaceKit.png; path = Images/PhidgetInterfaceKit.png; sourceTree = "<group>"; };
+		49D6B17B13AA87F500FFC9E7 /* Server.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Server.png; path = Images/Server.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4910719813A27E420094895B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491071A013A27E420094895B /* UIKit.framework in Frameworks */,
+				491071A213A27E420094895B /* Foundation.framework in Frameworks */,
+				491071A413A27E420094895B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4910719013A27E420094895B = {
+			isa = PBXGroup;
+			children = (
+				491071A513A27E420094895B /* PhidgetInterfacekit-full */,
+				4910719E13A27E420094895B /* Frameworks */,
+				4910719C13A27E420094895B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4910719C13A27E420094895B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4910719B13A27E420094895B /* InterfaceKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4910719E13A27E420094895B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4910719F13A27E420094895B /* UIKit.framework */,
+				491071A113A27E420094895B /* Foundation.framework */,
+				491071A313A27E420094895B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		491071A513A27E420094895B /* PhidgetInterfacekit-full */ = {
+			isa = PBXGroup;
+			children = (
+				491071EA13A2833A0094895B /* Images */,
+				491071AE13A27E420094895B /* PhidgetInterfacekit_fullAppDelegate.h */,
+				491071AF13A27E420094895B /* PhidgetInterfacekit_fullAppDelegate.m */,
+				491071B113A27E420094895B /* MainWindow.xib */,
+				491071A613A27E420094895B /* Supporting Files */,
+				493323DD13A6972600114654 /* ServerDetailsController.h */,
+				493323DE13A6972600114654 /* ServerDetailsController.m */,
+				493323DF13A6972700114654 /* ServerDetailsController.xib */,
+				491071CB13A27F140094895B /* HomeController.h */,
+				491071CC13A27F140094895B /* HomeController.m */,
+				491071CD13A27F140094895B /* HomeController.xib */,
+				491071C613A27EF30094895B /* DigitalInputsController.h */,
+				491071C713A27EF30094895B /* DigitalInputsController.m */,
+				491071C813A27EF40094895B /* DigitalInputsController.xib */,
+				491071D013A27F270094895B /* DigitalOutputsController.h */,
+				491071D113A27F270094895B /* DigitalOutputsController.m */,
+				491071D213A27F280094895B /* DigitalOutputsController.xib */,
+				491071D513A27F420094895B /* AnalogInputsController.h */,
+				491071D613A27F420094895B /* AnalogInputsController.m */,
+				491071D713A27F420094895B /* AnalogInputsController.xib */,
+			);
+			path = "PhidgetInterfacekit-full";
+			sourceTree = "<group>";
+		};
+		491071A613A27E420094895B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				491071A713A27E420094895B /* PhidgetInterfacekit-full-Info.plist */,
+				491071A813A27E420094895B /* InfoPlist.strings */,
+				491071AB13A27E420094895B /* PhidgetInterfacekit-full-Prefix.pch */,
+				491071AC13A27E420094895B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		491071EA13A2833A0094895B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				49D6B17713AA87F500FFC9E7 /* AnalogIn.png */,
+				49D6B17813AA87F500FFC9E7 /* DigitalIn.png */,
+				49D6B17913AA87F500FFC9E7 /* DigitalOut.png */,
+				49D6B17A13AA87F500FFC9E7 /* PhidgetInterfaceKit.png */,
+				49D6B17B13AA87F500FFC9E7 /* Server.png */,
+				491071EB13A283CC0094895B /* 1019.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4910719A13A27E420094895B /* PhidgetInterfacekit-full */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 491071B613A27E420094895B /* Build configuration list for PBXNativeTarget "PhidgetInterfacekit-full" */;
+			buildPhases = (
+				4910719713A27E420094895B /* Sources */,
+				4910719813A27E420094895B /* Frameworks */,
+				4910719913A27E420094895B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PhidgetInterfacekit-full";
+			productName = "PhidgetInterfacekit-full";
+			productReference = 4910719B13A27E420094895B /* InterfaceKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4910719213A27E420094895B /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4910719513A27E420094895B /* Build configuration list for PBXProject "PhidgetInterfacekit-full" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4910719013A27E420094895B;
+			productRefGroup = 4910719C13A27E420094895B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4910719A13A27E420094895B /* PhidgetInterfacekit-full */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4910719913A27E420094895B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491071AA13A27E420094895B /* InfoPlist.strings in Resources */,
+				491071B313A27E420094895B /* MainWindow.xib in Resources */,
+				491071CA13A27EF40094895B /* DigitalInputsController.xib in Resources */,
+				491071CF13A27F150094895B /* HomeController.xib in Resources */,
+				491071D413A27F280094895B /* DigitalOutputsController.xib in Resources */,
+				491071D913A27F420094895B /* AnalogInputsController.xib in Resources */,
+				491071EC13A283CC0094895B /* 1019.png in Resources */,
+				493323E113A6972700114654 /* ServerDetailsController.xib in Resources */,
+				49D6B17C13AA87F500FFC9E7 /* AnalogIn.png in Resources */,
+				49D6B17D13AA87F500FFC9E7 /* DigitalIn.png in Resources */,
+				49D6B17E13AA87F500FFC9E7 /* DigitalOut.png in Resources */,
+				49D6B17F13AA87F500FFC9E7 /* PhidgetInterfaceKit.png in Resources */,
+				49D6B18013AA87F500FFC9E7 /* Server.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4910719713A27E420094895B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491071AD13A27E420094895B /* main.m in Sources */,
+				491071B013A27E420094895B /* PhidgetInterfacekit_fullAppDelegate.m in Sources */,
+				491071C913A27EF40094895B /* DigitalInputsController.m in Sources */,
+				491071CE13A27F150094895B /* HomeController.m in Sources */,
+				491071D313A27F280094895B /* DigitalOutputsController.m in Sources */,
+				491071D813A27F420094895B /* AnalogInputsController.m in Sources */,
+				493323E013A6972700114654 /* ServerDetailsController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		491071A813A27E420094895B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				491071A913A27E420094895B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		491071B113A27E420094895B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				491071B213A27E420094895B /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		491071B413A27E420094895B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		491071B513A27E420094895B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		491071B713A27E420094895B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhidgetInterfacekit-full/PhidgetInterfacekit-full-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../\"";
+				INFOPLIST_FILE = "PhidgetInterfacekit-full/PhidgetInterfacekit-full-Info.plist";
+				"OTHER_LDFLAGS[sdk=iphoneos*][arch=*]" = "\"$(SRCROOT)/../iphoneos/libPhidget21.a\"";
+				"OTHER_LDFLAGS[sdk=iphonesimulator*][arch=*]" = "\"$(SRCROOT)/../iphonesimulator/libPhidget21.a\"";
+				PRODUCT_NAME = InterfaceKit;
+			};
+			name = Debug;
+		};
+		491071B813A27E420094895B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhidgetInterfacekit-full/PhidgetInterfacekit-full-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../\"";
+				INFOPLIST_FILE = "PhidgetInterfacekit-full/PhidgetInterfacekit-full-Info.plist";
+				"OTHER_LDFLAGS[sdk=iphoneos*][arch=*]" = "\"$(SRCROOT)/../iphoneos/libPhidget21.a\"";
+				"OTHER_LDFLAGS[sdk=iphonesimulator*][arch=*]" = "\"$(SRCROOT)/../iphonesimulator/libPhidget21.a\"";
+				PRODUCT_NAME = InterfaceKit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4910719513A27E420094895B /* Build configuration list for PBXProject "PhidgetInterfacekit-full" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				491071B413A27E420094895B /* Debug */,
+				491071B513A27E420094895B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		491071B613A27E420094895B /* Build configuration list for PBXNativeTarget "PhidgetInterfacekit-full" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				491071B713A27E420094895B /* Debug */,
+				491071B813A27E420094895B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4910719213A27E420094895B /* Project object */;
+}

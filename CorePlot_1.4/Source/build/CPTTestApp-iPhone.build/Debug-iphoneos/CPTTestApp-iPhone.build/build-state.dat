@@ -1,0 +1,1518 @@
+TCPTTestApp-iPhone
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/Info.plist /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Info.plist
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/ResourceRules.plist
+cCompileXIB /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/MainWindow.xib
+cCompileXIB /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/BarChart.xib
+cCompileXIB /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/ScatterPlot.xib
+cCopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CorePlotIcon.png CorePlotIcon.png
+cCompileXIB /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/PieChart.xib
+cCopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/16-line-chart.png GlyphishIcons/16-line-chart.png
+cCopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/17-bar-chart.png GlyphishIcons/17-bar-chart.png
+cCopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/62-contrast.png GlyphishIcons/62-contrast.png
+cCopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/Default-568h@2x.png Default-568h@2x.png
+cCopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CorePlotIcon@2x.png CorePlotIcon@2x.png
+cProcessPCH /var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-cmtvcqkotowvbwaafdyfdecfljxr/CPTTestApp_iPhone_Prefix.pch.pch CPTTestApp_iPhone_Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/main.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestApp_iPhoneAppDelegate.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestApp_iPhoneAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppBarChartController.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppBarChartController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppScatterPlotController.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppScatterPlotController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppPieChartController.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppPieChartController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UINavigationController+LegacyRotation.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UINavigationController+LegacyRotation.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UITabBarController+LegacyRotation.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UITabBarController+LegacyRotation.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UIViewController+LegacyRotation.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UIViewController+LegacyRotation.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CPTTestApp-iPhone normal armv7s
+cGenerateDSYMFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app.dSYM /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CPTTestApp-iPhone
+cProcessProductPackaging /Users/jamesfolk/Library/MobileDevice/Provisioning\ Profiles/10DC3917-DDAE-4233-BFC2-566ED3436072.mobileprovision /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/embedded.mobileprovision
+cTouch /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app
+cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone.xcent
+cCodeSign /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk
+c0000000053119F860000000000000132
+t1393663878
+s306
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist
+c00000000531FA6C70000000000000094
+t1394583239
+s148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist
+c00000000531FA6C70000000000000096
+t1394583239
+s150
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/SDKSettings.plist
+c00000000531FA6C7000000000000036B
+t1394583239
+s875
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000531FA6C8000000000000019E
+t1394583240
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c00000000531FA6CD000000000079C660
+t1394583245
+s7980640
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000531FA6CD00000000004D7BC0
+t1394583245
+s5077952
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000531FA6D00000000000A90C10
+t1394583248
+s11078672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c00000000531FA6D20000000000649DB0
+t1394583250
+s6593968
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000531FA6DC0000000002759920
+t1394583260
+s41261344
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+c00000000531FA6E30000000000385D50
+t1394583267
+s3693904
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/crt1.3.1.o
+c00000000531FA6E700000000000142B0
+t1394583271
+s82608
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libSystem.dylib
+c00000000531FA6E9000000000001E300
+t1394583273
+s123648
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libgcc_s.1.dylib
+c00000000531FA6E80000000000010D90
+t1394583272
+s69008
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libobjc.dylib
+c00000000531FA6E9000000000055EFE0
+t1394583273
+s5631968
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcache.dylib
+c00000000531FA6EA000000000002A880
+t1394583274
+s174208
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcommonCrypto.dylib
+c00000000531FA6EA00000000000458C0
+t1394583274
+s284864
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcompiler_rt.dylib
+c00000000531FA6EA000000000003E3E0
+t1394583274
+s254944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcopyfile.dylib
+c00000000531FA6EA000000000002B130
+t1394583274
+s176432
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcorecrypto.dylib
+c00000000531FA6EA00000000000E1FD0
+t1394583274
+s925648
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libdispatch.dylib
+c00000000531FA6EA00000000000A2A70
+t1394583274
+s666224
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libdyld.dylib
+c00000000531FA6EA000000000001E8A0
+t1394583274
+s125088
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libkeymgr.dylib
+c00000000531FA6EA000000000000BF00
+t1394583274
+s48896
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/liblaunch.dylib
+c00000000531FA6EA0000000000034380
+t1394583274
+s213888
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libmacho.dylib
+c00000000531FA6EA0000000000022F30
+t1394583274
+s143152
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libremovefile.dylib
+c00000000531FA6EA000000000001E2A0
+t1394583274
+s123552
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_asl.dylib
+c00000000531FA6EA0000000000052520
+t1394583274
+s337184
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_blocks.dylib
+c00000000531FA6EA0000000000015F20
+t1394583274
+s89888
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_c.dylib
+c00000000531FA6EB00000000001B90D0
+t1394583275
+s1806544
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_configuration.dylib
+c00000000531FA6EA000000000001F170
+t1394583274
+s127344
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_dnssd.dylib
+c00000000531FA6EA000000000002FCF0
+t1394583274
+s195824
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_info.dylib
+c00000000531FA6EA000000000008A150
+t1394583274
+s565584
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_kernel.dylib
+c00000000531FA6EA00000000000B60E0
+t1394583274
+s745696
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_m.dylib
+c00000000531FA6EA0000000000078720
+t1394583274
+s493344
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_malloc.dylib
+c00000000531FA6EA00000000000621F0
+t1394583274
+s401904
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_network.dylib
+c00000000531FA6EA00000000000BDAE0
+t1394583274
+s776928
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_notify.dylib
+c00000000531FA6EA0000000000039080
+t1394583274
+s233600
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_platform.dylib
+c00000000531FA6EA000000000003CBC0
+t1394583274
+s248768
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_pthread.dylib
+c00000000531FA6EA000000000002CFE0
+t1394583274
+s184288
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_sandbox.dylib
+c00000000531FA6EA000000000001EB50
+t1394583274
+s125776
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_stats.dylib
+c00000000531FA6EA000000000001EED0
+t1394583274
+s126672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libunwind.dylib
+c00000000531FA6EA00000000000236B0
+t1394583274
+s145072
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libxpc.dylib
+c00000000531FA6EB00000000000AC500
+t1394583275
+s705792
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_iphoneos.a
+c00000000531FA74200000000000159DC
+t1394583362
+s88540
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
+c00000000531FA742000000000000514C
+t1394583362
+s20812
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone.xcent
+t1395255648
+s420
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestApp-iPhone.LinkFileList
+c000000005329E95F0000000000000634
+t1395255647
+s1588
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppBarChartController.o
+t1395255648
+s90492
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppPieChartController.o
+t1395334671
+s82788
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppScatterPlotController.o
+t1395336411
+s95544
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestApp_iPhoneAppDelegate.o
+t1395255648
+s65784
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UINavigationController+LegacyRotation.o
+t1395255648
+s40100
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UITabBarController+LegacyRotation.o
+t1395255648
+s40936
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UIViewController+LegacyRotation.o
+t1395255648
+s39292
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/main.o
+t1395255648
+s3588
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app
+t1395336412
+s612
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app.dSYM
+t1395336412
+s102
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/16-line-chart.png
+t1395255647
+s438
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/17-bar-chart.png
+t1395255647
+s175
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/62-contrast.png
+t1395255647
+s303
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/BarChart.nib
+t1395255647
+s1420
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CPTTestApp-iPhone
+t1395336412
+s1282832
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CorePlotIcon.png
+t1395255647
+s9435
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CorePlotIcon@2x.png
+t1395255647
+s22178
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/Default-568h@2x.png
+t1395255647
+s7014
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/Info.plist
+t1395255647
+s1132
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/MainWindow.nib
+t1395255647
+s3917
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/PieChart.nib
+t1395255648
+s1420
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/PkgInfo
+t1395255647
+s8
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/ResourceRules.plist
+t1395255647
+s150
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/ScatterPlot.nib
+t1395333580
+s136
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/embedded.mobileprovision
+t1395255648
+s9912
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/libCorePlot-CocoaTouch.a
+c000000005329E94C0000000000372C78
+t1395255628
+s3615864
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/BarChart.xib
+c00000000508D38B90000000000003F9F
+t1351432377
+s16287
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/CPTTestApp_iPhone_Prefix.pch
+c000000005047E56400000000000000CB
+t1346889060
+s203
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppBarChartController.h
+c000000005246CD5A000000000000015A
+t1380371802
+s346
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppBarChartController.m
+c00000000524707D50000000000001F24
+t1380386773
+s7972
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppPieChartController.h
+c000000005246CD5A000000000000019C
+t1380371802
+s412
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppPieChartController.m
+c00000000532B1E0F000000000000171A
+t1395334671
+s5914
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppScatterPlotController.h
+c000000005246CD5A0000000000000194
+t1380371802
+s404
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppScatterPlotController.m
+c00000000532B24DB00000000000024C6
+t1395336411
+s9414
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestApp_iPhoneAppDelegate.h
+c000000005246CD5A000000000000023C
+t1380371802
+s572
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestApp_iPhoneAppDelegate.m
+c000000005246CD5A00000000000003DC
+t1380371802
+s988
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/CorePlotIcon.png
+c00000000522492CA0000000000002214
+t1378128586
+s8724
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/CorePlotIcon@2x.png
+c00000000522492CA0000000000004E2D
+t1378128586
+s20013
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Default-568h@2x.png
+c000000005049BB1000000000000048A2
+t1347009296
+s18594
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/GlyphishIcons/16-line-chart.png
+c000000005047E5640000000000000226
+t1346889060
+s550
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/GlyphishIcons/17-bar-chart.png
+c000000005047E56400000000000000B5
+t1346889060
+s181
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/GlyphishIcons/62-contrast.png
+c000000005047E56400000000000001A8
+t1346889060
+s424
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Info.plist
+c00000000508C34B6000000000000049C
+t1351365814
+s1180
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/MainWindow.xib
+c00000000517C6D7D0000000000004023
+t1367108989
+s16419
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/PieChart.xib
+c00000000508D38B90000000000003F56
+t1351432377
+s16214
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/ScatterPlot.xib
+c000000005329F00C000000000000051F
+t1395257356
+s1311
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/main.m
+c000000005246CD5A0000000000000105
+t1380371802
+s261
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS Rotation Utilities/UINavigationController+LegacyRotation.h
+c000000005246CD5B0000000000000051
+t1380371803
+s81
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS Rotation Utilities/UINavigationController+LegacyRotation.m
+c000000005246CD5B0000000000000138
+t1380371803
+s312
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS Rotation Utilities/UITabBarController+LegacyRotation.h
+c000000005246CD5B000000000000004D
+t1380371803
+s77
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS Rotation Utilities/UITabBarController+LegacyRotation.m
+c000000005246CD5B000000000000013A
+t1380371803
+s314
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS Rotation Utilities/UIViewController+LegacyRotation.h
+c000000005246CD5B000000000000004B
+t1380371803
+s75
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS Rotation Utilities/UIViewController+LegacyRotation.m
+c000000005246CD5B0000000000000362
+t1380371803
+s866
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/CorePlot-CocoaTouch.h
+c000000005246CD5D0000000000000746
+t1380371805
+s1862
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnimation.h
+c00000000524707D50000000000001313
+t1380386773
+s4883
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnimationOperation.h
+c00000000524707D5000000000000031E
+t1380386773
+s798
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnimationPeriod.h
+c00000000524707D50000000000001B34
+t1380386773
+s6964
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnnotation.h
+c00000000524707D500000000000003A5
+t1380386773
+s933
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnnotationHostLayer.h
+c00000000524707D50000000000000181
+t1380386773
+s385
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAxis.h
+c00000000524707D50000000000002B1C
+t1380386773
+s11036
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAxisLabel.h
+c00000000524707D50000000000000409
+t1380386773
+s1033
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAxisSet.h
+c00000000524707D5000000000000020A
+t1380386773
+s522
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAxisTitle.h
+c00000000524707D5000000000000004B
+t1380386773
+s75
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTBarPlot.h
+c00000000524707D50000000000001804
+t1380386773
+s6148
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTBorderedLayer.h
+c00000000524707D50000000000000230
+t1380386773
+s560
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTCalendarFormatter.h
+c00000000524707D5000000000000025A
+t1380386773
+s602
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTColor.h
+c00000000524707D5000000000000044A
+t1380386773
+s1098
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTColorSpace.h
+c00000000524707D50000000000000159
+t1380386773
+s345
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTConstraints.h
+c00000000524707D50000000000000370
+t1380386773
+s880
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTDefinitions.h
+c00000000524707D50000000000001719
+t1380386773
+s5913
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTExceptions.h
+c000000005246CD6200000000000000BE
+t1380371810
+s190
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTFill.h
+c00000000524707D50000000000000346
+t1380386773
+s838
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTFunctionDataSource.h
+c00000000524707D50000000000000457
+t1380386773
+s1111
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTGradient.h
+c00000000524707D50000000000000D7F
+t1380386773
+s3455
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTGraph.h
+c00000000524707D50000000000000F35
+t1380386773
+s3893
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTImage.h
+c00000000524707D500000000000003D5
+t1380386773
+s981
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLayer.h
+c00000000524707D50000000000000B91
+t1380386773
+s2961
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLayerAnnotation.h
+c00000000524707D500000000000001E7
+t1380386773
+s487
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLegend.h
+c00000000524707D5000000000000147E
+t1380386773
+s5246
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLegendEntry.h
+c00000000524707D50000000000000360
+t1380386773
+s864
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLimitBand.h
+c00000000524707D50000000000000204
+t1380386773
+s516
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLineCap.h
+c00000000524707D50000000000000851
+t1380386773
+s2129
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLineStyle.h
+c00000000524707D50000000000000578
+t1380386773
+s1400
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableLineStyle.h
+c00000000524707D50000000000000294
+t1380386773
+s660
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableNumericData+TypeConversion.h
+c00000000524707D5000000000000029C
+t1380386773
+s668
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableNumericData.h
+c00000000524707D50000000000000115
+t1380386773
+s277
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutablePlotRange.h
+c00000000524707D50000000000000277
+t1380386773
+s631
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableShadow.h
+c00000000524707D5000000000000011D
+t1380386773
+s285
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableTextStyle.h
+c00000000524707D500000000000001A4
+t1380386773
+s420
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTNumericData+TypeConversion.h
+c000000005246CD64000000000000030C
+t1380371812
+s780
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTNumericData.h
+c00000000524707D50000000000000D3A
+t1380386773
+s3386
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTNumericDataType.h
+c00000000524707D500000000000006A8
+t1380386773
+s1704
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPathExtensions.h
+c000000005246CD6500000000000000E0
+t1380371813
+s224
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPieChart.h
+c00000000524707D50000000000001756
+t1380386773
+s5974
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlot.h
+c00000000524707D50000000000002C1A
+t1380386773
+s11290
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotArea.h
+c00000000524707D50000000000000661
+t1380386773
+s1633
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotAreaFrame.h
+c00000000524707D5000000000000017C
+t1380386773
+s380
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotRange.h
+c00000000524707D500000000000007DB
+t1380386773
+s2011
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotSpace.h
+c00000000524707D50000000000001B37
+t1380386773
+s6967
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotSpaceAnnotation.h
+c00000000524707D5000000000000018C
+t1380386773
+s396
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotSymbol.h
+c00000000524707D500000000000009CF
+t1380386773
+s2511
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTRangePlot.h
+c00000000524707D50000000000000DFF
+t1380386773
+s3583
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTResponder.h
+c000000005246CD6700000000000006D5
+t1380371815
+s1749
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTScatterPlot.h
+c00000000524707D50000000000001110
+t1380386773
+s4368
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTShadow.h
+c00000000524707D50000000000000209
+t1380386773
+s521
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTextLayer.h
+c00000000524707D5000000000000035B
+t1380386773
+s859
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTextStyle.h
+c00000000524707D500000000000005A4
+t1380386773
+s1444
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTheme.h
+c00000000524707D500000000000005DD
+t1380386773
+s1501
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTimeFormatter.h
+c00000000524707D5000000000000017F
+t1380386773
+s383
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTradingRangePlot.h
+c00000000524707D500000000000024F2
+t1380386773
+s9458
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTUtilities.h
+c000000005246CD6900000000000010C8
+t1380371817
+s4296
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTXYAxis.h
+c00000000524707D5000000000000016A
+t1380386773
+s362
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTXYAxisSet.h
+c00000000524707D500000000000000CF
+t1380386773
+s207
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTXYGraph.h
+c00000000524707D5000000000000013E
+t1380386773
+s318
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTXYPlotSpace.h
+c00000000524707D50000000000000471
+t1380386773
+s1137
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTGraphHostingView.h
+c00000000524707D600000000000001C0
+t1380386774
+s448
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificCategories.h
+c00000000524707D60000000000000550
+t1380386774
+s1360
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificDefines.h
+c000000005246CD5D0000000000000082
+t1380371805
+s130
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificFunctions.h
+c000000005246CD5D000000000000011C
+t1380371805
+s284
+
+N/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTTextStylePlatformSpecific.h
+c00000000524707D60000000000000225
+t1380386774
+s549
+
+N/Users/jamesfolk/Library/MobileDevice/Provisioning Profiles/10DC3917-DDAE-4233-BFC2-566ED3436072.mobileprovision
+c00000000531DFA4D00000000000026B8
+t1394473549
+s9912
+
+N/var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-cmtvcqkotowvbwaafdyfdecfljxr/CPTTestApp_iPhone_Prefix.pch.pch
+t1395255648
+s5307624
+
+CBuild AST from /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppBarChartController.m
+r0
+
+CBuild AST from /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppPieChartController.m
+r0
+
+CBuild AST from /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppScatterPlotController.m
+r0
+
+CBuild AST from /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestApp_iPhoneAppDelegate.m
+r0
+
+CBuild AST from /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/main.m
+r0
+
+CBuild AST from /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UINavigationController+LegacyRotation.m
+r0
+
+CBuild AST from /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UITabBarController+LegacyRotation.m
+r0
+
+CBuild AST from /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UIViewController+LegacyRotation.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd26fab895cdbb841^c898ab895cdbb841^---0#1#1#--18"Check dependencies36"BB492D92-852C-4198-8F7E-6C4FF784AAFB-
+
+CCodeSign /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app
+s417029212.115351
+e417029212.245509
+r1
+xCodeSign
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"CodeSign /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app128"CodeSign /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.appbb991d5c5cdbb841^f1d93e5c5cdbb841^---0#0#1#-19%DVTDocumentLocation2@127"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/0000000000000000^1277"CodeSign /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    Using code signing identity "iPhone Developer: James Folk (FWZPKCY3PH)" and provisioning profile "iOS Team Provisioning Profile: *" (10DC3917-DDAE-4233-BFC2-566ED3436072)    /usr/bin/codesign --force --sign 3800617842631D04FB1915FEA5C15F2F76616FF4 --resource-rules=/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/ResourceRules.plist --entitlements /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone.xcent /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app36"3BC40978-92B5-484A-A1EC-D738B79A5FDC-
+bE8E009B2-6636-456A-99B6-EAABDF15F88B
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/arm64/CPTTestAppBarChartController.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppBarChartController.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/arm64/CPTTestAppPieChartController.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppPieChartController.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/arm64/CPTTestAppScatterPlotController.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppScatterPlotController.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/arm64/CPTTestApp_iPhoneAppDelegate.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestApp_iPhoneAppDelegate.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/arm64/UINavigationController+LegacyRotation.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UINavigationController+LegacyRotation.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/arm64/UITabBarController+LegacyRotation.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UITabBarController+LegacyRotation.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/arm64/UIViewController+LegacyRotation.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UIViewController+LegacyRotation.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/arm64/main.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/main.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7/CPTTestAppBarChartController.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppBarChartController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7/CPTTestAppPieChartController.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppPieChartController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7/CPTTestAppScatterPlotController.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppScatterPlotController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7/CPTTestApp_iPhoneAppDelegate.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestApp_iPhoneAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7/UINavigationController+LegacyRotation.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UINavigationController+LegacyRotation.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7/UITabBarController+LegacyRotation.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UITabBarController+LegacyRotation.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7/UIViewController+LegacyRotation.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UIViewController+LegacyRotation.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7/main.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppBarChartController.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppBarChartController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s416948448.563992
+e416948448.662654
+r1
+xCompileC
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppBarChartController.o
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppBarChartController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppBarChartController.m
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppBarChartController.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/CorePlot-CocoaTouch.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnimation.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnimationOperation.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTDefinitions.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnimationPeriod.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnnotation.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnnotationHostLayer.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLayer.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTResponder.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificDefines.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAxis.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTextStyle.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTTextStylePlatformSpecific.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAxisLabel.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAxisSet.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAxisTitle.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTBarPlot.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlot.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTNumericDataType.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTBorderedLayer.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTCalendarFormatter.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTColor.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTColorSpace.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTConstraints.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTExceptions.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTFill.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTFunctionDataSource.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTGradient.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTGraph.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTGraphHostingView.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTImage.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLayerAnnotation.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLegend.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLegendEntry.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLimitBand.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLineCap.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLineStyle.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableLineStyle.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableNumericData.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTNumericData.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableNumericData+TypeConversion.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutablePlotRange.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotRange.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableShadow.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTShadow.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableTextStyle.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTNumericData+TypeConversion.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPieChart.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificFunctions.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificCategories.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPathExtensions.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotArea.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotAreaFrame.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotSpace.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotSpaceAnnotation.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotSymbol.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTRangePlot.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTScatterPlot.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTextLayer.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTheme.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTimeFormatter.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTradingRangePlot.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTUtilities.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTXYAxis.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTXYAxisSet.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTXYGraph.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTXYPlotSpace.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection150"Compile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppBarChartController.m316"CompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppBarChartController.o Classes/CPTTestAppBarChartController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilere77190e020dab841^cfa4a9e020dab841^---0#0#1#-19%DVTDocumentLocation2@149"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppBarChartController.m0000000000000000^4365"CompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppBarChartController.o Classes/CPTTestAppBarChartController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=3.1.3 -iquote /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-generated-files.hmap -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-own-target-headers.hmap -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-all-target-headers.hmap -iquote /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-project-headers.hmap -iquote../../framework -iquote../../framework/.idea -iquote../../framework/iPhoneOnly -iquote../../framework/MacOnly -iquote../../framework/Source -iquote../../framework/TestResources -iquote../../framework/.idea/inspectionProfiles -iquote../../framework/.idea/scopes -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/include -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/DerivedSources/armv7s -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/DerivedSources -F/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos -include /var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-cmtvcqkotowvbwaafdyfdecfljxr/CPTTestApp_iPhone_Prefix.pch -MMD -MT dependencies -MF /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppBarChartController.d --serialize-diagnostics /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppBarChartController.dia -c /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppBarChartController.m -o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppBarChartController.o36"F51DB79F-0031-44E1-8625-0A0353E41C71-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppPieChartController.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppPieChartController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417027471.889182
+e417027471.968079
+r1
+xCompileC
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppPieChartController.o
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppPieChartController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppPieChartController.m
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppPieChartController.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/CorePlot-CocoaTouch.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnimation.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnimationOperation.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTDefinitions.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnimationPeriod.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnnotation.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnnotationHostLayer.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLayer.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTResponder.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificDefines.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAxis.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTextStyle.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTTextStylePlatformSpecific.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAxisLabel.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAxisSet.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAxisTitle.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTBarPlot.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlot.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTNumericDataType.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTBorderedLayer.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTCalendarFormatter.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTColor.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTColorSpace.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTConstraints.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTExceptions.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTFill.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTFunctionDataSource.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTGradient.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTGraph.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTGraphHostingView.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTImage.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLayerAnnotation.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLegend.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLegendEntry.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLimitBand.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLineCap.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLineStyle.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableLineStyle.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableNumericData.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTNumericData.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableNumericData+TypeConversion.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutablePlotRange.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotRange.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableShadow.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTShadow.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableTextStyle.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTNumericData+TypeConversion.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPieChart.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificFunctions.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificCategories.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPathExtensions.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotArea.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotAreaFrame.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotSpace.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotSpaceAnnotation.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotSymbol.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTRangePlot.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTScatterPlot.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTextLayer.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTheme.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTimeFormatter.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTradingRangePlot.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTUtilities.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTXYAxis.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTXYAxisSet.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTXYGraph.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTXYPlotSpace.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection150"Compile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppPieChartController.m316"CompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppPieChartController.o Classes/CPTTestAppPieChartController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler90bce38f55dbb841^39d4f78f55dbb841^---0#0#1#-19%DVTDocumentLocation2@149"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppPieChartController.m0000000000000000^4365"CompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppPieChartController.o Classes/CPTTestAppPieChartController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=3.1.3 -iquote /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-generated-files.hmap -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-own-target-headers.hmap -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-all-target-headers.hmap -iquote /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-project-headers.hmap -iquote../../framework -iquote../../framework/.idea -iquote../../framework/iPhoneOnly -iquote../../framework/MacOnly -iquote../../framework/Source -iquote../../framework/TestResources -iquote../../framework/.idea/inspectionProfiles -iquote../../framework/.idea/scopes -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/include -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/DerivedSources/armv7s -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/DerivedSources -F/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos -include /var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-cmtvcqkotowvbwaafdyfdecfljxr/CPTTestApp_iPhone_Prefix.pch -MMD -MT dependencies -MF /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppPieChartController.d --serialize-diagnostics /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppPieChartController.dia -c /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppPieChartController.m -o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppPieChartController.o36"12362BA2-CBEA-4E2E-9B1D-DEA3E3BDC50C-
+b4C409FF8-1AE1-4B4F-A535-61D3B72C8600
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppScatterPlotController.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppScatterPlotController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417029211.879256
+e417029211.950808
+r1
+xCompileC
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppScatterPlotController.o
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppScatterPlotController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppScatterPlotController.m
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppScatterPlotController.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/CorePlot-CocoaTouch.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnimation.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnimationOperation.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTDefinitions.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnimationPeriod.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnnotation.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnnotationHostLayer.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLayer.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTResponder.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificDefines.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAxis.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTextStyle.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTTextStylePlatformSpecific.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAxisLabel.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAxisSet.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAxisTitle.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTBarPlot.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlot.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTNumericDataType.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTBorderedLayer.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTCalendarFormatter.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTColor.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTColorSpace.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTConstraints.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTExceptions.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTFill.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTFunctionDataSource.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTGradient.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTGraph.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTGraphHostingView.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTImage.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLayerAnnotation.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLegend.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLegendEntry.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLimitBand.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLineCap.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLineStyle.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableLineStyle.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableNumericData.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTNumericData.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableNumericData+TypeConversion.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutablePlotRange.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotRange.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableShadow.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTShadow.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTMutableTextStyle.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTNumericData+TypeConversion.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPieChart.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificFunctions.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificCategories.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPathExtensions.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotArea.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotAreaFrame.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotSpace.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotSpaceAnnotation.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlotSymbol.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTRangePlot.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTScatterPlot.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTextLayer.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTheme.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTimeFormatter.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTradingRangePlot.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTUtilities.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTXYAxis.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTXYAxisSet.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTXYGraph.h
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTXYPlotSpace.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection153"Compile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppScatterPlotController.m322"CompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppScatterPlotController.o Classes/CPTTestAppScatterPlotController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler2730e15b5cdbb841^7b68f35b5cdbb841^---0#0#1#-19%DVTDocumentLocation2@152"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppScatterPlotController.m0000000000000000^4383"CompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppScatterPlotController.o Classes/CPTTestAppScatterPlotController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=3.1.3 -iquote /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-generated-files.hmap -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-own-target-headers.hmap -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-all-target-headers.hmap -iquote /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-project-headers.hmap -iquote../../framework -iquote../../framework/.idea -iquote../../framework/iPhoneOnly -iquote../../framework/MacOnly -iquote../../framework/Source -iquote../../framework/TestResources -iquote../../framework/.idea/inspectionProfiles -iquote../../framework/.idea/scopes -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/include -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/DerivedSources/armv7s -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/DerivedSources -F/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos -include /var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-cmtvcqkotowvbwaafdyfdecfljxr/CPTTestApp_iPhone_Prefix.pch -MMD -MT dependencies -MF /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppScatterPlotController.d --serialize-diagnostics /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppScatterPlotController.dia -c /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestAppScatterPlotController.m -o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppScatterPlotController.o36"330EBD5D-4953-4565-87BF-F295EBA610C7-
+bE8E009B2-6636-456A-99B6-EAABDF15F88B
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestApp_iPhoneAppDelegate.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestApp_iPhoneAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s416948448.563821
+e416948448.619560
+r1
+xCompileC
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestApp_iPhoneAppDelegate.o
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestApp_iPhoneAppDelegate.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestApp_iPhoneAppDelegate.m
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestApp_iPhoneAppDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection150"Compile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestApp_iPhoneAppDelegate.m316"CompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestApp_iPhoneAppDelegate.o Classes/CPTTestApp_iPhoneAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerb97090e020dab841^029c9ee020dab841^---0#0#1#-19%DVTDocumentLocation2@149"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestApp_iPhoneAppDelegate.m0000000000000000^4365"CompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestApp_iPhoneAppDelegate.o Classes/CPTTestApp_iPhoneAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=3.1.3 -iquote /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-generated-files.hmap -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-own-target-headers.hmap -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-all-target-headers.hmap -iquote /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-project-headers.hmap -iquote../../framework -iquote../../framework/.idea -iquote../../framework/iPhoneOnly -iquote../../framework/MacOnly -iquote../../framework/Source -iquote../../framework/TestResources -iquote../../framework/.idea/inspectionProfiles -iquote../../framework/.idea/scopes -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/include -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/DerivedSources/armv7s -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/DerivedSources -F/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos -include /var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-cmtvcqkotowvbwaafdyfdecfljxr/CPTTestApp_iPhone_Prefix.pch -MMD -MT dependencies -MF /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestApp_iPhoneAppDelegate.d --serialize-diagnostics /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestApp_iPhoneAppDelegate.dia -c /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Classes/CPTTestApp_iPhoneAppDelegate.m -o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestApp_iPhoneAppDelegate.o36"9F75BA85-9D98-47C8-82D1-CB6C9E8CDFA6-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UINavigationController+LegacyRotation.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UINavigationController+LegacyRotation.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s416948448.564911
+e416948448.614304
+r1
+xCompileC
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UINavigationController+LegacyRotation.o
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS Rotation Utilities/UINavigationController+LegacyRotation.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS Rotation Utilities/UINavigationController+LegacyRotation.m
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS Rotation Utilities/UINavigationController+LegacyRotation.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection156"Compile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS Rotation Utilities/UINavigationController+LegacyRotation.m437"CompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UINavigationController+LegacyRotation.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UINavigationController+LegacyRotation.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler09e290e020dab841^af439de020dab841^---0#0#1#-19%DVTDocumentLocation2@159"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS%20Rotation%20Utilities/UINavigationController+LegacyRotation.m0000000000000000^4521"CompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UINavigationController+LegacyRotation.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UINavigationController+LegacyRotation.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=3.1.3 -iquote /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-generated-files.hmap -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-own-target-headers.hmap -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-all-target-headers.hmap -iquote /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-project-headers.hmap -iquote../../framework -iquote../../framework/.idea -iquote../../framework/iPhoneOnly -iquote../../framework/MacOnly -iquote../../framework/Source -iquote../../framework/TestResources -iquote../../framework/.idea/inspectionProfiles -iquote../../framework/.idea/scopes -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/include -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/DerivedSources/armv7s -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/DerivedSources -F/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos -include /var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-cmtvcqkotowvbwaafdyfdecfljxr/CPTTestApp_iPhone_Prefix.pch -MMD -MT dependencies -MF /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UINavigationController+LegacyRotation.d --serialize-diagnostics /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UINavigationController+LegacyRotation.dia -c /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UINavigationController+LegacyRotation.m -o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UINavigationController+LegacyRotation.o36"011E5A12-5030-4F31-BE62-FD1B4E7ECD1E-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UITabBarController+LegacyRotation.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UITabBarController+LegacyRotation.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s416948448.565301
+e416948448.607281
+r1
+xCompileC
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UITabBarController+LegacyRotation.o
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS Rotation Utilities/UITabBarController+LegacyRotation.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS Rotation Utilities/UITabBarController+LegacyRotation.m
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS Rotation Utilities/UITabBarController+LegacyRotation.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection152"Compile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS Rotation Utilities/UITabBarController+LegacyRotation.m429"CompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UITabBarController+LegacyRotation.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UITabBarController+LegacyRotation.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler47cc90e020dab841^c87d9be020dab841^---0#0#1#-19%DVTDocumentLocation2@155"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS%20Rotation%20Utilities/UITabBarController+LegacyRotation.m0000000000000000^4497"CompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UITabBarController+LegacyRotation.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UITabBarController+LegacyRotation.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=3.1.3 -iquote /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-generated-files.hmap -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-own-target-headers.hmap -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-all-target-headers.hmap -iquote /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-project-headers.hmap -iquote../../framework -iquote../../framework/.idea -iquote../../framework/iPhoneOnly -iquote../../framework/MacOnly -iquote../../framework/Source -iquote../../framework/TestResources -iquote../../framework/.idea/inspectionProfiles -iquote../../framework/.idea/scopes -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/include -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/DerivedSources/armv7s -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/DerivedSources -F/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos -include /var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-cmtvcqkotowvbwaafdyfdecfljxr/CPTTestApp_iPhone_Prefix.pch -MMD -MT dependencies -MF /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UITabBarController+LegacyRotation.d --serialize-diagnostics /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UITabBarController+LegacyRotation.dia -c /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UITabBarController+LegacyRotation.m -o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UITabBarController+LegacyRotation.o36"89EB1DB9-17DA-4685-815A-E95F3882A581-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UIViewController+LegacyRotation.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UIViewController+LegacyRotation.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s416948448.566018
+e416948448.613940
+r1
+xCompileC
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UIViewController+LegacyRotation.o
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS Rotation Utilities/UIViewController+LegacyRotation.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS Rotation Utilities/UIViewController+LegacyRotation.m
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS Rotation Utilities/UIViewController+LegacyRotation.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection150"Compile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS Rotation Utilities/UIViewController+LegacyRotation.m425"CompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UIViewController+LegacyRotation.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UIViewController+LegacyRotation.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compileradfa90e020dab841^5a2c9de020dab841^---0#0#1#-19%DVTDocumentLocation2@153"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS%20Rotation%20Utilities/UIViewController+LegacyRotation.m0000000000000000^4485"CompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UIViewController+LegacyRotation.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UIViewController+LegacyRotation.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=3.1.3 -iquote /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-generated-files.hmap -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-own-target-headers.hmap -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-all-target-headers.hmap -iquote /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-project-headers.hmap -iquote../../framework -iquote../../framework/.idea -iquote../../framework/iPhoneOnly -iquote../../framework/MacOnly -iquote../../framework/Source -iquote../../framework/TestResources -iquote../../framework/.idea/inspectionProfiles -iquote../../framework/.idea/scopes -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/include -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/DerivedSources/armv7s -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/DerivedSources -F/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos -include /var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-cmtvcqkotowvbwaafdyfdecfljxr/CPTTestApp_iPhone_Prefix.pch -MMD -MT dependencies -MF /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UIViewController+LegacyRotation.d --serialize-diagnostics /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UIViewController+LegacyRotation.dia -c /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/iOS\ Rotation\ Utilities/UIViewController+LegacyRotation.m -o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UIViewController+LegacyRotation.o36"E2D6F145-EAC8-4D0D-81A7-436533DC097E-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CCompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/main.o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s416948448.563649
+e416948448.585494
+r1
+xCompileC
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/main.o
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/main.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/main.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Compile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/main.m260"CompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/main.o main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler705e90e020dab841^45a195e020dab841^---0#0#1#-19%DVTDocumentLocation2@117"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/main.m0000000000000000^4205"CompileC /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/main.o main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=3.1.3 -iquote /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-generated-files.hmap -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-own-target-headers.hmap -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-all-target-headers.hmap -iquote /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-project-headers.hmap -iquote../../framework -iquote../../framework/.idea -iquote../../framework/iPhoneOnly -iquote../../framework/MacOnly -iquote../../framework/Source -iquote../../framework/TestResources -iquote../../framework/.idea/inspectionProfiles -iquote../../framework/.idea/scopes -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/include -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/DerivedSources/armv7s -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/DerivedSources -F/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos -include /var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-cmtvcqkotowvbwaafdyfdecfljxr/CPTTestApp_iPhone_Prefix.pch -MMD -MT dependencies -MF /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/main.d --serialize-diagnostics /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/main.dia -c /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/main.m -o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/main.o36"BC58B83F-B8B8-486C-AB96-1FB1FC45BAD3-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CCompileXIB /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/BarChart.xib
+s416948447.823225
+e416948447.864027
+r1
+xCompileXIB
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/BarChart.xib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection126"Compiling /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/BarChart.xib23"CompileXIB BarChart.xib9fc9d2df20dab841^9831dddf20dab841^---0#0#1#-19%DVTDocumentLocation2@123"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/BarChart.xib0000000000000000^835"CompileXIB BarChart.xib    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 3.1.3 --output-format human-readable-text --compile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/BarChart.nib /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/BarChart.xib36"06D5225D-0310-412F-BD3A-462FDE69CB80-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CCompileXIB /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/MainWindow.xib
+s416948447.823133
+e416948447.892334
+r1
+xCompileXIB
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/MainWindow.xib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Compiling /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/MainWindow.xib25"CompileXIB MainWindow.xib27c2d2df20dab841^ca70e4df20dab841^---0#0#1#-19%DVTDocumentLocation2@125"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/MainWindow.xib0000000000000000^841"CompileXIB MainWindow.xib    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 3.1.3 --output-format human-readable-text --compile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/MainWindow.nib /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/MainWindow.xib36"0B89DCDA-4106-4F97-B62E-ED4961D69437-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CCompileXIB /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/PieChart.xib
+s416948447.823740
+e416948448.386581
+r1
+xCompileXIB
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/PieChart.xib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection126"Compiling /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/PieChart.xib23"CompileXIB PieChart.xib39f0d2df20dab841^3cf762e020dab841^---0#0#1#-19%DVTDocumentLocation2@123"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/PieChart.xib0000000000000000^835"CompileXIB PieChart.xib    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 3.1.3 --output-format human-readable-text --compile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/PieChart.nib /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/PieChart.xib36"5B4FAFFA-6F3A-4A6E-B816-2B08439058DA-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CCompileXIB /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/ScatterPlot.xib
+s417026380.191816
+e417026380.900865
+r1
+xCompileXIB
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/ScatterPlot.xib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection129"Compiling /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/ScatterPlot.xib26"CompileXIB ScatterPlot.xibe128314c51dbb841^6b9fe64c51dbb841^---0#0#1#-19%DVTDocumentLocation2@126"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/ScatterPlot.xib0000000000000000^844"CompileXIB ScatterPlot.xib    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 3.1.3 --output-format human-readable-text --compile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/ScatterPlot.nib /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/ScatterPlot.xib36"34DD763F-D420-49B4-BEFE-A14F143ACDCD-
+b3EBAC957-E4D0-4B18-9AC8-A661F724E2B4
+
+CCopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/16-line-chart.png GlyphishIcons/16-line-chart.png
+s416948447.823999
+e416948447.861192
+r1
+xCopyPNGFile
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/16-line-chart.png
+xGlyphishIcons/16-line-chart.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection181"CopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/16-line-chart.png GlyphishIcons/16-line-chart.png181"CopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/16-line-chart.png GlyphishIcons/16-line-chart.pnga698d3df20dab841^6a86dcdf20dab841^---0#0#1#-19%DVTDocumentLocation2@142"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/GlyphishIcons/16-line-chart.png0000000000000000^866"CopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/16-line-chart.png GlyphishIcons/16-line-chart.png    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/GlyphishIcons/16-line-chart.png /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/16-line-chart.png36"5C846E3A-F134-4913-B205-5D79A278FBE3-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CCopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/17-bar-chart.png GlyphishIcons/17-bar-chart.png
+s416948447.824630
+e416948447.857468
+r1
+xCopyPNGFile
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/17-bar-chart.png
+xGlyphishIcons/17-bar-chart.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection179"CopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/17-bar-chart.png GlyphishIcons/17-bar-chart.png179"CopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/17-bar-chart.png GlyphishIcons/17-bar-chart.png096bd3df20dab841^3484dbdf20dab841^---0#0#1#-19%DVTDocumentLocation2@141"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/GlyphishIcons/17-bar-chart.png0000000000000000^862"CopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/17-bar-chart.png GlyphishIcons/17-bar-chart.png    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/GlyphishIcons/17-bar-chart.png /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/17-bar-chart.png36"940B8C97-9496-49B1-9BE6-89BDBD7DDA73-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CCopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/62-contrast.png GlyphishIcons/62-contrast.png
+s416948447.824784
+e416948447.852714
+r1
+xCopyPNGFile
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/62-contrast.png
+xGlyphishIcons/62-contrast.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection177"CopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/62-contrast.png GlyphishIcons/62-contrast.png177"CopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/62-contrast.png GlyphishIcons/62-contrast.png8330d3df20dab841^c558dadf20dab841^---0#0#1#-19%DVTDocumentLocation2@140"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/GlyphishIcons/62-contrast.png0000000000000000^858"CopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/62-contrast.png GlyphishIcons/62-contrast.png    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/GlyphishIcons/62-contrast.png /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/62-contrast.png36"7AB43F86-43FD-4773-9D2C-3B4AA787FBFB-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CCopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CorePlotIcon.png CorePlotIcon.png
+s416948447.823458
+e416948447.859525
+r1
+xCopyPNGFile
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CorePlotIcon.png
+xCorePlotIcon.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection165"CopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CorePlotIcon.png CorePlotIcon.png165"CopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CorePlotIcon.png CorePlotIcon.png7fdcd2df20dab841^bb0bdcdf20dab841^---0#0#1#-19%DVTDocumentLocation2@127"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/CorePlotIcon.png0000000000000000^834"CopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CorePlotIcon.png CorePlotIcon.png    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/CorePlotIcon.png /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CorePlotIcon.png36"18CBD352-471A-469A-BFDD-1D7264701AA9-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CCopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CorePlotIcon@2x.png CorePlotIcon@2x.png
+s416948447.858789
+e416948447.886627
+r1
+xCopyPNGFile
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CorePlotIcon@2x.png
+xCorePlotIcon@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection171"CopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CorePlotIcon@2x.png CorePlotIcon@2x.png171"CopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CorePlotIcon@2x.png CorePlotIcon@2x.png79e8dbdf20dab841^94fae2df20dab841^---0#0#1#-19%DVTDocumentLocation2@130"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/CorePlotIcon@2x.png0000000000000000^846"CopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CorePlotIcon@2x.png CorePlotIcon@2x.png    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/CorePlotIcon@2x.png /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CorePlotIcon@2x.png36"25A278F3-6BE1-4D3A-AB36-BCB6D3BCD199-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CCopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/Default-568h@2x.png Default-568h@2x.png
+s416948447.853222
+e416948447.933480
+r1
+xCopyPNGFile
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/Default-568h@2x.png
+xDefault-568h@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection171"CopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/Default-568h@2x.png Default-568h@2x.png171"CopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/Default-568h@2x.png Default-568h@2x.pngfa7adadf20dab841^0dfaeedf20dab841^---0#0#1#-19%DVTDocumentLocation2@130"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Default-568h@2x.png0000000000000000^846"CopyPNGFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/Default-568h@2x.png Default-568h@2x.png    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Default-568h@2x.png /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/Default-568h@2x.png36"7272DA06-64C9-421B-A728-2C1CE83575B3-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/ResourceRules.plist
+s416948447.822308
+e416948447.822845
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/ResourceRules.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection144"Copy /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/ResourceRules.plist272"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/ResourceRules.plist1e8ad2df20dab841^5da6d2df20dab841^---0#0#1#-19%DVTDocumentLocation2@146"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/ResourceRules.plist0034c034dfffdf42^926"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/ResourceRules.plist    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app36"BAB2706A-5033-4039-B579-2847A3A5E2B1-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CCreateUniversalBinary /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CPTTestApp-iPhone normal armv7\ armv7s\ arm64
+r0
+
+CGenerateDSYMFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app.dSYM /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CPTTestApp-iPhone
+s417029212.040379
+e417029212.114122
+r1
+xGenerateDSYMFile
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app.dSYM
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CPTTestApp-iPhone
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection133"Generate /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app.dSYM279"GenerateDSYMFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app.dSYM /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CPTTestApp-iPhone525f0a5c5cdbb841^b0371d5c5cdbb841^---0#0#1#-19%DVTDocumentLocation2@132"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app.dSYM/0000000000000000^945"GenerateDSYMFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app.dSYM /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CPTTestApp-iPhone    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CPTTestApp-iPhone -o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app.dSYM36"A969688E-6449-4266-BAC2-20A1A7C1A8AA-
+bE8E009B2-6636-456A-99B6-EAABDF15F88B
+
+CLd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/arm64/CPTTestApp-iPhone normal arm64
+r0
+
+CLd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7/CPTTestApp-iPhone normal armv7
+r0
+
+CLd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestApp-iPhone normal armv7s
+r0
+
+CLd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CPTTestApp-iPhone normal armv7s
+s417029211.952024
+e417029212.039808
+r1
+xLd
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CPTTestApp-iPhone
+xnormal
+xarmv7s
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestApp-iPhone.LinkFileList
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/crt1.3.1.o
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/main.o
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestApp_iPhoneAppDelegate.o
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppBarChartController.o
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppScatterPlotController.o
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestAppPieChartController.o
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UINavigationController+LegacyRotation.o
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UITabBarController+LegacyRotation.o
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/UIViewController+LegacyRotation.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/libCorePlot-CocoaTouch.a
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_iphoneos.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libgcc_s.1.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libxpc.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection142"Link /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CPTTestApp-iPhone154"Ld /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CPTTestApp-iPhone normal armv7s40c3f35b5cdbb841^1f310a5c5cdbb841^---0#0#1#--1807"Ld /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CPTTestApp-iPhone normal armv7s    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export IPHONEOS_DEPLOYMENT_TARGET=3.1.3    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7s -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos -F/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos -filelist /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestApp-iPhone.LinkFileList -dead_strip -all_load -ObjC -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=3.1.3 -framework Foundation -framework UIKit -framework CoreGraphics -framework QuartzCore /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/libCorePlot-CocoaTouch.a -Xlinker -dependency_info -Xlinker /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/Objects-normal/armv7s/CPTTestApp-iPhone_dependency_info.dat -o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/CPTTestApp-iPhone36"66591360-9747-4AA8-9305-3F3CE4A5036B-
+bE8E009B2-6636-456A-99B6-EAABDF15F88B
+
+CProcessInfoPlistFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/Info.plist /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Info.plist
+s416948447.820947
+e416948447.822044
+r1
+xProcessInfoPlistFile
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/Info.plist
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Process /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Info.plist162"ProcessInfoPlistFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/Info.plist Info.plistf931d2df20dab841^a373d2df20dab841^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Info.plist0000000000000000^1094"ProcessInfoPlistFile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/Info.plist Info.plist    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/Info.plist -genpkginfo /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/ResourceRules.plist -o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/Info.plist36"0D9C5418-69D1-49F3-B5CC-E0297A3ECC15-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CProcessPCH /Users/jamesfolk/Library/Developer/Xcode/DerivedData/CPTTestApp-iPhone-gfuexbgmucdgdcgxnadzbqetmovw/Index/PrecompiledHeaders/CPTTestApp_iPhone_Prefix-acxyjgmlpxkagcetrgphwalydupo_ast/CPTTestApp_iPhone_Prefix.pch.pch CPTTestApp_iPhone_Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/jamesfolk/Library/Developer/Xcode/DerivedData/CPTTestApp-iPhone-gfuexbgmucdgdcgxnadzbqetmovw/Index/PrecompiledHeaders/CPTTestApp_iPhone_Prefix-cksievjnesqeqsazezrxpzeowehu_ast/CPTTestApp_iPhone_Prefix.pch.pch CPTTestApp_iPhone_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/jamesfolk/Library/Developer/Xcode/DerivedData/CPTTestApp-iPhone-gfuexbgmucdgdcgxnadzbqetmovw/Index/PrecompiledHeaders/CPTTestApp_iPhone_Prefix-dhtjwhxpemxayubbuzphageibsbr_ast/CPTTestApp_iPhone_Prefix.pch.pch CPTTestApp_iPhone_Prefix.pch normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-cmtvcqkotowvbwaafdyfdecfljxr/CPTTestApp_iPhone_Prefix.pch.pch CPTTestApp_iPhone_Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s416948448.387040
+e416948448.563133
+r1
+xProcessPCH
+x/var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-cmtvcqkotowvbwaafdyfdecfljxr/CPTTestApp_iPhone_Prefix.pch.pch
+xCPTTestApp_iPhone_Prefix.pch
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/CPTTestApp_iPhone_Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile CPTTestApp_iPhone_Prefix.pch312"ProcessPCH /var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-cmtvcqkotowvbwaafdyfdecfljxr/CPTTestApp_iPhone_Prefix.pch.pch CPTTestApp_iPhone_Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler852463e020dab841^672a90e020dab841^---0#0#1#-19%DVTDocumentLocation2@139"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/CPTTestApp_iPhone_Prefix.pch0000000000000000^4158"ProcessPCH /var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-cmtvcqkotowvbwaafdyfdecfljxr/CPTTestApp_iPhone_Prefix.pch.pch CPTTestApp_iPhone_Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Werror -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=3.1.3 -iquote /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-generated-files.hmap -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-own-target-headers.hmap -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-all-target-headers.hmap -iquote /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone-project-headers.hmap -iquote../../framework -iquote../../framework/.idea -iquote../../framework/iPhoneOnly -iquote../../framework/MacOnly -iquote../../framework/Source -iquote../../framework/TestResources -iquote../../framework/.idea/inspectionProfiles -iquote../../framework/.idea/scopes -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/include -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/DerivedSources/armv7s -I/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/DerivedSources -F/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos --serialize-diagnostics /var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-cmtvcqkotowvbwaafdyfdecfljxr/CPTTestApp_iPhone_Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-cmtvcqkotowvbwaafdyfdecfljxr/CPTTestApp_iPhone_Prefix.pch.d -c /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone/CPTTestApp_iPhone_Prefix.pch -o /var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-cmtvcqkotowvbwaafdyfdecfljxr/CPTTestApp_iPhone_Prefix.pch.pch36"8F6E49D6-BE21-4412-B88F-AEC58C0A62DA-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CProcessPCH /var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-eeqmnnklebsjyochogaqajrltfaj/CPTTestApp_iPhone_Prefix.pch.pch CPTTestApp_iPhone_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH /var/folders/_b/s70763rs4gjdsbyvc5gqk1sh0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPhone_Prefix-fwapierbqzmnhnabqmvejpkkinfa/CPTTestApp_iPhone_Prefix.pch.pch CPTTestApp_iPhone_Prefix.pch normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone.xcent
+s416948448.823351
+e416948448.824077
+r1
+xProcessProductPackaging
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone.xcent
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection314"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone.xcent314"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone.xcent85cfd2e020dab841^2bf7d2e020dab841^---0#0#1#-19%DVTDocumentLocation2@176"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone.xcent0034c034dfffdf42^970"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone.xcent    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/CPTTestApp-iPhone.build/Debug-iphoneos/CPTTestApp-iPhone.build/CPTTestApp-iPhone.xcent36"FE29CBF6-C211-43C6-9BAE-34C316C97D41-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CProcessProductPackaging /Users/jamesfolk/Library/MobileDevice/Provisioning\ Profiles/10DC3917-DDAE-4233-BFC2-566ED3436072.mobileprovision /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/embedded.mobileprovision
+s416948448.822023
+e416948448.822691
+r1
+xProcessProductPackaging
+x/Users/jamesfolk/Library/MobileDevice/Provisioning Profiles/10DC3917-DDAE-4233-BFC2-566ED3436072.mobileprovision
+x/Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/embedded.mobileprovision
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection282"ProcessProductPackaging /Users/jamesfolk/Library/MobileDevice/Provisioning\ Profiles/10DC3917-DDAE-4233-BFC2-566ED3436072.mobileprovision /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/embedded.mobileprovision282"ProcessProductPackaging /Users/jamesfolk/Library/MobileDevice/Provisioning\ Profiles/10DC3917-DDAE-4233-BFC2-566ED3436072.mobileprovision /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/embedded.mobileprovisione17cd2e020dab841^679cd2e020dab841^---0#0#1#-19%DVTDocumentLocation2@151"file:///Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/embedded.mobileprovision0034c034dfffdf42^880"ProcessProductPackaging /Users/jamesfolk/Library/MobileDevice/Provisioning\ Profiles/10DC3917-DDAE-4233-BFC2-566ED3436072.mobileprovision /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/embedded.mobileprovision    cd /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/examples/CPTTestApp-iPhone    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Users/jamesfolk/Library/MobileDevice/Provisioning\ Profiles/10DC3917-DDAE-4233-BFC2-566ED3436072.mobileprovision -o /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/embedded.mobileprovision36"CE50E7A5-E394-4E54-8EC4-54E881EA94E1-
+b533246EF-6C68-4874-B4B1-86E0F762848F
+
+CProcessProductPackaging /Users/jamesfolk/Library/MobileDevice/Provisioning\ Profiles/BC59A6B9-AAD1-4AC8-83A3-706FF9903E35.mobileprovision /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app/embedded.mobileprovision
+r0
+
+CTouch /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/build/Debug-iphoneos/CPTTestApp-iPhone.app
+r0
+

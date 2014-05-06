@@ -1,0 +1,21 @@
+dependencies: \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLegend.m \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLegend.h \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTBorderedLayer.h \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTAnnotationHostLayer.h \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLayer.h \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTDefinitions.h \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTResponder.h \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificDefines.h \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTExceptions.h \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTFill.h \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTGraph.h \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLegendEntry.h \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTLineStyle.h \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTPlot.h \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTNumericDataType.h \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTTextStyle.h \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/iPhoneOnly/CPTTextStylePlatformSpecific.h \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/CPTUtilities.h \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/NSCoderExtensions.h \
+  /Users/jamesfolk/Dropbox/Nick/iPhone/GreenEnergyResearch/CorePlot_1.4/Source/framework/Source/NSNumberExtensions.h
