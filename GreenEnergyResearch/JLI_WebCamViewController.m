@@ -7,6 +7,7 @@
 //
 
 #import "JLI_WebCamViewController.h"
+#import "JLI_AppDelegate.h"
 
 @interface JLI_WebCamViewController ()
 
@@ -27,12 +28,27 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate addToViewController:self.view];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate updateViewRatio];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate updateViewRatio];
 }
 
 /*

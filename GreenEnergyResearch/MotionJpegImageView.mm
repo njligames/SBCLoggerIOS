@@ -37,14 +37,14 @@
 @end
 
 @interface CredentialAlertView : UIAlertView
-<UITextFieldDelegate,
-UIAlertViewDelegate>
+                                <UITextFieldDelegate, 
+                                 UIAlertViewDelegate>
 {
     
 @private
     UITextField *_usernameField;
     UITextField *_passwordField;
-    __unsafe_unretained id<CredentialAlertDelegate> _credentialDelegate;
+//    id<CredentialAlertDelegate> _credentialDelegate;
     
 }
 
@@ -52,7 +52,7 @@ UIAlertViewDelegate>
 @property (nonatomic, readwrite, copy) NSString *password;
 @property (nonatomic, readwrite, assign) id<CredentialAlertDelegate> credentialDelegate;
 
-- (id)initWithDelegate:(id<CredentialAlertDelegate>)delegate
+- (id)initWithDelegate:(id<CredentialAlertDelegate>)delegate 
                forHost:(NSString *)hostName;
 
 @end
@@ -92,14 +92,14 @@ UIAlertViewDelegate>
 
 #pragma mark - Initializers
 
-- (id)initWithDelegate:(id<CredentialAlertDelegate>)delegate
+- (id)initWithDelegate:(id<CredentialAlertDelegate>)delegate 
                forHost:(NSString *)hostName {
-    self = [super initWithTitle:NSLocalizedString(@"CredentialAlertTitle", @"")
-                        message:hostName
-                       delegate:self
-              cancelButtonTitle:NSLocalizedString(@"CancelButtonTitle", @"")
-              otherButtonTitles:NSLocalizedString(@"LoginButtonTitle", @""),
-            nil];
+    self = [super initWithTitle:NSLocalizedString(@"CredentialAlertTitle", @"") 
+                        message:hostName 
+                       delegate:self 
+              cancelButtonTitle:NSLocalizedString(@"CancelButtonTitle", @"") 
+              otherButtonTitles:NSLocalizedString(@"LoginButtonTitle", @""), 
+                                nil];
     
     if (self) {
         _credentialDelegate = delegate;
@@ -114,7 +114,7 @@ UIAlertViewDelegate>
         _usernameField.returnKeyType = UIReturnKeyNext;
         _usernameField.clearButtonMode = UITextFieldViewModeUnlessEditing;
         [self addSubview:_usernameField];
-        //        [_usernameField release];
+//        [_usernameField release];
         
         _passwordField = [[UITextField alloc] initWithFrame:CGRectZero];
         _passwordField.secureTextEntry = YES;
@@ -127,7 +127,7 @@ UIAlertViewDelegate>
         _passwordField.returnKeyType = UIReturnKeyDone;
         _passwordField.clearButtonMode = UITextFieldViewModeUnlessEditing;
         [self addSubview:_passwordField];
-        //        [_passwordField release];
+//        [_passwordField release];
     }
     
     return self;
@@ -136,7 +136,7 @@ UIAlertViewDelegate>
 #pragma mark - Overrides
 
 - (void)dealloc {
-    //    [super dealloc];
+//    [super dealloc];
 }
 
 - (void)setFrame:(CGRect)frame {
@@ -152,7 +152,7 @@ UIAlertViewDelegate>
     _usernameField.text = @"a";
     CGSize textFieldSize = [_usernameField sizeThatFits:CGSizeZero];
     _usernameField.text = username;
-    
+
     UILabel *titleLabel = nil;
     UILabel *messageLabel = nil;
     NSMutableArray *buttonViews = [NSMutableArray arrayWithCapacity:3];
@@ -182,22 +182,22 @@ UIAlertViewDelegate>
         }
         else {
             [buttonViews addObject:subview];
-        }
+        } 
     }
     
     CGFloat buttonViewTop = 0.0;
     for (UIView *buttonView in buttonViews) {
         CGRect buttonViewFrame = buttonView.frame;
-        buttonViewFrame.origin.y =
+        buttonViewFrame.origin.y = 
         self.bounds.size.height - buttonViewFrame.size.height - BUTTON_MARGIN;
         buttonView.frame = buttonViewFrame;
         buttonViewTop = CGRectGetMinY(buttonViewFrame);
     }
     
     CGRect labelFrame = messageLabel.frame;
-    CGRect textFieldFrame = CGRectMake(labelFrame.origin.x,
-                                       labelFrame.origin.y + labelFrame.size.height + TEXT_FIELD_MARGIN,
-                                       labelFrame.size.width,
+    CGRect textFieldFrame = CGRectMake(labelFrame.origin.x, 
+                                       labelFrame.origin.y + labelFrame.size.height + TEXT_FIELD_MARGIN, 
+                                       labelFrame.size.width, 
                                        textFieldSize.height);
     _usernameField.frame = textFieldFrame;
     [self bringSubviewToFront:_usernameField];
@@ -209,7 +209,7 @@ UIAlertViewDelegate>
 
 #pragma mark - UIAlertView Delegate Methods
 
--    (void)alertView:(UIAlertView *)alertView
+-    (void)alertView:(UIAlertView *)alertView 
 clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == [self cancelButtonIndex]) {
         if (_credentialDelegate) {
@@ -241,7 +241,7 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
     
 }
 
--             (BOOL)textField:(UITextField *)textField
+-             (BOOL)textField:(UITextField *)textField 
 shouldChangeCharactersInRange:(NSRange)range
             replacementString:(NSString *)string {
     return YES;
@@ -338,19 +338,19 @@ static NSData *_endMarkerData = nil;
         [self cleanupConnection];
     }
     
-    //    if (_url) {
-    //        [_url release];
-    //    }
-    //
-    //    if (_username) {
-    //        [_username release];
-    //    }
-    //
-    //    if (_password) {
-    //        [_password release];
-    //    }
-    //
-    //    [super dealloc];
+//    if (_url) {
+//        [_url release];
+//    }
+//    
+//    if (_username) {
+//        [_username release];
+//    }
+//    
+//    if (_password) {
+//        [_password release];
+//    }
+//    
+//    [super dealloc];
 }
 
 #pragma mark - Public Methods
@@ -385,12 +385,12 @@ static NSData *_endMarkerData = nil;
 
 - (void)cleanupConnection {
     if (_connection) {
-        //        [_connection release];
+//        [_connection release];
         _connection = nil;
     }
     
     if (_receivedData) {
-        //        [_receivedData release];
+//        [_receivedData release];
         _receivedData = nil;
     }
 }
@@ -398,9 +398,9 @@ static NSData *_endMarkerData = nil;
 #pragma mark - NSURLConnection Delegate Methods
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
-    //    if (_receivedData) {
-    //        [_receivedData release];
-    //    }
+//    if (_receivedData) {
+//        [_receivedData release];
+//    }
     
     _receivedData = [[NSMutableData alloc] init];
 }
@@ -408,8 +408,8 @@ static NSData *_endMarkerData = nil;
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     [_receivedData appendData:data];
     
-    NSRange endRange = [_receivedData rangeOfData:_endMarkerData
-                                          options:0
+    NSRange endRange = [_receivedData rangeOfData:_endMarkerData 
+                                          options:0 
                                             range:NSMakeRange(0, _receivedData.length)];
     
     long long endLocation = endRange.location + endRange.length;
@@ -426,7 +426,7 @@ static NSData *_endMarkerData = nil;
     [self cleanupConnection];
 }
 
--                    (BOOL)connection:(NSURLConnection *)connection
+-                    (BOOL)connection:(NSURLConnection *)connection 
 canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace {
     BOOL allow = NO;
     if ([protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust]) {
@@ -439,15 +439,15 @@ canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace {
     return allow;
 }
 
--                (void)connection:(NSURLConnection *)connection
+-                (void)connection:(NSURLConnection *)connection 
 didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
     if ([challenge previousFailureCount] == 0 &&
         _username && _username.length > 0 &&
         _password && _password.length > 0) {
-        NSURLCredential *credentials =
-        [NSURLCredential credentialWithUser:_username
-                                   password:_password
-                                persistence:NSURLCredentialPersistenceForSession];
+        NSURLCredential *credentials = 
+            [NSURLCredential credentialWithUser:_username
+                                       password:_password
+                                    persistence:NSURLCredentialPersistenceForSession];
         [[challenge sender] useCredential:credentials
                forAuthenticationChallenge:challenge];
     }
@@ -455,9 +455,9 @@ didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
         [[challenge sender] cancelAuthenticationChallenge:challenge];
         [self cleanupConnection];
         
-        CredentialAlertView *loginAlert =
-        [[CredentialAlertView alloc] initWithDelegate:self
-                                              forHost:_url.host];
+        CredentialAlertView *loginAlert = 
+            [[CredentialAlertView alloc] initWithDelegate:self
+                                                  forHost:_url.host];
         loginAlert.username = self.username;
         [loginAlert show];
     }
@@ -467,7 +467,7 @@ didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
     return YES;
 }
 
-- (void)connection:(NSURLConnection *)connection
+- (void)connection:(NSURLConnection *)connection 
   didFailWithError:(NSError *)error {
     [self cleanupConnection];
 }
@@ -475,13 +475,13 @@ didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
 #pragma mark - CredentialAlertView Delegate Methods
 
 - (void)credentialAlertCancelled:(CredentialAlertView *)alert {
-    //    [alert release];
+//    [alert release];
 }
 
 - (void)credentialAlertSaved:(CredentialAlertView *)alert {
     self.username = alert.username;
     self.password = alert.password;
-    //    [alert release];
+//    [alert release];
     
     [self play];
 }

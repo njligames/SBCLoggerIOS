@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JLI_WebCamViewController : UIViewController
 
+@interface JLI_WebCamViewController : UIViewController
+{
+}
 @end
