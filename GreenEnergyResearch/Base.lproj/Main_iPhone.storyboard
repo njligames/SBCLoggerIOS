@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="K6S-3T-Uiv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14A238x" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="K6S-3T-Uiv">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -29,9 +29,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="Py8-m0-KIn" kind="push" identifier="showDetail" id="g9h-Md-pEp"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -50,7 +47,7 @@
         <!--Plot View Controller-->
         <scene sceneID="zqi-PE-0mR">
             <objects>
-                <viewController id="Py8-m0-KIn" customClass="JLI_PlotViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlotViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Py8-m0-KIn" customClass="JLI_PlotViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4Ub-9N-wxH"/>
                         <viewControllerLayoutGuide type="bottom" id="coy-Um-iQh"/>
@@ -70,6 +67,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9GR-hX-zaj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1344" y="-661"/>
+        </scene>
+        <!--Web Cam View Controller-->
+        <scene sceneID="iJF-dy-4Zm">
+            <objects>
+                <viewController storyboardIdentifier="WebCamViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jpI-ja-Xkv" customClass="JLI_WebCamViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1nn-da-lif"/>
+                        <viewControllerLayoutGuide type="bottom" id="t8V-lW-iMy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kyv-SD-S85">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yHq-JA-Wzz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Elk-IG-Xca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1320" y="-18"/>
         </scene>
         <!--Server Choose View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -102,7 +118,7 @@
                                 <color key="textColor" red="0.60784316059999999" green="0.74901962280000001" blue="0.35686275360000003" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="172.20.25.152" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6e3-iU-W5r">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="192.168.1.116" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6e3-iU-W5r">
                                 <rect key="frame" x="104" y="100" width="196" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>

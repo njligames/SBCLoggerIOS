@@ -11,6 +11,7 @@
 		C13DF17918D0E1D4003286A3 /* JLI_HardwareListTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C13DF17818D0E1D4003286A3 /* JLI_HardwareListTableViewController.mm */; };
 		C13DF17C18D0E284003286A3 /* JLI_PlotViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C13DF17B18D0E284003286A3 /* JLI_PlotViewController.mm */; };
 		C13DF18118D2552A003286A3 /* JLI_PhidgetHardwareDevice.mm in Sources */ = {isa = PBXBuildFile; fileRef = C13DF18018D2552A003286A3 /* JLI_PhidgetHardwareDevice.mm */; };
+		C174A4C9194CEEF600286CFA /* JLI_WebCamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C174A4C8194CEEF600286CFA /* JLI_WebCamViewController.m */; };
 		C196D62918E1AC75000CE33B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C196D62818E1AC75000CE33B /* MessageUI.framework */; };
 		C196D62B18E1B7AE000CE33B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C196D62A18E1B7AE000CE33B /* AddressBook.framework */; };
 		C196D62E18E1DBB5000CE33B /* MotionJpegImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = C196D62D18E1DBB5000CE33B /* MotionJpegImageView.mm */; };
@@ -52,6 +53,8 @@
 		C13DF17B18D0E284003286A3 /* JLI_PlotViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JLI_PlotViewController.mm; sourceTree = "<group>"; };
 		C13DF17F18D2552A003286A3 /* JLI_PhidgetHardwareDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLI_PhidgetHardwareDevice.h; sourceTree = "<group>"; };
 		C13DF18018D2552A003286A3 /* JLI_PhidgetHardwareDevice.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JLI_PhidgetHardwareDevice.mm; sourceTree = "<group>"; };
+		C174A4C7194CEEF600286CFA /* JLI_WebCamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLI_WebCamViewController.h; sourceTree = "<group>"; };
+		C174A4C8194CEEF600286CFA /* JLI_WebCamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLI_WebCamViewController.m; sourceTree = "<group>"; };
 		C196D62818E1AC75000CE33B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		C196D62A18E1B7AE000CE33B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		C196D62C18E1DBB5000CE33B /* MotionJpegImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionJpegImageView.h; sourceTree = "<group>"; };
@@ -254,6 +257,8 @@
 				C13DF17818D0E1D4003286A3 /* JLI_HardwareListTableViewController.mm */,
 				C13DF17A18D0E284003286A3 /* JLI_PlotViewController.h */,
 				C13DF17B18D0E284003286A3 /* JLI_PlotViewController.mm */,
+				C174A4C7194CEEF600286CFA /* JLI_WebCamViewController.h */,
+				C174A4C8194CEEF600286CFA /* JLI_WebCamViewController.m */,
 			);
 			path = GreenEnergyResearch;
 			sourceTree = "<group>";
@@ -462,6 +467,7 @@
 				C19C2F3418D797EF006F7D3C /* JLI_PhidgetHardwareInterfaceKit.mm in Sources */,
 				C1B1814318CE42CD00456FD1 /* JLI_ServerChooseViewController.mm in Sources */,
 				C10FB25118DA04D70071FF01 /* JLI_PhidgetHardwareAccelerometer.mm in Sources */,
+				C174A4C9194CEEF600286CFA /* JLI_WebCamViewController.m in Sources */,
 				C19C2F3118D79103006F7D3C /* JLI_PhidgetHardwareTemperatureSensor.mm in Sources */,
 				C1B1811318CE361200456FD1 /* main.m in Sources */,
 				C13DF17918D0E1D4003286A3 /* JLI_HardwareListTableViewController.mm in Sources */,

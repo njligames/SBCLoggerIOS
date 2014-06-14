@@ -10,6 +10,7 @@
 
 #import "JLI_AppDelegate.h"
 #import "JLI_PlotViewController.h"
+#import "JLI_WebCamViewController.h"
 
 @interface JLI_HardwareListTableViewController ()
 
@@ -19,7 +20,8 @@
 
 - (void)awakeFromNib
 {
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+    {
         self.clearsSelectionOnViewWillAppear = NO;
         self.preferredContentSize = CGSizeMake(320.0, 600.0);
         
@@ -191,16 +193,23 @@
 {
     JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
     
-    return [appDelegate getHardwareCount];
+    return [appDelegate getHardwareCount] + 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
-    
-    cell.textLabel.text = [[appDelegate getPhidgetHardware:indexPath.row] getDeviceName];
+    if(indexPath.row == 0)
+    {
+        cell.textLabel.text = @"web cam";
+    }
+    else
+    {
+        JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
+        
+        cell.textLabel.text = [[appDelegate getPhidgetHardware:indexPath.row - 1] getDeviceName];
+    }
     
     return cell;
 }
@@ -213,11 +222,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
     {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
-        JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
 
         self.plotViewController.phidgetGraphDrawInterval = [[appDelegate pollInterval] doubleValue];
         self.plotViewController.phidgetPollInterval = [[appDelegate pollInterval] doubleValue];
@@ -228,24 +237,76 @@
         UIBarButtonItem *button = self.navigationItem.rightBarButtonItems[0];
         button.enabled = YES;
     }
+    else
+    {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle: nil];
+        
+        
+        if(indexPath.row == 0)
+        {
+            //
+            
+            JLI_PlotViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"WebCamViewController"];
+            
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        else
+        {
+            JLI_PlotViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"PlotViewController"];
+            
+            [vc setPhidgetGraphDrawInterval:[[appDelegate pollInterval] doubleValue]];
+            [vc setPhidgetPollInterval:[[appDelegate pollInterval] doubleValue]];
+            
+            id object = [appDelegate getPhidgetHardware:indexPath.row - 1];
+            [vc setPhidgetHardware:object];
+            
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"showDetail"])
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    id dest = [segue destinationViewController];
+    if(indexPath.row == 0)
     {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        dest = [segue destinationViewController];
         
-        JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
-
-        
+    }
+    else
+    {
         [[segue destinationViewController] setPhidgetGraphDrawInterval:[[appDelegate pollInterval] doubleValue]];
         [[segue destinationViewController] setPhidgetPollInterval:[[appDelegate pollInterval] doubleValue]];
         
         id object = [appDelegate getPhidgetHardware:indexPath.row];
         [[segue destinationViewController] setPhidgetHardware:object];
-        
     }
+    
+//    if ([[segue identifier] isEqualToString:@"showDetail"])
+//    {
+//        id dest = nil;
+//        if(indexPath.row == 0)
+//        {
+//            dest = [segue destinationViewController];
+//            
+//        }
+//        else
+//        {
+//            [[segue destinationViewController] setPhidgetGraphDrawInterval:[[appDelegate pollInterval] doubleValue]];
+//            [[segue destinationViewController] setPhidgetPollInterval:[[appDelegate pollInterval] doubleValue]];
+//            
+//            id object = [appDelegate getPhidgetHardware:indexPath.row];
+//            [[segue destinationViewController] setPhidgetHardware:object];
+//        }
+//    }
+//    
+//    else if ([[segue identifier] isEqualToString:@"showWebcam"])
+//    {
+//        
+//    }
 }
 
 -(void)reloadTable
