@@ -11,6 +11,8 @@
 
 @implementation JLI_PhidgetHardwareDevice
 
+@synthesize currentIndex;
+
 - (BOOL)isEqual:(id)object
 {
     int serialNumber = -1;

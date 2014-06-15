@@ -268,18 +268,12 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
     
     if(PHIDCLASS_INTERFACEKIT == deviceClass)
     {
-        [self addHardware:phid];
-        [self addHardware:phid];
-        [self addHardware:phid];
-        [self addHardware:phid];
-        [self addHardware:phid];
-        [self addHardware:phid];
-        [self addHardware:phid];
-        [self addHardware:phid];
+        for(int i = 0; i < 8; ++i)
+            [self addHardware:phid index:[NSNumber numberWithInt:i]];
     }
     else
     {
-        [self addHardware:phid];
+        [self addHardware:phid index:0];
     }
     
     
@@ -334,10 +328,12 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
     [self.window setRootViewController:[currentViewController.storyboard instantiateViewControllerWithIdentifier:@"hardware_chooser"]];
 }
 
--(void)addHardware:(NSValue*)phid
+-(void)addHardware:(NSValue*)phid index:(NSNumber*)index
 {
 //    JLI_PhidgetHardwareDevice *p = [[JLI_PhidgetHardwareDevice alloc] initWithPhidget:phid password:@"admin"];
-    JLI_PhidgetHardwareDevice *p = [JLI_AppDelegate createPhidget:phid];
+    id p = [JLI_AppDelegate createPhidget:phid];
+    
+    [p setValue:index forKey:@"currentIndex"];
     
     if(p != nil)
     {

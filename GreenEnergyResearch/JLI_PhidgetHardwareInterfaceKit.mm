@@ -23,6 +23,8 @@ const char *const IDENTIFIERS[8] =
 
 @implementation JLI_PhidgetHardwareInterfaceKit
 
+
+
 - (id)initWithPhidget:(NSValue *)phid password:(NSString*)password
 {
     self = [super initWithPhidget:phid password:password];
@@ -52,24 +54,57 @@ const char *const IDENTIFIERS[8] =
     
     NSTimeInterval time = [startDate timeIntervalSinceNow] * -1.0;
     
-    int count = 0;
-    LocalErrorCatcher(CPhidgetInterfaceKit_getInputCount(phidget, &count));
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    NSNumber *n = [self valueForKey:@"currentIndex"];
+    int _currentIndex = [n integerValue];
+    int sensorValue;
+    
+    LocalErrorCatcher(CPhidgetInterfaceKit_getSensorValue(phidget,
+                                                          _currentIndex,
+                                                          &sensorValue));
+    NSNumber *val = [NSNumber numberWithInt:sensorValue];
+    NSString *ident = [NSString stringWithUTF8String:IDENTIFIERS[_currentIndex]];
     NSMutableDictionary *mutableDictionary = [[NSMutableDictionary alloc] init];
-    for(int inputIndex = 0; inputIndex < count; ++inputIndex)
-    {
-        int sensorValue;
-        
-        LocalErrorCatcher(CPhidgetInterfaceKit_getSensorValue(phidget,
-                                                              inputIndex,
-                                                              &sensorValue));
-        
-        NSNumber *val = [NSNumber numberWithInt:sensorValue];
-        NSString *ident = [NSString stringWithUTF8String:IDENTIFIERS[inputIndex]];
-        [mutableDictionary setObject:val forKey:ident];
-    }
-    
+    [mutableDictionary setObject:val forKey:ident];
     [self addValue:[NSNumber numberWithDouble:time] values:mutableDictionary];
+    
+    
+    
+    
+    
+    
+    
+//    int count = 0;
+//    LocalErrorCatcher(CPhidgetInterfaceKit_getInputCount(phidget, &count));
+//    
+//    NSMutableDictionary *mutableDictionary = [[NSMutableDictionary alloc] init];
+//    for(int inputIndex = 0; inputIndex < count; ++inputIndex)
+//    {
+//        int sensorValue;
+//        
+//        LocalErrorCatcher(CPhidgetInterfaceKit_getSensorValue(phidget,
+//                                                              inputIndex,
+//                                                              &sensorValue));
+//        
+//        NSNumber *val = [NSNumber numberWithInt:sensorValue];
+//        NSString *ident = [NSString stringWithUTF8String:IDENTIFIERS[inputIndex]];
+//        [mutableDictionary setObject:val forKey:ident];
+//    }
+//    
+//    [self addValue:[NSNumber numberWithDouble:time] values:mutableDictionary];
 }
 
 -(void)configurePlot:(CPTGraphHostingView*)hostView
@@ -87,23 +122,9 @@ const char *const IDENTIFIERS[8] =
     
     
     
-    if([self numValues] > 0)
-    {
-//        plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(0)
-//                                                        length:CPTDecimalFromDouble([[self xValue:[self numValues] - 1] doubleValue])];
-//        
-//        double yMax = 0, yMin = 0;
-//        LocalErrorCatcher(CPhidgetAccelerometer_getAccelerationMax(phidget, 0, &yMax));
-//        LocalErrorCatcher(CPhidgetAccelerometer_getAccelerationMin(phidget, 0, &yMin));
-//        
-//        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(yMin) length:CPTDecimalFromDouble(yMax)];
-    }
-    else
-    {
-        plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(-1.0f)
-                                                        length:CPTDecimalFromDouble(10.0)];
-        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(-10.0) length:CPTDecimalFromDouble(70.0)];
-    }
+    plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(-1.0f)
+                                                    length:CPTDecimalFromDouble(10.0)];
+    plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(-10.0) length:CPTDecimalFromDouble(70.0)];
     
     
     
@@ -121,43 +142,55 @@ const char *const IDENTIFIERS[8] =
     y.delegate             = self;
     
     
-//    double *acceleration = nullptr;
-    int inputCount = 0;
-//    LocalErrorCatcher(CPhidgetAccelerometer_getAxisCount(phidget, &count));
-//    acceleration = new double[count];
-    CPhidgetInterfaceKit_getSensorCount(phidget, &inputCount);
     
-//    LocalErrorCatcher(CPhidgetAccelerometer_getAcceleration(phidget, 0, acceleration));
     
+    
+    
+    
+    
+    
+    
+    
+    
+    NSNumber *n = [self valueForKey:@"currentIndex"];
+    int _currentIndex = [n integerValue];
     CPTScatterPlot *plot = nil;
-    for(int inputIndex = 0; inputIndex < inputCount; ++inputIndex)
-    {
-        NSString *ident = [NSString stringWithUTF8String:IDENTIFIERS[inputIndex]];
-        
-        plot = [self addLinePlot:ident];
-        plot.dataSource    = self;
-        [graph addPlot:plot];
-    }
     
-//    delete [] acceleration;
+    NSString *ident = [NSString stringWithUTF8String:IDENTIFIERS[_currentIndex]];
+    
+    plot = [self addLinePlot:ident];
+    plot.dataSource    = self;
+    [graph addPlot:plot];
+    
+    
+    
+    
+    
+    
+    
+    
+    
+//    int inputCount = 0;
+//
+//    CPhidgetInterfaceKit_getSensorCount(phidget, &inputCount);
+//    
+//
+//    
+//    
+//    CPTScatterPlot *plot = nil;
+//    for(int inputIndex = 0; inputIndex < inputCount; ++inputIndex)
+//    {
+//        NSString *ident = [NSString stringWithUTF8String:IDENTIFIERS[inputIndex]];
+//        
+//        plot = [self addLinePlot:ident];
+//        plot.dataSource    = self;
+//        [graph addPlot:plot];
+//    }
 }
 
 -(void)updatePlot:(CPTGraphHostingView*)hostView
 {
-//    if([self numValues] == 1)
-//    {
-//        CPTXYGraph *graph = [[CPTXYGraph alloc] initWithFrame:hostView.bounds];
-//        CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *)graph.defaultPlotSpace;
-//        
-//        plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(0)
-//                                                        length:CPTDecimalFromDouble([[self xValue:[self numValues] - 1] doubleValue])];
-//        
-//        double yMax = 0, yMin = 0;
-//        LocalErrorCatcher(CPhidgetAccelerometer_getAccelerationMax(phidget, 0, &yMax));
-//        LocalErrorCatcher(CPhidgetAccelerometer_getAccelerationMin(phidget, 0, &yMin));
-//        
-//        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(yMin) length:CPTDecimalFromDouble(yMax)];
-//    }
+    
 }
 
 -(NSString*)getCSVFileContent

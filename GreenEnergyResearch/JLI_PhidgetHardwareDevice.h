@@ -32,7 +32,10 @@
     NSString *_serverPassword;
     
     NSDate *startDate;
+    NSNumber *currentIndex;
 }
+
+@property (nonatomic, copy) NSNumber *currentIndex;
 
 - (id)initWithPhidget:(NSValue *)phid password:(NSString*)password;
 
