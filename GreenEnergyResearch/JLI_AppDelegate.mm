@@ -263,7 +263,26 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
 
 - (void)deviceAttach:(NSValue *)phid
 {
-    [self addHardware:phid];
+    CPhidget_DeviceClass deviceClass;
+    CPhidget_getDeviceClass((CPhidgetHandle)[phid pointerValue], &deviceClass);
+    
+    if(PHIDCLASS_INTERFACEKIT == deviceClass)
+    {
+        [self addHardware:phid];
+        [self addHardware:phid];
+        [self addHardware:phid];
+        [self addHardware:phid];
+        [self addHardware:phid];
+        [self addHardware:phid];
+        [self addHardware:phid];
+        [self addHardware:phid];
+    }
+    else
+    {
+        [self addHardware:phid];
+    }
+    
+    
 }
 
 - (void)deviceRemoved:(NSValue *)phid

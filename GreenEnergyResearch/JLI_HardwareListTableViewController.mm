@@ -226,16 +226,23 @@
     
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
     {
-        
+        if(indexPath.row == 0)
+        {
+            
+        }
+        else
+        {
+            self.plotViewController.phidgetGraphDrawInterval = [[appDelegate pollInterval] doubleValue];
+            self.plotViewController.phidgetPollInterval = [[appDelegate pollInterval] doubleValue];
+            
+            id object = [appDelegate getPhidgetHardware:indexPath.row - 1];
+            self.plotViewController.phidgetHardware = object;
+            
+            UIBarButtonItem *button = self.navigationItem.rightBarButtonItems[0];
+            button.enabled = YES;
+        }
 
-        self.plotViewController.phidgetGraphDrawInterval = [[appDelegate pollInterval] doubleValue];
-        self.plotViewController.phidgetPollInterval = [[appDelegate pollInterval] doubleValue];
         
-        id object = [appDelegate getPhidgetHardware:indexPath.row];
-        self.plotViewController.phidgetHardware = object;
-        
-        UIBarButtonItem *button = self.navigationItem.rightBarButtonItems[0];
-        button.enabled = YES;
     }
     else
     {
@@ -244,8 +251,6 @@
         
         if(indexPath.row == 0)
         {
-            //
-            
             JLI_PlotViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"WebCamViewController"];
             
             [self.navigationController pushViewController:vc animated:YES];
