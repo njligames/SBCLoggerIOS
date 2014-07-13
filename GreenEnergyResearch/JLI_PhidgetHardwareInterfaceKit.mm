@@ -122,6 +122,15 @@ const char *const IDENTIFIERS[8] =
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(-1.0f)
                                                     length:CPTDecimalFromDouble(10.0)];
     plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(-10.0) length:CPTDecimalFromDouble(70.0)];
@@ -135,11 +144,20 @@ const char *const IDENTIFIERS[8] =
     x.majorIntervalLength         = CPTDecimalFromString(@"1.0");
     x.minorTicksPerInterval       = 0;
     
+    [x setTitle:@"Time"];
+    
     CPTXYAxis *y = axisSet.yAxis;
     y.majorIntervalLength         = CPTDecimalFromString(@"1.0");
     y.minorTicksPerInterval       = 0;
     
-    y.delegate             = self;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+//    NSNumber *deviceClass = [self valueForKey:@"deviceClass"];
+//    NSNumber *currentIndex = [self valueForKey:@"currentIndex"];
+    
+    [y setTitle:[defaults valueForKey:[self getUserDefaultsKey]]];
+    
+//    y.delegate             = self;
     
     
     

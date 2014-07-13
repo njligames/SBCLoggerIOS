@@ -12,6 +12,7 @@
 @implementation JLI_PhidgetHardwareDevice
 
 @synthesize currentIndex;
+//@synthesize yAxisTitle;
 
 - (BOOL)isEqual:(id)object
 {
@@ -247,4 +248,10 @@
     recording = NO;
 }
 
+-(NSString*)getUserDefaultsKey
+{
+    return [NSString stringWithFormat:@"deviceClass=%@, currentIndex=%@",
+            [self valueForKey:@"deviceClass"],
+            [self valueForKey:@"currentIndex"]];
+}
 @end

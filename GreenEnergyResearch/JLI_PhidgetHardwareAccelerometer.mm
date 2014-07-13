@@ -73,24 +73,30 @@ const char *const IDENTIFIERS[3] = {"X AXIS", "Y AXIS", "Z AXIS"};
     
     
     
-    if([self numValues] > 0)
+//    if([self numValues] > 0)
+//    {
+//        plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(0)
+//                                                        length:CPTDecimalFromDouble([[self xValue:[self numValues] - 1] doubleValue])];
+//        
+//        double yMax = 0, yMin = 0;
+//        LocalErrorCatcher(CPhidgetAccelerometer_getAccelerationMax(phidget, 0, &yMax));
+//        LocalErrorCatcher(CPhidgetAccelerometer_getAccelerationMin(phidget, 0, &yMin));
+//        
+//        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(yMin) length:CPTDecimalFromDouble(yMax)];
+//    }
+//    else
     {
-        plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(0)
-                                                        length:CPTDecimalFromDouble([[self xValue:[self numValues] - 1] doubleValue])];
-        
         double yMax = 0, yMin = 0;
-//        CPhidgetTemperatureSensor_getPotentialMax(phidget, 0, &yMax);
-//        CPhidgetTemperatureSensor_getPotentialMin(phidget, 0, &yMin);
         LocalErrorCatcher(CPhidgetAccelerometer_getAccelerationMax(phidget, 0, &yMax));
         LocalErrorCatcher(CPhidgetAccelerometer_getAccelerationMin(phidget, 0, &yMin));
         
-        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(yMin) length:CPTDecimalFromDouble(yMax)];
-    }
-    else
-    {
+        
         plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(-1.0f)
                                                         length:CPTDecimalFromDouble(10.0)];
-        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(-10.0) length:CPTDecimalFromDouble(70.0)];
+        
+        double length = fabs(yMax) + fabs(yMin);
+        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(yMin)
+                                                        length:CPTDecimalFromDouble(length)];
     }
     
     
@@ -102,11 +108,19 @@ const char *const IDENTIFIERS[3] = {"X AXIS", "Y AXIS", "Z AXIS"};
     x.majorIntervalLength         = CPTDecimalFromString(@"1.0");
     x.minorTicksPerInterval       = 0;
     
+//    x.delegate = self;
+    
+//    x.title = @"JAMESFOLK";
+    [x setTitle:@"Time (seconds)"];
+    
+    
     CPTXYAxis *y = axisSet.yAxis;
     y.majorIntervalLength         = CPTDecimalFromString(@"1.0");
     y.minorTicksPerInterval       = 0;
     
-    y.delegate             = self;
+    [y setTitle:@"Acceleration (G)"];
+    
+//    y.delegate             = self;
     
     
 //    double *acceleration = nullptr;

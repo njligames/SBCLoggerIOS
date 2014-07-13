@@ -69,21 +69,29 @@
     
     
     
-    if([self numValues] > 0)
+//    if([self numValues] > 0)
+//    {
+//        plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(0)
+//                                                        length:CPTDecimalFromDouble([[self xValue:[self numValues] - 1] doubleValue])];
+//        
+//        double yMax = 0, yMin = 0;
+//        CPhidgetTemperatureSensor_getPotentialMax(phidget, 0, &yMax);
+//        CPhidgetTemperatureSensor_getPotentialMin(phidget, 0, &yMin);
+//        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(yMin) length:CPTDecimalFromDouble(yMax)];
+//    }
+//    else
     {
-        plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(0)
-                                                        length:CPTDecimalFromDouble([[self xValue:[self numValues] - 1] doubleValue])];
-        
         double yMax = 0, yMin = 0;
-        CPhidgetTemperatureSensor_getPotentialMax(phidget, 0, &yMax);
-        CPhidgetTemperatureSensor_getPotentialMin(phidget, 0, &yMin);
-        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(yMin) length:CPTDecimalFromDouble(yMax)];
-    }
-    else
-    {
-        plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(-1.0f)
+        
+        LocalErrorCatcher(CPhidgetTemperatureSensor_getPotentialMax(phidget, 0, &yMax));
+        LocalErrorCatcher(CPhidgetTemperatureSensor_getPotentialMin(phidget, 0, &yMin));
+        
+        plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(-2.0f)
                                                         length:CPTDecimalFromDouble(10.0)];
-        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(-10.0) length:CPTDecimalFromDouble(70.0)];
+        
+        double length = fabs(yMax) + fabs(yMin);
+        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(yMin)
+                                                        length:CPTDecimalFromDouble(length)];
     }
 
     
@@ -95,11 +103,16 @@
     x.majorIntervalLength         = CPTDecimalFromString(@"1.0");
     x.minorTicksPerInterval       = 0;
     
+    [x setTitle:@"Time (seconds)"];
+    
+
     CPTXYAxis *y = axisSet.yAxis;
-    y.majorIntervalLength         = CPTDecimalFromString(@"1.0");
+    y.majorIntervalLength         = CPTDecimalFromString(@"5.0");
     y.minorTicksPerInterval       = 0;
     
-    y.delegate             = self;
+    [y setTitle:@"Temperature"];
+    
+//    y.delegate             = self;
     
     CPTScatterPlot *plot = [self addLinePlot:IDENTIFIER];
     plot.dataSource    = self;

@@ -8,6 +8,8 @@
 
 #import "JLI_PlotViewController.h"
 #import <AddressBook/AddressBook.h>
+#import "JLI_GraphEditorViewController.h"
+
 
 @interface JLI_PlotViewController ()
 
@@ -28,6 +30,66 @@
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
 {
     return YES;
+}
+
+/*--------------------------------------------------------------
+ * One finger, two taps
+ *-------------------------------------------------------------*/
+- (void)oneFingerTwoTaps
+{
+    NSLog(@"Action: One finger, two taps");
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+    {
+        
+    }
+    else
+    {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle: nil];
+        JLI_GraphEditorViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"GraphEditorViewController"];
+        
+        [vc setPhidgetHardwareDevice:_phidgetHardware];
+        
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+//        NSNumber *deviceClass = [self.phidgetHardware valueForKey:@"deviceClass"];
+//        NSNumber *currentIndex = [self.phidgetHardware valueForKey:@"currentIndex"];
+        
+        [vc setTextFieldValue:[defaults valueForKey:[self.phidgetHardware getUserDefaultsKey]]];
+
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }
+    
+    
+//    [vc setPhidgetGraphDrawInterval:[[appDelegate pollInterval] doubleValue]];
+//    [vc setPhidgetPollInterval:[[appDelegate pollInterval] doubleValue]];
+//    
+//    id object = [appDelegate getPhidgetHardware:indexPath.row - 1];
+//    [vc setPhidgetHardware:object];
+    
+    
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
+    // -----------------------------
+    // One finger, two taps
+    // -----------------------------
+    
+    // Create gesture recognizer
+    UITapGestureRecognizer *oneFingerTwoTaps =
+    [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(oneFingerTwoTaps)];
+    
+    // Set required taps and number of touches
+    [oneFingerTwoTaps setNumberOfTapsRequired:2];
+    [oneFingerTwoTaps setNumberOfTouchesRequired:1];
+    
+    // Add the gesture to the view
+    [[self view] addGestureRecognizer:oneFingerTwoTaps];
 }
 
 #pragma mark - Managing the detail item
@@ -259,7 +321,6 @@
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
 }
-
 
 
 

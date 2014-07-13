@@ -36,6 +36,7 @@
 }
 
 @property (nonatomic, copy) NSNumber *currentIndex;
+//@property (nonatomic, copy) NSString *yAxisTitle;
 
 - (id)initWithPhidget:(NSValue *)phid password:(NSString*)password;
 
@@ -74,5 +75,7 @@
 -(BOOL)hasRecordedData;
 -(void)startRecording;
 -(void)stopRecording;
+
+-(NSString*)getUserDefaultsKey;
 
 @end

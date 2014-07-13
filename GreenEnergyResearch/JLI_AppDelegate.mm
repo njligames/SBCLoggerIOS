@@ -184,6 +184,14 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
 
 - (CGRect)updateViewRatio
 {
+    CGSize windowSize = self.window.bounds.size;
+    CGSize webViewSize = _webView.bounds.size;
+    
+    CGRect windowFrame = self.window.frame;
+    CGRect webViewFrame = _webView.frame;
+    
+    
+    
     CGFloat windowWidth = self.window.bounds.size.width;
     CGFloat viewWidth = _webView.bounds.size.width;
     CGFloat scaleRatio = self.window.bounds.size.width / _webView.bounds.size.width;
@@ -204,13 +212,14 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
 
 - (void) initWebCam
 {
-    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0.0, 0.0, 640.0, 480.0)];
+//    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0.0, 0.0, 640.0, 480.0)];
+    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0.0, 0.0, 1280, 960)];
     _webView.userInteractionEnabled = NO;
     
     CGRect webFrame = [self updateViewRatio];
     
-    NSURL *url = [NSURL URLWithString:@"http://iris.not.iac.es/axis-cgi/mjpg/video.cgi?resolution=320x240"];
-//    NSURL *url = [NSURL URLWithString:@"http://phidgetsbc.local.:81/?action=stream"];
+//    NSURL *url = [NSURL URLWithString:@"http://iris.not.iac.es/axis-cgi/mjpg/video.cgi?resolution=320x240"];
+    NSURL *url = [NSURL URLWithString:@"http://phidgetsbc.local.:81/?action=stream"];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [_webView loadRequest:request];
@@ -466,6 +475,12 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
             break;
         default:
             break;
+    }
+    
+    if(phidgetHardwareDevice)
+    {
+        [phidgetHardwareDevice setValue:[NSNumber numberWithInt:deviceClass]
+                                 forKey:@"deviceClass"];
     }
     
     return phidgetHardwareDevice;
