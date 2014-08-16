@@ -12,6 +12,7 @@
 		C13DF17C18D0E284003286A3 /* JLI_PlotViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C13DF17B18D0E284003286A3 /* JLI_PlotViewController.mm */; };
 		C13DF18118D2552A003286A3 /* JLI_PhidgetHardwareDevice.mm in Sources */ = {isa = PBXBuildFile; fileRef = C13DF18018D2552A003286A3 /* JLI_PhidgetHardwareDevice.mm */; };
 		C174A4C9194CEEF600286CFA /* JLI_WebCamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C174A4C8194CEEF600286CFA /* JLI_WebCamViewController.m */; };
+		C18B4565199FC28C0097FB71 /* GraphEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C18B4564199FC28C0097FB71 /* GraphEditViewController.xib */; };
 		C196D62918E1AC75000CE33B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C196D62818E1AC75000CE33B /* MessageUI.framework */; };
 		C196D62B18E1B7AE000CE33B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C196D62A18E1B7AE000CE33B /* AddressBook.framework */; };
 		C196D62E18E1DBB5000CE33B /* MotionJpegImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = C196D62D18E1DBB5000CE33B /* MotionJpegImageView.mm */; };
@@ -32,6 +33,10 @@
 		C1B1814318CE42CD00456FD1 /* JLI_ServerChooseViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C1B1814218CE42CD00456FD1 /* JLI_ServerChooseViewController.mm */; };
 		C1B1814518CE494B00456FD1 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B1814418CE494B00456FD1 /* libCorePlot-CocoaTouch.a */; };
 		C1B1819618CE499800456FD1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B1819518CE499800456FD1 /* QuartzCore.framework */; };
+		C1DBA42B197341370000AFCE /* MJPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DBA428197341370000AFCE /* MJPopupBackgroundView.m */; };
+		C1DBA42C197341370000AFCE /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DBA42A197341370000AFCE /* UIViewController+MJPopupViewController.m */; };
+		C1DBA431197342A80000AFCE /* GraphEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DBA42F197342A80000AFCE /* GraphEditViewController.m */; };
+		C1E209DB1972E91B003423CF /* JLI_GraphEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E209DA1972E91B003423CF /* JLI_GraphEditorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,7 @@
 		C13DF18018D2552A003286A3 /* JLI_PhidgetHardwareDevice.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JLI_PhidgetHardwareDevice.mm; sourceTree = "<group>"; };
 		C174A4C7194CEEF600286CFA /* JLI_WebCamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLI_WebCamViewController.h; sourceTree = "<group>"; };
 		C174A4C8194CEEF600286CFA /* JLI_WebCamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLI_WebCamViewController.m; sourceTree = "<group>"; };
+		C18B4564199FC28C0097FB71 /* GraphEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GraphEditViewController.xib; sourceTree = "<group>"; };
 		C196D62818E1AC75000CE33B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		C196D62A18E1B7AE000CE33B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		C196D62C18E1DBB5000CE33B /* MotionJpegImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionJpegImageView.h; sourceTree = "<group>"; };
@@ -160,6 +166,14 @@
 		C1B1819318CE495E00456FD1 /* NSDecimalNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDecimalNumberExtensions.h; sourceTree = "<group>"; };
 		C1B1819418CE495E00456FD1 /* NSNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNumberExtensions.h; sourceTree = "<group>"; };
 		C1B1819518CE499800456FD1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C1DBA427197341370000AFCE /* MJPopupBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPopupBackgroundView.h; sourceTree = "<group>"; };
+		C1DBA428197341370000AFCE /* MJPopupBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPopupBackgroundView.m; sourceTree = "<group>"; };
+		C1DBA429197341370000AFCE /* UIViewController+MJPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MJPopupViewController.h"; sourceTree = "<group>"; };
+		C1DBA42A197341370000AFCE /* UIViewController+MJPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MJPopupViewController.m"; sourceTree = "<group>"; };
+		C1DBA42E197342A80000AFCE /* GraphEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphEditViewController.h; sourceTree = "<group>"; };
+		C1DBA42F197342A80000AFCE /* GraphEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphEditViewController.m; sourceTree = "<group>"; };
+		C1E209D91972E91B003423CF /* JLI_GraphEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLI_GraphEditorViewController.h; sourceTree = "<group>"; };
+		C1E209DA1972E91B003423CF /* JLI_GraphEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLI_GraphEditorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +255,8 @@
 		C1B1810C18CE361200456FD1 /* GreenEnergyResearch */ = {
 			isa = PBXGroup;
 			children = (
+				C1DBA42D197341D00000AFCE /* GraphEditView */,
+				C1DBA426197341370000AFCE /* PopOver */,
 				C196D62C18E1DBB5000CE33B /* MotionJpegImageView.h */,
 				C196D62D18E1DBB5000CE33B /* MotionJpegImageView.mm */,
 				C19C2F2E18D79074006F7D3C /* JLI_PhidgetHardware */,
@@ -259,6 +275,8 @@
 				C13DF17B18D0E284003286A3 /* JLI_PlotViewController.mm */,
 				C174A4C7194CEEF600286CFA /* JLI_WebCamViewController.h */,
 				C174A4C8194CEEF600286CFA /* JLI_WebCamViewController.m */,
+				C1E209D91972E91B003423CF /* JLI_GraphEditorViewController.h */,
+				C1E209DA1972E91B003423CF /* JLI_GraphEditorViewController.m */,
 			);
 			path = GreenEnergyResearch;
 			sourceTree = "<group>";
@@ -360,6 +378,27 @@
 			path = CorePlot_1.4/Binaries/iOS/CorePlotHeaders;
 			sourceTree = SOURCE_ROOT;
 		};
+		C1DBA426197341370000AFCE /* PopOver */ = {
+			isa = PBXGroup;
+			children = (
+				C1DBA427197341370000AFCE /* MJPopupBackgroundView.h */,
+				C1DBA428197341370000AFCE /* MJPopupBackgroundView.m */,
+				C1DBA429197341370000AFCE /* UIViewController+MJPopupViewController.h */,
+				C1DBA42A197341370000AFCE /* UIViewController+MJPopupViewController.m */,
+			);
+			path = PopOver;
+			sourceTree = "<group>";
+		};
+		C1DBA42D197341D00000AFCE /* GraphEditView */ = {
+			isa = PBXGroup;
+			children = (
+				C1DBA42E197342A80000AFCE /* GraphEditViewController.h */,
+				C1DBA42F197342A80000AFCE /* GraphEditViewController.m */,
+				C18B4564199FC28C0097FB71 /* GraphEditViewController.xib */,
+			);
+			name = GraphEditView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -442,6 +481,7 @@
 			files = (
 				C1B1811D18CE361200456FD1 /* Main_iPad.storyboard in Resources */,
 				C1B1812218CE361200456FD1 /* Images.xcassets in Resources */,
+				C18B4565199FC28C0097FB71 /* GraphEditViewController.xib in Resources */,
 				C1B1811A18CE361200456FD1 /* Main_iPhone.storyboard in Resources */,
 				C1B1811118CE361200456FD1 /* InfoPlist.strings in Resources */,
 			);
@@ -464,11 +504,15 @@
 				C1B1811718CE361200456FD1 /* JLI_AppDelegate.mm in Sources */,
 				C13DF18118D2552A003286A3 /* JLI_PhidgetHardwareDevice.mm in Sources */,
 				C196D62E18E1DBB5000CE33B /* MotionJpegImageView.mm in Sources */,
+				C1DBA42C197341370000AFCE /* UIViewController+MJPopupViewController.m in Sources */,
 				C19C2F3418D797EF006F7D3C /* JLI_PhidgetHardwareInterfaceKit.mm in Sources */,
 				C1B1814318CE42CD00456FD1 /* JLI_ServerChooseViewController.mm in Sources */,
 				C10FB25118DA04D70071FF01 /* JLI_PhidgetHardwareAccelerometer.mm in Sources */,
 				C174A4C9194CEEF600286CFA /* JLI_WebCamViewController.m in Sources */,
 				C19C2F3118D79103006F7D3C /* JLI_PhidgetHardwareTemperatureSensor.mm in Sources */,
+				C1DBA42B197341370000AFCE /* MJPopupBackgroundView.m in Sources */,
+				C1E209DB1972E91B003423CF /* JLI_GraphEditorViewController.m in Sources */,
+				C1DBA431197342A80000AFCE /* GraphEditViewController.m in Sources */,
 				C1B1811318CE361200456FD1 /* main.m in Sources */,
 				C13DF17918D0E1D4003286A3 /* JLI_HardwareListTableViewController.mm in Sources */,
 				C13DF17C18D0E284003286A3 /* JLI_PlotViewController.mm in Sources */,

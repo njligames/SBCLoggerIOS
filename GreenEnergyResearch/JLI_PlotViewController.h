@@ -11,7 +11,10 @@
 #import "JLI_PhidgetHardwareDevice.h"
 #import <MessageUI/MessageUI.h>
 
-@interface JLI_PlotViewController : UIViewController <UISplitViewControllerDelegate, UIAlertViewDelegate, MFMailComposeViewControllerDelegate>
+@interface JLI_PlotViewController : UIViewController <
+UISplitViewControllerDelegate,
+//UIAlertViewDelegate,
+MFMailComposeViewControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet CPTGraphHostingView *scatterPlotView;
 

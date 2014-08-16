@@ -308,7 +308,13 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
     LocalErrorCatcher(CPhidget_set_OnError_Handler((CPhidgetHandle) phidMan,
                                                    errorEventHandler, NULL));
     
-	LocalErrorCatcher(CPhidgetManager_openRemoteIP(phidMan, [server UTF8String], [port intValue], [password UTF8String]));
+    
+    const char *_server = [server UTF8String];
+    int _port = [port intValue];
+    const char *_password = [password UTF8String];
+    
+    
+	LocalErrorCatcher(CPhidgetManager_openRemoteIP(phidMan, _server, _port, _password));
     
 //    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"GreenEnergy Research"
 //                                                      message:@"WHATUP"

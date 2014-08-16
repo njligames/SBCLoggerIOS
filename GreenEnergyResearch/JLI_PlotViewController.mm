@@ -10,8 +10,12 @@
 #import <AddressBook/AddressBook.h>
 #import "JLI_GraphEditorViewController.h"
 
+//#import "MJPopupBackgroundView.h"
 
-@interface JLI_PlotViewController ()
+#import "UIViewController+MJPopupViewController.h"
+#import "GraphEditViewController.h"
+
+@interface JLI_PlotViewController () //<GraphEditPopupDelegate>
 
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 
@@ -32,43 +36,65 @@
     return YES;
 }
 
+- (void)saveButtonClicked:(GraphEditViewController *)aSecondDetailViewController
+{
+    [self dismissPopupViewControllerWithanimationType:MJPopupViewAnimationFade];
+}
+
 /*--------------------------------------------------------------
  * One finger, two taps
  *-------------------------------------------------------------*/
 - (void)oneFingerTwoTaps
 {
-    NSLog(@"Action: One finger, two taps");
+    MJPopupViewAnimation anim = MJPopupViewAnimationFade;
     
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
-    {
-        
-    }
-    else
-    {
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle: nil];
-        JLI_GraphEditorViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"GraphEditorViewController"];
-        
-        [vc setPhidgetHardwareDevice:_phidgetHardware];
-        
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        
-//        NSNumber *deviceClass = [self.phidgetHardware valueForKey:@"deviceClass"];
-//        NSNumber *currentIndex = [self.phidgetHardware valueForKey:@"currentIndex"];
-        
-        [vc setTextFieldValue:[defaults valueForKey:[self.phidgetHardware getUserDefaultsKey]]];
+    GraphEditViewController *detailViewController = [[GraphEditViewController alloc] initWithNibName:@"GraphEditViewController" bundle:nil];
+    
+    [self presentPopupViewController:detailViewController
+                       animationType:MJPopupViewAnimationFade];
+    
+//    [self presentPopupViewController:detailViewController animationType:anim];
+    
+    
+//    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Question"
+//                                                   message:@"Do you like cats?"
+//                                                  delegate:self
+//                                         cancelButtonTitle:@"No"
+//                                         otherButtonTitles:@"Yes",nil];
+//    [alert show];
 
-        [self.navigationController pushViewController:vc animated:YES];
-        
-    }
+    
+//    GraphEditViewController *vc = [[GraphEditViewController alloc] initWithNibName:@"GraphEditViewController" bundle:nil];
+//    vc.delegate = self;
+//    [vc setPhidgetHardwareDevice:_phidgetHardware];
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+////    [vc setTextFieldValue:[defaults valueForKey:[self.phidgetHardware getUserDefaultsKey]]];
+//    [self presentPopupViewController:vc animationType:MJPopupViewAnimationFade];
     
     
-//    [vc setPhidgetGraphDrawInterval:[[appDelegate pollInterval] doubleValue]];
-//    [vc setPhidgetPollInterval:[[appDelegate pollInterval] doubleValue]];
+    
+    
+    
+//    NSLog(@"Action: One finger, two taps");
 //    
-//    id object = [appDelegate getPhidgetHardware:indexPath.row - 1];
-//    [vc setPhidgetHardware:object];
-    
-    
+//    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+//    {
+//        
+//    }
+//    else
+//    {
+//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle: nil];
+//        JLI_GraphEditorViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"GraphEditorViewController"];
+//        
+//        [vc setPhidgetHardwareDevice:_phidgetHardware];
+//        
+//        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//        
+//        [vc setTextFieldValue:[defaults valueForKey:[self.phidgetHardware getUserDefaultsKey]]];
+//
+//        [self.navigationController pushViewController:vc animated:YES];
+//        
+//    }
 }
 
 - (void)viewDidLoad

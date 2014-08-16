@@ -67,13 +67,6 @@
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
-    /*
-     [phidgetHardwareDevice setValue:[NSNumber numberWithInt:deviceClass]
-     forKey:@"deviceClass"];currentIndex
-     */
-//    NSNumber *deviceClass = [self.phidgetHardwareDevice valueForKey:@"deviceClass"];
-//    NSNumber *currentIndex = [self.phidgetHardwareDevice valueForKey:@"currentIndex"];
-    
     
     [defaults setValue:_textField.text forKey:[self.phidgetHardwareDevice getUserDefaultsKey]];
     
