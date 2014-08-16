@@ -32,6 +32,8 @@
         emailButton.enabled = NO;
         
         self.navigationItem.rightBarButtonItems = @[recordButton, emailButton];
+        
+        
     }
     [super awakeFromNib];
 }
@@ -228,6 +230,9 @@
     {
         if(indexPath.row == 0)
         {
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPad" bundle: nil];
+            JLI_PlotViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"WebCamViewController"];
+            
             
         }
         else

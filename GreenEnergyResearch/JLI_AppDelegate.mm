@@ -170,6 +170,7 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
 {
     CPhidgetManagerHandle phidMan;
     UIViewController *viewController;
+    
 }
 
 
@@ -236,6 +237,8 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
     startDate = [NSDate date];
     
     [self initWebCam];
+    
+    self.masterIsHidden = YES;
     
     // Override point for customization after application launch.
     return YES;
@@ -497,4 +500,118 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
     [v addSubview:_webView];
     [v addSubview:_imageView];
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-(void)toggleHideMaster:(void(^)(void))completionBlock
+{
+    __weak JLI_AppDelegate  *delegate = self;
+    __weak UISplitViewController *splitView = (UISplitViewController*)self.window.rootViewController;
+    
+    // Adjust the detailView frame to hide/show the masterview
+    [UIView animateWithDuration:0.0020f
+                          delay:0.0f
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^(void)
+     {
+         CGRect selfFrame = splitView.view.frame;
+         
+         // Get the masterViewController's frame's width for reference.
+         // Note that masterNavigationController is stored as a property on my delegate
+         // when the application finishes launching.
+         CGFloat deltaWidth = 0.001;//delegate.masterNavigationController.topViewController.view.frame.size.width;
+         
+         // masterIsHidden is a BOOL property used to track hidden state.
+         if(!delegate.masterIsHidden)
+         {
+             // Frame is turned on it's side for Landscape view (Only view supported in the app I am building. if supporting portrait - don't call this and let the default functionality happen.)
+             // To simulate hiding master, increase the width and move the origin by the width of the master.
+             // The frame is treated as though you are in portrait - adjust height and y origin.
+             selfFrame.size.height += deltaWidth;
+             
+             // y origin only needs adjustment in landscape right.
+             if (splitView.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+             {
+                 selfFrame.origin.y -= deltaWidth;
+             }
+         }
+         else
+         {
+             // Reverse for showing again.
+             selfFrame.size.height -= deltaWidth;
+             if (splitView.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+             {
+                 selfFrame.origin.y += deltaWidth;
+             }
+         }
+         
+         // No set the new adjusted frame to be the frame of the splitview
+         [splitView.view setFrame:selfFrame];
+         
+     }completion:^(BOOL finished){
+         if (finished)
+         {
+             // Now just finish up and call the completion block if provided.
+             delegate.masterIsHidden = !delegate.masterIsHidden;
+             
+             if (completionBlock)
+             {
+                 completionBlock();
+             }
+         }
+     }];
+}
+
+// Since the different rotations of landscape have to be treated differently, this method needs to be called
+// whenever a rotation occurs so the frame can be updated appropriately (rotations reset the splitview frame which will leave your state tracking incorrect.). Additional conditions may exist to reset for portrait, since this system will be by-passed.
+//
+- (void)updateHideMasterOnRotation
+{
+    if (self.masterIsHidden)
+    {
+        self.masterIsHidden = NO;
+        [self toggleHideMaster:nil];
+    }
+}
+
+
 @end

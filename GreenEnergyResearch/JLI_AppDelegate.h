@@ -29,6 +29,7 @@ extern NSString *LocalErrorCatcher (int errorCode);
 @property (strong, nonatomic) NSMutableArray *phidgetHardwareArray;
 @property (strong, nonatomic) NSNumber *pollInterval;
 @property (strong, nonatomic) NSDate *startDate;
+@property ( nonatomic) BOOL masterIsHidden;
 
 - (void)connectToServer:(NSString*)server port:(NSString*)port password:(NSString*)password;
 
@@ -48,5 +49,7 @@ extern NSString *LocalErrorCatcher (int errorCode);
 -(void)addToViewController:(UIView*)v;
 
 - (CGRect)updateViewRatio;
+
+- (void)updateHideMasterOnRotation;
 
 @end

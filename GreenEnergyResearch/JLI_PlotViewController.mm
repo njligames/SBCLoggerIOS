@@ -15,6 +15,8 @@
 #import "UIViewController+MJPopupViewController.h"
 #import "GraphEditViewController.h"
 
+#import "JLI_AppDelegate.h"
+
 @interface JLI_PlotViewController () <GraphEditPopupDelegate>
 
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -30,6 +32,18 @@
 @end
 
 @implementation JLI_PlotViewController
+
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    
+    [self.splitViewController setDelegate:self];
+    
+//    self.clearsSelectionOnViewWillAppear = NO;
+//    self.preferredContentSize = CGSizeMake(320.0, 600.0);
+    
+}
 
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
 {
@@ -88,6 +102,8 @@
     
     
     
+    
+    
 }
 
 #pragma mark - Managing the detail item
@@ -134,7 +150,6 @@
         UIBarButtonItem *emailButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(emailAction:)];
         emailButton.enabled = [self.phidgetHardware hasRecordedData];
         self.navigationItem.rightBarButtonItems = @[recordButton, emailButton];
-        
         
         [_phidgetHardware configurePlot:self.scatterPlotView];
         
@@ -308,7 +323,7 @@
 
 - (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
 {
-    barButtonItem.title = NSLocalizedString(@"Master", @"Master");
+    barButtonItem.title = NSLocalizedString(@"Hardware List", @"Hardware List");
     [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
     self.masterPopoverController = popoverController;
 }
@@ -318,6 +333,57 @@
     // Called when the view is shown again in the split view, invalidating the button and popover controller.
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
+}
+
+-(BOOL)splitViewController:(UISplitViewController *)svc shouldHideViewController:(UIViewController *)vc inOrientation:(UIInterfaceOrientation)orientation
+{
+    return YES;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// I observe the rotation in my detailview's navigationcontroller like this.
+// We track this on the navigation controller to globally reset the master hidden state to where it needs to be. This won't take into account previously passed completion blocks. If needed that can be handled in the view controller implementing the hideable splitview.
+// Again - additional things will need to be considered if supporting portrait - like resetting if we rotate to a portrait orientation.
+//- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+//{
+//    JLI_AppDelegate *appDelegate = (JLI_AppDelegate*)[UIApplication sharedApplication].delegate;
+//    
+//    [appDelegate updateHideMasterOnRotation];
+//}
+
+
+- (IBAction)touchUpInside:(id)sender
+{
+    __weak JLI_AppDelegate  *delegate = (JLI_AppDelegate*)[UIApplication sharedApplication].delegate;
+    __weak UISplitViewController *splitView = (UISplitViewController*)delegate.window.rootViewController;
+
 }
 
 
