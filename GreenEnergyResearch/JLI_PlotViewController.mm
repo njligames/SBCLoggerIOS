@@ -15,7 +15,7 @@
 #import "UIViewController+MJPopupViewController.h"
 #import "GraphEditViewController.h"
 
-@interface JLI_PlotViewController () //<GraphEditPopupDelegate>
+@interface JLI_PlotViewController () <GraphEditPopupDelegate>
 
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 
@@ -39,6 +39,13 @@
 - (void)saveButtonClicked:(GraphEditViewController *)aSecondDetailViewController
 {
     [self dismissPopupViewControllerWithanimationType:MJPopupViewAnimationFade];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    NSString *val = [defaults valueForKey:[self.phidgetHardware getUserDefaultsKey]];
+    
+    CPTXYAxisSet *axisSet = (CPTXYAxisSet*)self.scatterPlotView.hostedGraph.axisSet;
+    [axisSet.yAxis setTitle:val];
 }
 
 /*--------------------------------------------------------------
@@ -50,51 +57,11 @@
     
     GraphEditViewController *detailViewController = [[GraphEditViewController alloc] initWithNibName:@"GraphEditViewController" bundle:nil];
     
+    detailViewController.delegate = self;
+    [detailViewController setPhidgetHardwareDevice:_phidgetHardware];
+    
     [self presentPopupViewController:detailViewController
-                       animationType:MJPopupViewAnimationFade];
-    
-//    [self presentPopupViewController:detailViewController animationType:anim];
-    
-    
-//    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Question"
-//                                                   message:@"Do you like cats?"
-//                                                  delegate:self
-//                                         cancelButtonTitle:@"No"
-//                                         otherButtonTitles:@"Yes",nil];
-//    [alert show];
-
-    
-//    GraphEditViewController *vc = [[GraphEditViewController alloc] initWithNibName:@"GraphEditViewController" bundle:nil];
-//    vc.delegate = self;
-//    [vc setPhidgetHardwareDevice:_phidgetHardware];
-//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-////    [vc setTextFieldValue:[defaults valueForKey:[self.phidgetHardware getUserDefaultsKey]]];
-//    [self presentPopupViewController:vc animationType:MJPopupViewAnimationFade];
-    
-    
-    
-    
-    
-//    NSLog(@"Action: One finger, two taps");
-//    
-//    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
-//    {
-//        
-//    }
-//    else
-//    {
-//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle: nil];
-//        JLI_GraphEditorViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"GraphEditorViewController"];
-//        
-//        [vc setPhidgetHardwareDevice:_phidgetHardware];
-//        
-//        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//        
-//        [vc setTextFieldValue:[defaults valueForKey:[self.phidgetHardware getUserDefaultsKey]]];
-//
-//        [self.navigationController pushViewController:vc animated:YES];
-//        
-//    }
+                       animationType:anim];
 }
 
 - (void)viewDidLoad
@@ -116,6 +83,11 @@
     
     // Add the gesture to the view
     [[self view] addGestureRecognizer:oneFingerTwoTaps];
+    
+    
+    
+    
+    
 }
 
 #pragma mark - Managing the detail item

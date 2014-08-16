@@ -78,4 +78,7 @@
 
 -(NSString*)getUserDefaultsKey;
 
+//CPTXYAxisSet *axisSet = (CPTXYAxisSet *)hostView.hostedGraph.axisSet;
+//-(CPTXYAxisSet*)getAxisSet;
+
 @end

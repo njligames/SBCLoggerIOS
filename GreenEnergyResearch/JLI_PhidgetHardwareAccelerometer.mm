@@ -118,7 +118,21 @@ const char *const IDENTIFIERS[3] = {"X AXIS", "Y AXIS", "Z AXIS"};
     y.majorIntervalLength         = CPTDecimalFromString(@"1.0");
     y.minorTicksPerInterval       = 0;
     
-    [y setTitle:@"Acceleration (G)"];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *val = [defaults valueForKey:[self getUserDefaultsKey]];
+    
+    if([val isEqualToString:@""])
+    {
+        [y setTitle:@"Acceleration (G)"];
+    }
+    else
+    {
+        [y setTitle:val];
+    }
+    
+    
+//    [y setTitle:@"Acceleration (G)"];
     
 //    y.delegate             = self;
     

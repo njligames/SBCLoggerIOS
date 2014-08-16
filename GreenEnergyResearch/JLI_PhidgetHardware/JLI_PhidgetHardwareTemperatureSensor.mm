@@ -64,7 +64,7 @@
 //    graph.paddingBottom = 10.0;
     
     // Setup plot space
-    CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *)graph.defaultPlotSpace;
+    CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *)hostView.hostedGraph.defaultPlotSpace;
     plotSpace.allowsUserInteraction = YES;
     
     
@@ -96,8 +96,13 @@
 
     
     
+    
+    
+    
+    
+    
     // Axes
-    CPTXYAxisSet *axisSet = (CPTXYAxisSet *)graph.axisSet;
+    CPTXYAxisSet *axisSet = (CPTXYAxisSet *)hostView.hostedGraph.axisSet;
     
     CPTXYAxis *x          = axisSet.xAxis;
     x.majorIntervalLength         = CPTDecimalFromString(@"1.0");
@@ -110,13 +115,27 @@
     y.majorIntervalLength         = CPTDecimalFromString(@"5.0");
     y.minorTicksPerInterval       = 0;
     
-    [y setTitle:@"Temperature"];
+    
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *val = [defaults valueForKey:[self getUserDefaultsKey]];
+    
+    if([val isEqualToString:@""])
+    {
+        [y setTitle:@"Temperature"];
+    }
+    else
+    {
+        [y setTitle:val];
+    }
+    
+//    [y setTitle:@"Temperature"];
     
 //    y.delegate             = self;
     
     CPTScatterPlot *plot = [self addLinePlot:IDENTIFIER];
     plot.dataSource    = self;
-    [graph addPlot:plot];
+    [hostView.hostedGraph addPlot:plot];
 }
 
 -(void)updatePlot:(CPTGraphHostingView*)hostView

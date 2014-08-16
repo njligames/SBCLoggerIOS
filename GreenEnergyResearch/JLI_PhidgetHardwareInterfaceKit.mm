@@ -150,12 +150,24 @@ const char *const IDENTIFIERS[8] =
     y.majorIntervalLength         = CPTDecimalFromString(@"1.0");
     y.minorTicksPerInterval       = 0;
     
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
 //    NSNumber *deviceClass = [self valueForKey:@"deviceClass"];
 //    NSNumber *currentIndex = [self valueForKey:@"currentIndex"];
     
-    [y setTitle:[defaults valueForKey:[self getUserDefaultsKey]]];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *val = [defaults valueForKey:[self getUserDefaultsKey]];
+    
+    if([val isEqualToString:@""])
+    {
+        [y setTitle:@"Y Label"];
+    }
+    else
+    {
+        [y setTitle:val];
+    }
+    
+//    [y setTitle:[defaults valueForKey:[self getUserDefaultsKey]]];
     
 //    y.delegate             = self;
     

@@ -254,4 +254,9 @@
             [self valueForKey:@"deviceClass"],
             [self valueForKey:@"currentIndex"]];
 }
+//CPTXYAxisSet *axisSet = (CPTXYAxisSet *)hostView.hostedGraph.axisSet;
+//-(CPTXYAxisSet*)getAxisSet
+//{
+//    return (CPTXYAxisSet *)hostView.hostedGraph.axisSet;
+//}
 @end

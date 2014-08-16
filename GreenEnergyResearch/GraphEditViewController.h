@@ -8,8 +8,15 @@
 
 
 #import <UIKit/UIKit.h>
+#import "JLI_PhidgetHardwareDevice.h"
+
+@protocol GraphEditPopupDelegate;
 
 @interface GraphEditViewController : UIViewController
+
+@property (assign, nonatomic) id <GraphEditPopupDelegate> delegate;
+@property (weak, nonatomic) JLI_PhidgetHardwareDevice *phidgetHardwareDevice;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end
 
@@ -17,8 +24,8 @@
 //#import <UIKit/UIKit.h>
 //#import "JLI_PhidgetHardwareDevice.h"
 //
-//@protocol GraphEditPopupDelegate;
-//
+@protocol GraphEditPopupDelegate;
+
 //@interface GraphEditViewController : UIViewController
 //
 //@property (assign, nonatomic) id <GraphEditPopupDelegate>delegate;
@@ -27,7 +34,7 @@
 //@end
 //
 //
-//@protocol GraphEditPopupDelegate<NSObject>
-//@optional
-//- (void)saveButtonClicked:(GraphEditViewController*)secondDetailViewController;
-//@end
+@protocol GraphEditPopupDelegate<NSObject>
+@optional
+- (void)saveButtonClicked:(GraphEditViewController*)secondDetailViewController;
+@end
