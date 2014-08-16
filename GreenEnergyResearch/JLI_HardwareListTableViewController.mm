@@ -33,6 +33,8 @@
         
         self.navigationItem.rightBarButtonItems = @[recordButton, emailButton];
         
+        [self.splitViewController setDelegate:self];
+        
         
     }
     [super awakeFromNib];
@@ -228,24 +230,74 @@
     
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
     {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPad" bundle: nil];
+        JLI_PlotViewController *newController = nil;
+        
         if(indexPath.row == 0)
         {
-            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPad" bundle: nil];
-            JLI_PlotViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"WebCamViewController"];
-            
-            
+            newController = [storyboard instantiateViewControllerWithIdentifier:@"WebCamViewController"];
         }
         else
         {
-            self.plotViewController.phidgetGraphDrawInterval = [[appDelegate pollInterval] doubleValue];
-            self.plotViewController.phidgetPollInterval = [[appDelegate pollInterval] doubleValue];
+            newController = [storyboard instantiateViewControllerWithIdentifier:@"PlotViewController"];
+            newController.phidgetGraphDrawInterval = [[appDelegate pollInterval] doubleValue];
+            newController.phidgetPollInterval = [[appDelegate pollInterval] doubleValue];
             
             id object = [appDelegate getPhidgetHardware:indexPath.row - 1];
-            self.plotViewController.phidgetHardware = object;
+            newController.phidgetHardware = object;
             
             UIBarButtonItem *button = self.navigationItem.rightBarButtonItems[0];
             button.enabled = YES;
+            
         }
+        
+        UINavigationController *navController = [[[self splitViewController ] viewControllers ] lastObject ];
+        JLI_PlotViewController *oldController = [[navController viewControllers] firstObject];
+        
+        NSArray *newStack = [NSArray arrayWithObjects:newController, nil ];
+        [navController setViewControllers:newStack];
+        
+        UIBarButtonItem *splitViewButton = [[oldController navigationItem] leftBarButtonItem];
+        UIPopoverController *popoverController = [oldController masterPopoverController];
+        [newController setSplitViewButton:splitViewButton forPopoverController:popoverController];
+        
+        // see if we should be hidden
+        if (!UIDeviceOrientationIsLandscape([[UIDevice currentDevice] orientation])) {
+            // we are in portrait mode so go away
+            [popoverController dismissPopoverAnimated:YES];
+            
+        }
+        
+        
+        
+//        if(indexPath.row == 0)
+//        {
+//            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPad" bundle: nil];
+//            JLI_PlotViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"WebCamViewController"];
+//            
+//            
+//            
+//            
+//            
+//            UINavigationController *navController = [[[self splitViewController ] viewControllers ] lastObject ];
+//            UIViewController *oldController = [[navController viewControllers] firstObject];
+//            
+//            NSArray *newStack = [NSArray arrayWithObjects:vc, nil ];
+//            [navController setViewControllers:newStack];
+//            
+//            
+//        }
+//        else
+//        {
+//            self.plotViewController.phidgetGraphDrawInterval = [[appDelegate pollInterval] doubleValue];
+//            self.plotViewController.phidgetPollInterval = [[appDelegate pollInterval] doubleValue];
+//            
+//            id object = [appDelegate getPhidgetHardware:indexPath.row - 1];
+//            self.plotViewController.phidgetHardware = object;
+//            
+//            UIBarButtonItem *button = self.navigationItem.rightBarButtonItems[0];
+//            button.enabled = YES;
+//        }
 
         
     }
@@ -322,6 +374,24 @@
 -(void)reloadTable
 {
     [self.tableView reloadData];
+}
+
+
+#pragma mark - Split View Delegate
+- (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
+{
+    UINavigationController *navController = [[[self splitViewController ] viewControllers ] lastObject ];
+    JLI_PlotViewController *vc = [[navController viewControllers] firstObject];
+    
+    [vc setSplitViewButton:barButtonItem forPopoverController:popoverController];
+}
+
+- (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
+{
+    UINavigationController *navController = [[[self splitViewController ] viewControllers ] lastObject ];
+    JLI_PlotViewController *vc = [[navController viewControllers] firstObject];
+    
+    [vc setSplitViewButton:nil forPopoverController:nil];
 }
 
 @end

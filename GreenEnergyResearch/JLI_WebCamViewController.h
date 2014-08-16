@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SplitViewButtonHandler.h"
 
-
-@interface JLI_WebCamViewController : UIViewController
+@interface JLI_WebCamViewController : UIViewController <SplitViewButtonHandler>
 {
 }
+
+@property (strong, nonatomic) UIPopoverController *masterPopoverController;
+
 @end

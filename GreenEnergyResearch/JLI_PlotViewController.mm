@@ -19,7 +19,7 @@
 
 @interface JLI_PlotViewController () <GraphEditPopupDelegate>
 
-@property (strong, nonatomic) UIPopoverController *masterPopoverController;
+//@property (strong, nonatomic) UIPopoverController *masterPopoverController;
 
 @property (nonatomic, assign) NSTimer *phidgetPollTimer;
 @property (nonatomic, assign) NSTimer *drawPollTimer;
@@ -34,11 +34,13 @@
 @implementation JLI_PlotViewController
 
 
+@synthesize splitViewButton = _splitViewButton;
+
 - (void)awakeFromNib
 {
     [super awakeFromNib];
     
-    [self.splitViewController setDelegate:self];
+//    [self.splitViewController setDelegate:self];
     
 //    self.clearsSelectionOnViewWillAppear = NO;
 //    self.preferredContentSize = CGSizeMake(320.0, 600.0);
@@ -143,7 +145,7 @@
 {
     [super viewWillAppear:animated];
     
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+//    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
     {
         UIBarButtonItem *recordButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(recordButton:)];
         
@@ -319,26 +321,26 @@
     self.drawPollTimer = nil;
 }
 
-#pragma mark - Split view
-
-- (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
-{
-    barButtonItem.title = NSLocalizedString(@"Hardware List", @"Hardware List");
-    [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
-    self.masterPopoverController = popoverController;
-}
-
-- (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
-{
-    // Called when the view is shown again in the split view, invalidating the button and popover controller.
-    [self.navigationItem setLeftBarButtonItem:nil animated:YES];
-    self.masterPopoverController = nil;
-}
-
--(BOOL)splitViewController:(UISplitViewController *)svc shouldHideViewController:(UIViewController *)vc inOrientation:(UIInterfaceOrientation)orientation
-{
-    return YES;
-}
+//#pragma mark - Split view
+//
+//- (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
+//{
+//    barButtonItem.title = NSLocalizedString(@"Hardware List", @"Hardware List");
+//    [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
+//    self.masterPopoverController = popoverController;
+//}
+//
+//- (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
+//{
+//    // Called when the view is shown again in the split view, invalidating the button and popover controller.
+//    [self.navigationItem setLeftBarButtonItem:nil animated:YES];
+//    self.masterPopoverController = nil;
+//}
+//
+//-(BOOL)splitViewController:(UISplitViewController *)svc shouldHideViewController:(UIViewController *)vc inOrientation:(UIInterfaceOrientation)orientation
+//{
+//    return YES;
+//}
 
 
 
@@ -379,13 +381,42 @@
 //}
 
 
-- (IBAction)touchUpInside:(id)sender
-{
-    __weak JLI_AppDelegate  *delegate = (JLI_AppDelegate*)[UIApplication sharedApplication].delegate;
-    __weak UISplitViewController *splitView = (UISplitViewController*)delegate.window.rootViewController;
+//- (IBAction)touchUpInside:(id)sender
+//{
+//    __weak JLI_AppDelegate  *delegate = (JLI_AppDelegate*)[UIApplication sharedApplication].delegate;
+//    __weak UISplitViewController *splitView = (UISplitViewController*)delegate.window.rootViewController;
+//
+//}
 
+
+
+#pragma mark - Split view
+
+#pragma mark - Split View Handler
+-(void) turnSplitViewButtonOn: (UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *) popoverController {
+    barButtonItem.title = NSLocalizedString(@"Master", @"Master");
+    _splitViewButton = barButtonItem;
+    [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
+    self.masterPopoverController = popoverController;
 }
 
+-(void)turnSplitViewButtonOff {
+    // Called when the view is shown again in the split view, invalidating the button and popover controller.
+    [self.navigationItem setLeftBarButtonItem:nil animated:YES];
+    _splitViewButton = nil;
+    self.masterPopoverController = nil;
+    
+}
+
+-(void) setSplitViewButton:(UIBarButtonItem *)splitViewButton forPopoverController:(UIPopoverController *)popoverController {
+    if (splitViewButton != _splitViewButton) {
+        if (splitViewButton) {
+            [self turnSplitViewButtonOn:splitViewButton forPopoverController:popoverController];
+        } else {
+            [self turnSplitViewButtonOff];
+        }
+    }
+}
 
 
 @end

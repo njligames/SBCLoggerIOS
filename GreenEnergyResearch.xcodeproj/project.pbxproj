@@ -61,6 +61,7 @@
 		C174A4C7194CEEF600286CFA /* JLI_WebCamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLI_WebCamViewController.h; sourceTree = "<group>"; };
 		C174A4C8194CEEF600286CFA /* JLI_WebCamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLI_WebCamViewController.m; sourceTree = "<group>"; };
 		C18B4564199FC28C0097FB71 /* GraphEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GraphEditViewController.xib; sourceTree = "<group>"; };
+		C18B4566199FF5C70097FB71 /* SplitViewButtonHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitViewButtonHandler.h; sourceTree = "<group>"; };
 		C196D62818E1AC75000CE33B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		C196D62A18E1B7AE000CE33B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		C196D62C18E1DBB5000CE33B /* MotionJpegImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionJpegImageView.h; sourceTree = "<group>"; };
@@ -255,6 +256,7 @@
 		C1B1810C18CE361200456FD1 /* GreenEnergyResearch */ = {
 			isa = PBXGroup;
 			children = (
+				C18B4566199FF5C70097FB71 /* SplitViewButtonHandler.h */,
 				C1DBA42D197341D00000AFCE /* GraphEditView */,
 				C1DBA426197341370000AFCE /* PopOver */,
 				C196D62C18E1DBB5000CE33B /* MotionJpegImageView.h */,

@@ -10,11 +10,12 @@
 #import <UIKit/UIKit.h>
 #import "JLI_PhidgetHardwareDevice.h"
 #import <MessageUI/MessageUI.h>
+#import "SplitViewButtonHandler.h"
 
 @interface JLI_PlotViewController : UIViewController <
-UISplitViewControllerDelegate,
 //UIAlertViewDelegate,
-MFMailComposeViewControllerDelegate>
+MFMailComposeViewControllerDelegate,
+SplitViewButtonHandler>
 
 @property (strong, nonatomic) IBOutlet CPTGraphHostingView *scatterPlotView;
 
@@ -25,5 +26,7 @@ MFMailComposeViewControllerDelegate>
 @property (nonatomic, assign) NSTimeInterval phidgetGraphDrawInterval;
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+
+@property (strong, nonatomic) UIPopoverController *masterPopoverController;
 
 @end

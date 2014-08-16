@@ -12,7 +12,8 @@
 @class JLI_PlotViewController;
 @class JLI_WebCamViewController;
 
-@interface JLI_HardwareListTableViewController : UITableViewController <UIAlertViewDelegate, MFMailComposeViewControllerDelegate>
+@interface JLI_HardwareListTableViewController : UITableViewController <
+UISplitViewControllerDelegate,UIAlertViewDelegate, MFMailComposeViewControllerDelegate>
 
 @property (strong, nonatomic) JLI_PlotViewController *plotViewController;
 @property (strong, nonatomic) JLI_WebCamViewController *webcamViewController;
