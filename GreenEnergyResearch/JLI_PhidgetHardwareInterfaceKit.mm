@@ -36,7 +36,10 @@ const char *const IDENTIFIERS[8] =
                                                  [[self getServerAddress] UTF8String],
                                                  [self getServerPort],
                                                  [[self getServerPassword] UTF8String]));
+        shouldPanView = YES;
     }
+    
+    
     return self;
 }
 
@@ -80,6 +83,7 @@ const char *const IDENTIFIERS[8] =
     NSMutableDictionary *mutableDictionary = [[NSMutableDictionary alloc] init];
     [mutableDictionary setObject:val forKey:ident];
     [self addValue:[NSNumber numberWithDouble:time] values:mutableDictionary];
+    
     
     
     
@@ -220,7 +224,32 @@ const char *const IDENTIFIERS[8] =
 
 -(void)updatePlot:(CPTGraphHostingView*)hostView
 {
+    BOOL canPanView = ([self numValues] > 0);
     
+    if(canPanView && shouldPanView)
+    {
+        shouldPanView = NO;
+        
+        int lastIndex = [self numValues] - 1;
+        
+        NSString *identifier = [NSString stringWithUTF8String:IDENTIFIERS[0]];
+        
+        double time = [[self xValue:lastIndex] doubleValue];
+        int value = [[self yValue:lastIndex identifier:identifier] integerValue];
+        
+        
+        CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *)hostView.hostedGraph.defaultPlotSpace;
+        
+        NSDecimal xFrom = CPTDecimalFromDouble(-1.0f);
+        NSDecimal xLength = CPTDecimalFromDouble(10.0 + time);
+        plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:xFrom
+                                                        length:xLength];
+        
+        NSDecimal yFrom = CPTDecimalFromDouble(value - 10);
+        NSDecimal yLength = CPTDecimalFromDouble(value / 10);
+        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:yFrom
+                                                        length:yLength];
+    }
 }
 
 -(NSString*)getCSVFileContent

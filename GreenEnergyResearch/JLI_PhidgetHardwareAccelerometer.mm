@@ -72,19 +72,6 @@ const char *const IDENTIFIERS[3] = {"X AXIS", "Y AXIS", "Z AXIS"};
     plotSpace.allowsUserInteraction = YES;
     
     
-    
-//    if([self numValues] > 0)
-//    {
-//        plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(0)
-//                                                        length:CPTDecimalFromDouble([[self xValue:[self numValues] - 1] doubleValue])];
-//        
-//        double yMax = 0, yMin = 0;
-//        LocalErrorCatcher(CPhidgetAccelerometer_getAccelerationMax(phidget, 0, &yMax));
-//        LocalErrorCatcher(CPhidgetAccelerometer_getAccelerationMin(phidget, 0, &yMin));
-//        
-//        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(yMin) length:CPTDecimalFromDouble(yMax)];
-//    }
-//    else
     {
         double yMax = 0, yMin = 0;
         LocalErrorCatcher(CPhidgetAccelerometer_getAccelerationMax(phidget, 0, &yMax));
@@ -159,20 +146,20 @@ const char *const IDENTIFIERS[3] = {"X AXIS", "Y AXIS", "Z AXIS"};
 
 -(void)updatePlot:(CPTGraphHostingView*)hostView
 {
-    if([self numValues] == 1)
-    {
-        CPTXYGraph *graph = [[CPTXYGraph alloc] initWithFrame:hostView.bounds];
-        CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *)graph.defaultPlotSpace;
-        
-        plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(0)
-                                                        length:CPTDecimalFromDouble([[self xValue:[self numValues] - 1] doubleValue])];
-        
-        double yMax = 0, yMin = 0;
-        LocalErrorCatcher(CPhidgetAccelerometer_getAccelerationMax(phidget, 0, &yMax));
-        LocalErrorCatcher(CPhidgetAccelerometer_getAccelerationMin(phidget, 0, &yMin));
-        
-        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(yMin) length:CPTDecimalFromDouble(yMax)];
-    }
+//    if([self numValues] == 1)
+//    {
+//        CPTXYGraph *graph = [[CPTXYGraph alloc] initWithFrame:hostView.bounds];
+//        CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *)graph.defaultPlotSpace;
+//        
+//        plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(0)
+//                                                        length:CPTDecimalFromDouble([[self xValue:[self numValues] - 1] doubleValue])];
+//        
+//        double yMax = 0, yMin = 0;
+//        LocalErrorCatcher(CPhidgetAccelerometer_getAccelerationMax(phidget, 0, &yMax));
+//        LocalErrorCatcher(CPhidgetAccelerometer_getAccelerationMin(phidget, 0, &yMin));
+//        
+//        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(yMin) length:CPTDecimalFromDouble(yMax)];
+//    }
 }
 
 -(NSString*)getCSVFileContent

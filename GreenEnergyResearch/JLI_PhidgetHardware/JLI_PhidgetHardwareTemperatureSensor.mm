@@ -68,18 +68,6 @@
     plotSpace.allowsUserInteraction = YES;
     
     
-    
-//    if([self numValues] > 0)
-//    {
-//        plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(0)
-//                                                        length:CPTDecimalFromDouble([[self xValue:[self numValues] - 1] doubleValue])];
-//        
-//        double yMax = 0, yMin = 0;
-//        CPhidgetTemperatureSensor_getPotentialMax(phidget, 0, &yMax);
-//        CPhidgetTemperatureSensor_getPotentialMin(phidget, 0, &yMin);
-//        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(yMin) length:CPTDecimalFromDouble(yMax)];
-//    }
-//    else
     {
         double yMax = 0, yMin = 0;
         
@@ -140,19 +128,6 @@
 
 -(void)updatePlot:(CPTGraphHostingView*)hostView
 {
-    if([self numValues] == 1)
-    {
-        CPTXYGraph *graph = [[CPTXYGraph alloc] initWithFrame:hostView.bounds];
-        CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *)graph.defaultPlotSpace;
-        
-        plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(0)
-                                                        length:CPTDecimalFromDouble([[self xValue:[self numValues] - 1] doubleValue])];
-        
-        double yMax = 0, yMin = 0;
-        CPhidgetTemperatureSensor_getPotentialMax(phidget, 0, &yMax);
-        CPhidgetTemperatureSensor_getPotentialMin(phidget, 0, &yMin);
-        plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(yMin) length:CPTDecimalFromDouble(yMax)];
-    }
     
 }
 
