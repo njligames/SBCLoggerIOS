@@ -85,7 +85,7 @@
 
 #pragma mark - Split View Handler
 -(void) turnSplitViewButtonOn: (UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *) popoverController {
-    barButtonItem.title = NSLocalizedString(@"Master", @"Master");
+    barButtonItem.title = NSLocalizedString(@"Hardware List", @"Hardware List");
     _splitViewButton = barButtonItem;
     [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
     self.masterPopoverController = popoverController;
@@ -99,7 +99,8 @@
     
 }
 
--(void) setSplitViewButton:(UIBarButtonItem *)splitViewButton forPopoverController:(UIPopoverController *)popoverController {
+-(void) setSplitViewButton:(UIBarButtonItem *)splitViewButton forPopoverController:(UIPopoverController *)popoverController
+{
     if (splitViewButton != _splitViewButton) {
         if (splitViewButton) {
             [self turnSplitViewButtonOn:splitViewButton forPopoverController:popoverController];
