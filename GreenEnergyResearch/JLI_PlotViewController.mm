@@ -157,6 +157,8 @@
         
         [self stopAnimation];
         [self startAnimation];
+        
+        [self.navigationItem setTitle:[self.phidgetHardware getDeviceName]];
     }
 }
 

@@ -51,6 +51,8 @@
 {
     JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
     [appDelegate updateViewRatio];
+    
+    [self.navigationItem setTitle:@"Web Camera"];
 }
 
 /*
