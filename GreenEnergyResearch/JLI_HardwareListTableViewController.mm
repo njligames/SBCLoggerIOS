@@ -61,7 +61,7 @@
     
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
     {
-        
+        [self selectHardwareItem:0];
     }
 }
 
@@ -226,105 +226,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
-    
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
-    {
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPad" bundle: nil];
-        JLI_PlotViewController *newController = nil;
-        
-        if(indexPath.row == 0)
-        {
-            newController = [storyboard instantiateViewControllerWithIdentifier:@"WebCamViewController"];
-        }
-        else
-        {
-            newController = [storyboard instantiateViewControllerWithIdentifier:@"PlotViewController"];
-            newController.phidgetGraphDrawInterval = [[appDelegate pollInterval] doubleValue];
-            newController.phidgetPollInterval = [[appDelegate pollInterval] doubleValue];
-            
-            id object = [appDelegate getPhidgetHardware:indexPath.row - 1];
-            newController.phidgetHardware = object;
-            
-            UIBarButtonItem *button = self.navigationItem.rightBarButtonItems[0];
-            button.enabled = YES;
-            
-        }
-        
-        UINavigationController *navController = [[[self splitViewController ] viewControllers ] lastObject ];
-        JLI_PlotViewController *oldController = [[navController viewControllers] firstObject];
-        
-        NSArray *newStack = [NSArray arrayWithObjects:newController, nil ];
-        [navController setViewControllers:newStack];
-        
-        UIBarButtonItem *splitViewButton = [[oldController navigationItem] leftBarButtonItem];
-        UIPopoverController *popoverController = [oldController masterPopoverController];
-        [newController setSplitViewButton:splitViewButton forPopoverController:popoverController];
-        
-        // see if we should be hidden
-        if (!UIDeviceOrientationIsLandscape([[UIDevice currentDevice] orientation])) {
-            // we are in portrait mode so go away
-            [popoverController dismissPopoverAnimated:YES];
-            
-        }
-        
-        
-        
-//        if(indexPath.row == 0)
-//        {
-//            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPad" bundle: nil];
-//            JLI_PlotViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"WebCamViewController"];
-//            
-//            
-//            
-//            
-//            
-//            UINavigationController *navController = [[[self splitViewController ] viewControllers ] lastObject ];
-//            UIViewController *oldController = [[navController viewControllers] firstObject];
-//            
-//            NSArray *newStack = [NSArray arrayWithObjects:vc, nil ];
-//            [navController setViewControllers:newStack];
-//            
-//            
-//        }
-//        else
-//        {
-//            self.plotViewController.phidgetGraphDrawInterval = [[appDelegate pollInterval] doubleValue];
-//            self.plotViewController.phidgetPollInterval = [[appDelegate pollInterval] doubleValue];
-//            
-//            id object = [appDelegate getPhidgetHardware:indexPath.row - 1];
-//            self.plotViewController.phidgetHardware = object;
-//            
-//            UIBarButtonItem *button = self.navigationItem.rightBarButtonItems[0];
-//            button.enabled = YES;
-//        }
-
-        
-    }
-    else
-    {
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle: nil];
-        
-        
-        if(indexPath.row == 0)
-        {
-            JLI_PlotViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"WebCamViewController"];
-            
-            [self.navigationController pushViewController:vc animated:YES];
-        }
-        else
-        {
-            JLI_PlotViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"PlotViewController"];
-            
-            [vc setPhidgetGraphDrawInterval:[[appDelegate pollInterval] doubleValue]];
-            [vc setPhidgetPollInterval:[[appDelegate pollInterval] doubleValue]];
-            
-            id object = [appDelegate getPhidgetHardware:indexPath.row - 1];
-            [vc setPhidgetHardware:object];
-            
-            [self.navigationController pushViewController:vc animated:YES];
-        }
-    }
+    [self selectHardwareItem:indexPath.row];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -392,6 +294,77 @@
     JLI_PlotViewController *vc = [[navController viewControllers] firstObject];
     
     [vc setSplitViewButton:nil forPopoverController:nil];
+}
+
+
+-(void)selectHardwareItem:(NSInteger)index
+{
+    JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+    {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPad" bundle: nil];
+        JLI_PlotViewController *newController = nil;
+        
+        if(index == 0)
+        {
+            newController = [storyboard instantiateViewControllerWithIdentifier:@"WebCamViewController"];
+        }
+        else
+        {
+            newController = [storyboard instantiateViewControllerWithIdentifier:@"PlotViewController"];
+            newController.phidgetGraphDrawInterval = [[appDelegate pollInterval] doubleValue];
+            newController.phidgetPollInterval = [[appDelegate pollInterval] doubleValue];
+            
+            id object = [appDelegate getPhidgetHardware:index - 1];
+            newController.phidgetHardware = object;
+            
+            UIBarButtonItem *button = self.navigationItem.rightBarButtonItems[0];
+            button.enabled = YES;
+            
+        }
+        
+        UINavigationController *navController = [[[self splitViewController ] viewControllers ] lastObject ];
+        JLI_PlotViewController *oldController = [[navController viewControllers] firstObject];
+        
+        NSArray *newStack = [NSArray arrayWithObjects:newController, nil ];
+        [navController setViewControllers:newStack];
+        
+        UIBarButtonItem *splitViewButton = [[oldController navigationItem] leftBarButtonItem];
+        UIPopoverController *popoverController = [oldController masterPopoverController];
+        [newController setSplitViewButton:splitViewButton forPopoverController:popoverController];
+        
+        // see if we should be hidden
+        if (!UIDeviceOrientationIsLandscape([[UIDevice currentDevice] orientation]))
+        {
+            // we are in portrait mode so go away
+            [popoverController dismissPopoverAnimated:YES];
+        }
+    }
+    else
+    {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle: nil];
+        
+        
+        if(index == 0)
+        {
+            JLI_PlotViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"WebCamViewController"];
+            
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        else
+        {
+            JLI_PlotViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"PlotViewController"];
+            
+            [vc setPhidgetGraphDrawInterval:[[appDelegate pollInterval] doubleValue]];
+            [vc setPhidgetPollInterval:[[appDelegate pollInterval] doubleValue]];
+            
+            id object = [appDelegate getPhidgetHardware:index - 1];
+            [vc setPhidgetHardware:object];
+            
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+    }
 }
 
 @end
