@@ -33,6 +33,7 @@
 		C1B1814318CE42CD00456FD1 /* JLI_ServerChooseViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C1B1814218CE42CD00456FD1 /* JLI_ServerChooseViewController.mm */; };
 		C1B1814518CE494B00456FD1 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B1814418CE494B00456FD1 /* libCorePlot-CocoaTouch.a */; };
 		C1B1819618CE499800456FD1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B1819518CE499800456FD1 /* QuartzCore.framework */; };
+		C1D5CE2919A1172C0054F7E8 /* UINavigationController+JLI_ServerChooserNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D5CE2819A1172C0054F7E8 /* UINavigationController+JLI_ServerChooserNavigationController.m */; };
 		C1DBA42B197341370000AFCE /* MJPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DBA428197341370000AFCE /* MJPopupBackgroundView.m */; };
 		C1DBA42C197341370000AFCE /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DBA42A197341370000AFCE /* UIViewController+MJPopupViewController.m */; };
 		C1DBA431197342A80000AFCE /* GraphEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DBA42F197342A80000AFCE /* GraphEditViewController.m */; };
@@ -167,6 +168,8 @@
 		C1B1819318CE495E00456FD1 /* NSDecimalNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDecimalNumberExtensions.h; sourceTree = "<group>"; };
 		C1B1819418CE495E00456FD1 /* NSNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNumberExtensions.h; sourceTree = "<group>"; };
 		C1B1819518CE499800456FD1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C1D5CE2719A1172C0054F7E8 /* UINavigationController+JLI_ServerChooserNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+JLI_ServerChooserNavigationController.h"; sourceTree = "<group>"; };
+		C1D5CE2819A1172C0054F7E8 /* UINavigationController+JLI_ServerChooserNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JLI_ServerChooserNavigationController.m"; sourceTree = "<group>"; };
 		C1DBA427197341370000AFCE /* MJPopupBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPopupBackgroundView.h; sourceTree = "<group>"; };
 		C1DBA428197341370000AFCE /* MJPopupBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPopupBackgroundView.m; sourceTree = "<group>"; };
 		C1DBA429197341370000AFCE /* UIViewController+MJPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MJPopupViewController.h"; sourceTree = "<group>"; };
@@ -279,6 +282,8 @@
 				C174A4C8194CEEF600286CFA /* JLI_WebCamViewController.m */,
 				C1E209D91972E91B003423CF /* JLI_GraphEditorViewController.h */,
 				C1E209DA1972E91B003423CF /* JLI_GraphEditorViewController.m */,
+				C1D5CE2719A1172C0054F7E8 /* UINavigationController+JLI_ServerChooserNavigationController.h */,
+				C1D5CE2819A1172C0054F7E8 /* UINavigationController+JLI_ServerChooserNavigationController.m */,
 			);
 			path = GreenEnergyResearch;
 			sourceTree = "<group>";
@@ -505,6 +510,7 @@
 			files = (
 				C1B1811718CE361200456FD1 /* JLI_AppDelegate.mm in Sources */,
 				C13DF18118D2552A003286A3 /* JLI_PhidgetHardwareDevice.mm in Sources */,
+				C1D5CE2919A1172C0054F7E8 /* UINavigationController+JLI_ServerChooserNavigationController.m in Sources */,
 				C196D62E18E1DBB5000CE33B /* MotionJpegImageView.mm in Sources */,
 				C1DBA42C197341370000AFCE /* UIViewController+MJPopupViewController.m in Sources */,
 				C19C2F3418D797EF006F7D3C /* JLI_PhidgetHardwareInterfaceKit.mm in Sources */,
