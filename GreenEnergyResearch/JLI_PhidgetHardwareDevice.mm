@@ -76,6 +76,8 @@
         recordedMutableArray = [[NSMutableArray alloc] init];
         
         _serverPassword = [[NSString alloc] initWithString:password];
+        
+        [self setShouldPanView:YES];
     }
     
     return self;
@@ -259,4 +261,13 @@
 //{
 //    return (CPTXYAxisSet *)hostView.hostedGraph.axisSet;
 //}
+
+-(void)setShouldPanView:(BOOL)pan
+{
+    shouldPanView = pan;
+}
+-(BOOL)shouldPanView
+{
+    return shouldPanView && ([self numValues] > 0);
+}
 @end

@@ -159,6 +159,8 @@
         [self startAnimation];
         
         [self.navigationItem setTitle:[self.phidgetHardware getDeviceName]];
+        
+        [self.phidgetHardware setShouldPanView:YES];
     }
 }
 

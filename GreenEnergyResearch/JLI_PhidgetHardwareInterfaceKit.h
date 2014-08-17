@@ -11,7 +11,7 @@
 @interface JLI_PhidgetHardwareInterfaceKit : JLI_PhidgetHardwareDevice <CPTPlotDataSource, CPTAxisDelegate>
 {
     CPhidgetInterfaceKitHandle phidget;
-    BOOL shouldPanView;
+    
 }
 
 - (id)initWithPhidget:(NSValue *)phid password:(NSString*)password;
@@ -21,5 +21,7 @@
 -(void)updatePlot:(CPTGraphHostingView*)hostView;
 
 -(NSString*)getCSVFileContent;
+
+
 
 @end

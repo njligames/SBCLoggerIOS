@@ -36,7 +36,8 @@ const char *const IDENTIFIERS[8] =
                                                  [[self getServerAddress] UTF8String],
                                                  [self getServerPort],
                                                  [[self getServerPassword] UTF8String]));
-        shouldPanView = YES;
+//        shouldPanView = YES;
+        
     }
     
     
@@ -224,11 +225,11 @@ const char *const IDENTIFIERS[8] =
 
 -(void)updatePlot:(CPTGraphHostingView*)hostView
 {
-    BOOL canPanView = ([self numValues] > 0);
+//    BOOL canPanView = ([self numValues] > 0);
     
-    if(canPanView && shouldPanView)
+    if([self shouldPanView])
     {
-        shouldPanView = NO;
+        [self setShouldPanView:NO];
         
         int lastIndex = [self numValues] - 1;
         
@@ -236,7 +237,6 @@ const char *const IDENTIFIERS[8] =
         
         double time = [[self xValue:lastIndex] doubleValue];
         int value = [[self yValue:lastIndex identifier:identifier] integerValue];
-        
         
         CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *)hostView.hostedGraph.defaultPlotSpace;
         

@@ -33,6 +33,8 @@
     
     NSDate *startDate;
     NSNumber *currentIndex;
+    
+    BOOL shouldPanView;
 }
 
 @property (nonatomic, copy) NSNumber *currentIndex;
@@ -80,5 +82,9 @@
 
 //CPTXYAxisSet *axisSet = (CPTXYAxisSet *)hostView.hostedGraph.axisSet;
 //-(CPTXYAxisSet*)getAxisSet;
+
+
+-(void)setShouldPanView:(BOOL)pan;
+-(BOOL)shouldPanView;
 
 @end
