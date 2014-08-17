@@ -108,11 +108,11 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp8-Dj-5AG">
                                 <rect key="frame" x="365" y="445" width="192" height="25"/>
-                                <state key="normal" image="button_connect">
+                                <state key="normal" backgroundImage="button_connect">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" image="button_connect_pressed"/>
-                                <state key="highlighted" image="button_connect_pressed"/>
+                                <state key="selected" backgroundImage="button_connect_pressed"/>
+                                <state key="highlighted" backgroundImage="button_connect_pressed"/>
                                 <connections>
                                     <action selector="connect_ipad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yH-Vk-MNa"/>
                                 </connections>
