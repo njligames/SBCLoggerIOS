@@ -118,34 +118,34 @@ NSString *LocalErrorCatcher (int errorCode)
 
 int gotAttach(CPhidgetHandle phid, void *context)
 {
-    [(__bridge id)context performSelectorOnMainThread:@selector(deviceAttach:)
-                                           withObject:[NSValue valueWithPointer:phid]
-                                        waitUntilDone:YES];
+    [(__bridge id)context performSelector:@selector(deviceAttach:)
+                               withObject:[NSValue valueWithPointer:phid]];
+    
     return 0;
 }
 
 int gotDetach(CPhidgetHandle phid, void *context)
 {
-    [(__bridge id)context performSelectorOnMainThread:@selector(deviceRemoved:)
-                                           withObject:[NSValue valueWithPointer:phid]
-                                        waitUntilDone:YES];
-    return 0;
-}
-
-int serverConnectCallback(CPhidgetManagerHandle handle, void *userPtr)
-{
-    JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
-    
-    [appDelegate setHardwareLister];
+    [(__bridge id)context performSelector:@selector(deviceRemoved:)
+                               withObject:[NSValue valueWithPointer:phid]];
     
     return 0;
 }
 
-int serverDisconnectCallback(CPhidgetManagerHandle handle, void *userPtr)
+int serverConnectCallback(CPhidgetManagerHandle handle, void *context)
 {
-    JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [(__bridge id)context performSelectorOnMainThread:@selector(setHardwareLister:)
+                                           withObject:[NSValue valueWithPointer:handle]
+                                        waitUntilDone:NO];
     
-    [appDelegate setServerChooser];
+    return 0;
+}
+
+int serverDisconnectCallback(CPhidgetManagerHandle handle, void *context)
+{
+    [(__bridge id)context performSelectorOnMainThread:@selector(setServerChooser:)
+                                           withObject:[NSValue valueWithPointer:handle]
+                                        waitUntilDone:NO];
     
     return 0;
 }
@@ -305,11 +305,10 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
 	LocalErrorCatcher(CPhidgetManager_set_OnAttach_Handler(phidMan, gotAttach, (__bridge void*)self));
 	LocalErrorCatcher(CPhidgetManager_set_OnDetach_Handler(phidMan, gotDetach, (__bridge void*)self));
 	
-    LocalErrorCatcher(CPhidgetManager_set_OnServerConnect_Handler(phidMan, serverConnectCallback, NULL));
-    LocalErrorCatcher(CPhidgetManager_set_OnServerDisconnect_Handler(phidMan, serverDisconnectCallback, NULL));
+    LocalErrorCatcher(CPhidgetManager_set_OnServerConnect_Handler(phidMan, serverConnectCallback, (__bridge void*)self));
+    LocalErrorCatcher(CPhidgetManager_set_OnServerDisconnect_Handler(phidMan, serverDisconnectCallback, (__bridge void*)self));
     
-    LocalErrorCatcher(CPhidget_set_OnError_Handler((CPhidgetHandle) phidMan,
-                                                   errorEventHandler, NULL));
+    LocalErrorCatcher(CPhidget_set_OnError_Handler((CPhidgetHandle) phidMan, errorEventHandler, (__bridge void*)self));
     
     
     const char *_server = [server UTF8String];
@@ -328,7 +327,7 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
 //    [message show];
 }
 
--(void)setServerChooser
+-(void)setServerChooser:(NSValue *)phidHandle
 {
     phidgetHardwareArray = nil;
     
@@ -337,13 +336,20 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
     [self.window setRootViewController:[currentViewController.storyboard instantiateViewControllerWithIdentifier:@"server_chooser"]];
 }
 
--(void)setHardwareLister
+-(void)setHardwareLister:(NSValue *)phidHandle
 {
     phidgetHardwareArray = [[NSMutableArray alloc] init];
     
     UIViewController *currentViewController = ((UINavigationController*)self.window.rootViewController).visibleViewController;
     
     [self.window setRootViewController:[currentViewController.storyboard instantiateViewControllerWithIdentifier:@"hardware_chooser"]];
+}
+
+- (void)updateHardware:(NSNotification *)notif
+{
+    
+//    JLI_HardwareListTableViewController *vc = [notif object];
+//    [vc reloadTable];
 }
 
 -(void)addHardware:(NSValue*)phid index:(NSNumber*)index
@@ -357,9 +363,12 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
     {
         [phidgetHardwareArray addObject:p];
         
-        UIViewController *currentViewController = ((UINavigationController*)self.window.rootViewController).visibleViewController;
         
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"com.jamesfolk.greenenergyresearch.updatehardware" object:currentViewController];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"com.jamesfolk.greenenergyresearch.updatehardware" object:self];
+        
+//        UIViewController *currentViewController = ((UINavigationController*)self.window.rootViewController).visibleViewController;
+//        
+//        [[NSNotificationCenter defaultCenter] postNotificationName:@"com.jamesfolk.greenenergyresearch.updatehardware" object:currentViewController];
     }
 }
 
@@ -369,9 +378,11 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
     
     [phidgetHardwareArray removeObject:p];
     
-    UIViewController *currentViewController = ((UINavigationController*)self.window.rootViewController).visibleViewController;
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"com.jamesfolk.greenenergyresearch.updatehardware" object:self];
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"com.jamesfolk.greenenergyresearch.updatehardware" object:currentViewController];
+//    UIViewController *currentViewController = ((UINavigationController*)self.window.rootViewController).visibleViewController;
+//    
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"com.jamesfolk.greenenergyresearch.updatehardware" object:currentViewController];
 }
 
 -(NSUInteger)getHardwareCount

@@ -33,8 +33,8 @@ extern NSString *LocalErrorCatcher (int errorCode);
 
 - (void)connectToServer:(NSString*)server port:(NSString*)port password:(NSString*)password;
 
--(void)setServerChooser;
--(void)setHardwareLister;
+-(void)setServerChooser:(NSValue *)phidHandle;
+-(void)setHardwareLister:(NSValue *)phidHandle;
 
 -(void)addHardware:(NSValue*)phid;
 -(void)removeHardware:(NSValue*)phid;
