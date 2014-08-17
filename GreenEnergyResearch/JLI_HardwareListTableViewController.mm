@@ -25,13 +25,13 @@
         self.clearsSelectionOnViewWillAppear = NO;
         self.preferredContentSize = CGSizeMake(320.0, 600.0);
         
-        UIBarButtonItem *recordButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(recordButton:)];
-        recordButton.enabled = NO;
+//        UIBarButtonItem *recordButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(recordButton:)];
+//        recordButton.enabled = NO;
+//        
+//        UIBarButtonItem *emailButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(emailAction:)];
+//        emailButton.enabled = NO;
         
-        UIBarButtonItem *emailButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(emailAction:)];
-        emailButton.enabled = NO;
-        
-        self.navigationItem.rightBarButtonItems = @[recordButton, emailButton];
+//        self.navigationItem.rightBarButtonItems = @[recordButton, emailButton];
         
         [self.splitViewController setDelegate:self];
         
