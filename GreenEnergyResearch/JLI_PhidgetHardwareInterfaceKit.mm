@@ -245,8 +245,8 @@ const char *const IDENTIFIERS[8] =
         plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:xFrom
                                                         length:xLength];
         
-        NSDecimal yFrom = CPTDecimalFromDouble(value - 10);
-        NSDecimal yLength = CPTDecimalFromDouble(value / 10);
+        NSDecimal yFrom = CPTDecimalFromDouble(0);
+        NSDecimal yLength = CPTDecimalFromDouble(500);
         plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:yFrom
                                                         length:yLength];
     }
