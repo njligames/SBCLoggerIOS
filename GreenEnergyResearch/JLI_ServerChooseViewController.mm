@@ -20,6 +20,8 @@
 
 @implementation JLI_ServerChooseViewController
 
+@synthesize activityIndicator;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,7 +34,7 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
+    self.activityIndicator.hidden = YES;
     
 }
 - (void)viewDidLoad
@@ -103,10 +105,16 @@
     NSNumber *number = [NSNumber numberWithInt:[[_pollTextField text] intValue]];
     [appDelegate setPollInterval:number];
     
+    
 //    [appDelegate setHardwareLister];
     [appDelegate connectToServer:[_serverTextField text]
                             port:[_portTextField text]
                         password:[_passwordTextField text]];
+    
+    self.activityIndicator.hidden = NO;
+    [self.activityIndicator startAnimating];
+    
+    
 }
 
 - (IBAction)connect:(id)sender

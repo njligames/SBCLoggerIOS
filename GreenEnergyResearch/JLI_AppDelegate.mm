@@ -152,6 +152,14 @@ int serverDisconnectCallback(CPhidgetManagerHandle handle, void *context)
 
 int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const char *errorDescription)
 {
+    NSLog(@"%s", errorDescription);
+    
+    JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+//    [appDelegate setStatusLabelText:[NSString stringWithUTF8String:errorDescription]];
+    
+//    [appDelegate.statusLabel setText:[NSString stringWithUTF8String:errorDescription]];
+    
 //    JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
 //    UIViewController *currentViewController = ((UINavigationController*)appDelegate.window.rootViewController).visibleViewController;
 //    
@@ -182,6 +190,7 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
 @synthesize phidgetHardwareArray;
 @synthesize pollInterval;
 @synthesize startDate;
+
 
 - (CGRect)updateViewRatio
 {
@@ -317,6 +326,14 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
     
     
 	LocalErrorCatcher(CPhidgetManager_openRemoteIP(phidMan, _server, _port, _password));
+    
+    
+    activityIndicator.hidden = NO;
+    
+    [activityIndicator startAnimating];
+    
+    [statusLabel setText:@"Connecting..."];
+    
     
 //    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"GreenEnergy Research"
 //                                                      message:@"WHATUP"
@@ -623,6 +640,7 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
         [self toggleHideMaster:nil];
     }
 }
+
 
 
 @end

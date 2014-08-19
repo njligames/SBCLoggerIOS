@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface JLI_ServerChooseViewController : UIViewController <UITextViewDelegate, UIAlertViewDelegate>
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 -(IBAction)dismissKeyboardOnTap:(id)sender;
 

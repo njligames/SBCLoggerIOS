@@ -24,12 +24,18 @@ extern NSString *LocalErrorCatcher (int errorCode);
 @private
     MotionJpegImageView *_imageView;
     UIWebView *_webView;
+    
+    UIActivityIndicatorView *activityIndicator;
+    UILabel *statusLabel;
 }
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) NSMutableArray *phidgetHardwareArray;
 @property (strong, nonatomic) NSNumber *pollInterval;
 @property (strong, nonatomic) NSDate *startDate;
 @property ( nonatomic) BOOL masterIsHidden;
+
+
+
 
 - (void)connectToServer:(NSString*)server port:(NSString*)port password:(NSString*)password;
 
@@ -50,6 +56,5 @@ extern NSString *LocalErrorCatcher (int errorCode);
 
 - (CGRect)updateViewRatio;
 
-- (void)updateHideMasterOnRotation;
 
 @end
