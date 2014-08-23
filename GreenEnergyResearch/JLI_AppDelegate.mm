@@ -194,17 +194,49 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
 
 - (CGRect)updateViewRatio
 {
-    CGSize windowSize = self.window.bounds.size;
-    CGSize webViewSize = _webView.bounds.size;
-    
-    CGRect windowFrame = self.window.frame;
-    CGRect webViewFrame = _webView.frame;
-    
-    
-    
+    return [self updateViewRatio:[[UIApplication sharedApplication] statusBarOrientation]];
+}
+
+- (CGRect)updateViewRatio:(UIInterfaceOrientation)toInterfaceOrientation
+{
     CGFloat windowWidth = self.window.bounds.size.width;
+    CGFloat windowHeight = self.window.bounds.size.height;
+    
     CGFloat viewWidth = _webView.bounds.size.width;
-    CGFloat scaleRatio = self.window.bounds.size.width / _webView.bounds.size.width;
+    CGFloat viewHeight = _webView.bounds.size.height;
+    
+    
+    BOOL isPortrait = YES;
+    
+    if(UIInterfaceOrientationIsLandscape(toInterfaceOrientation))
+    {
+        isPortrait = NO;
+    }
+    
+    CGFloat scaleRatio = 1.0f;
+    
+    if(isPortrait)
+    {
+        
+        scaleRatio = windowWidth / viewWidth;
+//        scaleRatio = 0.25;
+    }
+    else
+    {
+        //        scaleRatio =  viewWidth / windowWidth;
+        scaleRatio = windowWidth / viewWidth;
+//        scaleRatio = 0.33;
+    }
+    
+    
+    //    CGFloat viewWidth = _webView.bounds.size.width;
+    
+    
+    
+    
+    NSLog(@"\n\nWindow width %f\nWindow height %f\nFrame width %f\nFrame height %f\nPortrait %s\nRatio %f\n",
+          windowWidth, windowHeight, viewWidth, viewHeight, (isPortrait)?"yes":"no", scaleRatio);
+    
     CGAffineTransform scalingTransform = CGAffineTransformScale(CGAffineTransformIdentity,
                                                                 scaleRatio,
                                                                 scaleRatio);
@@ -217,18 +249,27 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
     if(_imageView)
         [_imageView setFrame:webFrame];
     
+    windowWidth = self.window.bounds.size.width;
+    windowHeight = self.window.bounds.size.height;
+    
+    viewWidth = _webView.bounds.size.width;
+    viewHeight = _webView.bounds.size.height;
+    
+    
+    
+    
+    
+    
     return webFrame;
 }
 
 - (void) initWebCam
 {
-//    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0.0, 0.0, 640.0, 480.0)];
     _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0.0, 0.0, 1280, 960)];
     _webView.userInteractionEnabled = NO;
     
     CGRect webFrame = [self updateViewRatio];
     
-//    NSURL *url = [NSURL URLWithString:@"http://iris.not.iac.es/axis-cgi/mjpg/video.cgi?resolution=320x240"];
     NSURL *url = [NSURL URLWithString:@"http://phidgetsbc.local.:81/?action=stream"];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -238,8 +279,6 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
     
     _imageView.url = url;
     [_imageView play];
-    
-    
 }
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

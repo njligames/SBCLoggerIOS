@@ -55,6 +55,7 @@ extern NSString *LocalErrorCatcher (int errorCode);
 -(void)addToViewController:(UIView*)v;
 
 - (CGRect)updateViewRatio;
+- (CGRect)updateViewRatio:(UIInterfaceOrientation)toInterfaceOrientation;
 
 
 @end

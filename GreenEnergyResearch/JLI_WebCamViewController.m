@@ -44,7 +44,7 @@
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
     JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
-    [appDelegate updateViewRatio];
+    [appDelegate updateViewRatio:toInterfaceOrientation];
 }
 
 - (void)viewWillAppear:(BOOL)animated
