@@ -213,7 +213,10 @@
     CPTMutableLineStyle *lineStyle = [CPTMutableLineStyle lineStyle];
     lineStyle.miterLimit        = 1.0f;
     lineStyle.lineWidth         = 3.0f;
-    lineStyle.lineColor         = [CPTColor blueColor];
+    lineStyle.lineColor         = [CPTColor colorWithComponentRed:0.6 green:0.8 blue:0.2 alpha:1.0];
+    //CGColorCreateGenericRGB(0.6, 0.8, 0.2, 1)
+
+    
     boundLinePlot.dataLineStyle = lineStyle;
     boundLinePlot.identifier    = identifier;
 //    boundLinePlot.dataSource    = self;
@@ -221,9 +224,11 @@
     
     // Add plot symbols
     CPTMutableLineStyle *symbolLineStyle = [CPTMutableLineStyle lineStyle];
-    symbolLineStyle.lineColor = [CPTColor greenColor];
-    CPTPlotSymbol *plotSymbol = [CPTPlotSymbol ellipsePlotSymbol];
-    plotSymbol.fill          = [CPTFill fillWithColor:[CPTColor blueColor]];
+    symbolLineStyle.lineColor = [CPTColor colorWithComponentRed:0.6 green:0.8 blue:0.2 alpha:1.0];
+    
+//    CPTPlotSymbol *plotSymbol = [CPTPlotSymbol ellipsePlotSymbol];
+    CPTPlotSymbol *plotSymbol = [CPTPlotSymbol diamondPlotSymbol];
+    plotSymbol.fill          = [CPTFill fillWithColor:[CPTColor colorWithComponentRed:0.6 green:0.8 blue:0.2 alpha:1.0]];
     plotSymbol.lineStyle     = symbolLineStyle;
     plotSymbol.size          = CGSizeMake(10.0, 10.0);
     boundLinePlot.plotSymbol = plotSymbol;

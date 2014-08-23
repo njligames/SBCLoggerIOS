@@ -116,7 +116,7 @@ const char *const IDENTIFIERS[8] =
 {
     // Create graph from theme
     CPTXYGraph *graph = [[CPTXYGraph alloc] initWithFrame:hostView.bounds];
-    CPTTheme *theme = [CPTTheme themeNamed:kCPTSlateTheme];
+    CPTTheme *theme = [CPTTheme themeNamed:kCPTPlainWhiteTheme];
     [graph applyTheme:theme];
     hostView.collapsesLayers = NO;
     hostView.hostedGraph     = graph;
@@ -303,8 +303,8 @@ const char *const IDENTIFIERS[8] =
     CPTTextLayer *label = [[CPTTextLayer alloc] initWithText:[NSString stringWithFormat:@"%@", [self yValue:index identifier:plot.identifier]]];
     
     CPTMutableTextStyle *textStyle = [label.textStyle mutableCopy];
-    
-    textStyle.color = [CPTColor redColor];
+    //CGColorCreateGenericRGB(0.2, 0.6, 0.8, 1)
+    textStyle.color = [CPTColor colorWithComponentRed:0.2 green:0.6 blue:0.8 alpha:1.0];
     textStyle.fontSize = 8.0f;
     label.textStyle = textStyle;
     

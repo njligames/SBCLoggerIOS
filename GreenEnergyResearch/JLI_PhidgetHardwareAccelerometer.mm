@@ -62,7 +62,7 @@ const char *const IDENTIFIERS[3] = {"X AXIS", "Y AXIS", "Z AXIS"};
 {
     // Create graph from theme
     CPTXYGraph *graph = [[CPTXYGraph alloc] initWithFrame:hostView.bounds];
-    CPTTheme *theme = [CPTTheme themeNamed:kCPTSlateTheme];
+    CPTTheme *theme = [CPTTheme themeNamed:kCPTPlainWhiteTheme];
     [graph applyTheme:theme];
     hostView.collapsesLayers = NO;
     hostView.hostedGraph     = graph;
@@ -209,7 +209,7 @@ const char *const IDENTIFIERS[3] = {"X AXIS", "Y AXIS", "Z AXIS"};
     
     CPTMutableTextStyle *textStyle = [label.textStyle mutableCopy];
     
-    textStyle.color = [CPTColor redColor];
+    textStyle.color = [CPTColor colorWithComponentRed:0.2 green:0.6 blue:0.8 alpha:1.0];
     textStyle.fontSize = 8.0f;
     label.textStyle = textStyle;
     

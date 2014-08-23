@@ -27,7 +27,7 @@
 
 
 //@property (nonatomic, strong) CPTGraphHostingView *hostView;
-@property (nonatomic, assign) CPhidgetTemperatureSensorHandle device;
+//@property (nonatomic, assign) CPhidgetTemperatureSensorHandle device;
 
 @end
 

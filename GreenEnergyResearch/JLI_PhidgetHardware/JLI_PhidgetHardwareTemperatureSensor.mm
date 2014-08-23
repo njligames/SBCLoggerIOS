@@ -52,7 +52,7 @@
     // Create graph from theme
 //    CPTXYGraph *graph = [[CPTXYGraph alloc] initWithFrame:CGRectZero];
     CPTXYGraph *graph = [[CPTXYGraph alloc] initWithFrame:hostView.bounds];
-    CPTTheme *theme = [CPTTheme themeNamed:kCPTSlateTheme];
+    CPTTheme *theme = [CPTTheme themeNamed:kCPTPlainWhiteTheme];
     [graph applyTheme:theme];
 //    CPTGraphHostingView *hostingView = (CPTGraphHostingView *)self.view;
     hostView.collapsesLayers = NO; // Setting to YES reduces GPU memory usage, but can slow drawing/scrolling
@@ -174,7 +174,7 @@
     
     CPTMutableTextStyle *textStyle = [label.textStyle mutableCopy];
     
-    textStyle.color = [CPTColor redColor];
+    textStyle.color = [CPTColor colorWithComponentRed:0.2 green:0.6 blue:0.8 alpha:1.0];
     textStyle.fontSize = 8.0f;
 
     label.textStyle = textStyle;
