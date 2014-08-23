@@ -152,7 +152,11 @@ const char *const IDENTIFIERS[8] =
     [x setTitle:@"Time"];
     
     CPTXYAxis *y = axisSet.yAxis;
-    y.majorIntervalLength         = CPTDecimalFromString(@"1.0");
+    NSDecimalNumber *doubleDecimal = [[NSDecimalNumber alloc] initWithDouble:(50)];
+    
+    y.majorIntervalLength = [doubleDecimal decimalValue];
+    
+//    y.majorIntervalLength         = CPTDecimalFromString(@"1.0");
     y.minorTicksPerInterval       = 0;
     
 //    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

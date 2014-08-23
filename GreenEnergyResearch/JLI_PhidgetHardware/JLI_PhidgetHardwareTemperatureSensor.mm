@@ -67,6 +67,11 @@
     CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *)hostView.hostedGraph.defaultPlotSpace;
     plotSpace.allowsUserInteraction = YES;
     
+    // Axes
+    CPTXYAxisSet *axisSet = (CPTXYAxisSet *)hostView.hostedGraph.axisSet;
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *val = [defaults valueForKey:[self getUserDefaultsKey]];
     
     {
         double yMax = 0, yMin = 0;
@@ -80,6 +85,32 @@
         double length = fabs(yMax) + fabs(yMin);
         plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(yMin)
                                                         length:CPTDecimalFromDouble(length)];
+        
+        
+        
+        CPTXYAxis *x          = axisSet.xAxis;
+        x.majorIntervalLength         = CPTDecimalFromString(@"1.0");
+        x.minorTicksPerInterval       = 0;
+        
+        [x setTitle:@"Time (seconds)"];
+        
+        
+        CPTXYAxis *y = axisSet.yAxis;
+//        y.majorIntervalLength         = CPTDecimalFromString(@"5.0");
+        
+        NSDecimalNumber *doubleDecimal = [[NSDecimalNumber alloc] initWithDouble:(yMax - yMin) / 10];
+
+        y.majorIntervalLength = [doubleDecimal decimalValue];
+        y.minorTicksPerInterval       = 0;
+        
+        if([val isEqualToString:@""])
+        {
+            [y setTitle:@"Temperature"];
+        }
+        else
+        {
+            [y setTitle:val];
+        }
     }
 
     
@@ -89,33 +120,15 @@
     
     
     
-    // Axes
-    CPTXYAxisSet *axisSet = (CPTXYAxisSet *)hostView.hostedGraph.axisSet;
-    
-    CPTXYAxis *x          = axisSet.xAxis;
-    x.majorIntervalLength         = CPTDecimalFromString(@"1.0");
-    x.minorTicksPerInterval       = 0;
-    
-    [x setTitle:@"Time (seconds)"];
-    
-
-    CPTXYAxis *y = axisSet.yAxis;
-    y.majorIntervalLength         = CPTDecimalFromString(@"5.0");
-    y.minorTicksPerInterval       = 0;
     
     
     
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *val = [defaults valueForKey:[self getUserDefaultsKey]];
     
-    if([val isEqualToString:@""])
-    {
-        [y setTitle:@"Temperature"];
-    }
-    else
-    {
-        [y setTitle:val];
-    }
+    
+    
+    
+    
+    
     
 //    [y setTitle:@"Temperature"];
     
