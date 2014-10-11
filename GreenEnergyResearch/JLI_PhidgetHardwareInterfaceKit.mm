@@ -49,7 +49,7 @@ const char *const IDENTIFIERS[8] =
     
 }
 
--(void)pollPhidget
+-(void)pollPhidget:(CPTGraphHostingView*)hostView;
 {
     if([self numValues] == 0)
     {
@@ -85,7 +85,7 @@ const char *const IDENTIFIERS[8] =
     [mutableDictionary setObject:val forKey:ident];
     [self addValue:[NSNumber numberWithDouble:time] values:mutableDictionary];
     
-    
+    [self changeXAxisRange:hostView withNewValue:time];
     
     
     

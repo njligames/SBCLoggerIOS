@@ -294,7 +294,7 @@
         [self drawView];
     }
     
-    [self.phidgetHardware pollPhidget];
+    [self.phidgetHardware pollPhidget:self.scatterPlotView];
 }
 
 - (void)drawView

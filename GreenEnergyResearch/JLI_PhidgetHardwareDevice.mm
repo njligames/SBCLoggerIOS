@@ -207,7 +207,22 @@
     }
 }
 
--(void)pollPhidget
+-(void)changeXAxisRange:(CPTGraphHostingView*)hostView withNewValue:(double)val
+{
+    CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *)hostView.hostedGraph.defaultPlotSpace;
+    
+    if(val > 10.0)
+    {
+        plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(-2.0f)
+                                                        length:CPTDecimalFromDouble(val)];
+        
+        [[hostView hostedGraph] display];
+        
+
+    }
+}
+
+-(void)pollPhidget:(CPTGraphHostingView*)hostView
 {
     [self doesNotRecognizeSelector:_cmd];
     

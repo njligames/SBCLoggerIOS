@@ -66,9 +66,10 @@
 -(NSNumber*)yValue:(int)index identifier:(NSString*)identifier;
 -(NSNumber*)xValue:(int)index;
 
+-(void)changeXAxisRange:(CPTGraphHostingView*)hostView withNewValue:(double)val;
 -(void)addValue:(NSNumber*)time values:(NSDictionary*)values;
 
--(void)pollPhidget;
+-(void)pollPhidget:(CPTGraphHostingView*)hostView;
 -(void)configurePlot:(CPTGraphHostingView*)hostView;
 -(void)updatePlot:(CPTGraphHostingView*)hostView;
 

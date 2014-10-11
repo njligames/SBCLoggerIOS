@@ -33,7 +33,7 @@ const char *const IDENTIFIERS[3] = {"X AXIS", "Y AXIS", "Z AXIS"};
     
 }
 
--(void)pollPhidget
+-(void)pollPhidget:(CPTGraphHostingView*)hostView
 {
     if([self numValues] == 0)
     {
@@ -56,6 +56,8 @@ const char *const IDENTIFIERS[3] = {"X AXIS", "Y AXIS", "Z AXIS"};
     }
     
     [self addValue:[NSNumber numberWithDouble:time] values:mutableDictionary];
+    
+    [self changeXAxisRange:hostView withNewValue:time];
 }
 
 -(void)configurePlot:(CPTGraphHostingView*)hostView

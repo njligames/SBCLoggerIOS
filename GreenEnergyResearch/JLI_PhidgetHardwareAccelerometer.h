@@ -15,7 +15,7 @@
 
 - (id)initWithPhidget:(NSValue *)phid password:(NSString*)password;
 
--(void)pollPhidget;
+-(void)pollPhidget:(CPTGraphHostingView*)hostView;
 -(void)configurePlot:(CPTGraphHostingView*)hostView;
 -(void)updatePlot:(CPTGraphHostingView*)hostView;
 

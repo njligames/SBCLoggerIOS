@@ -32,7 +32,7 @@
 {
 }
 
--(void)pollPhidget
+-(void)pollPhidget:(CPTGraphHostingView*)hostView
 {
     if([self numValues] == 0)
     {
@@ -45,7 +45,11 @@
     LocalErrorCatcher(CPhidgetTemperatureSensor_getTemperature(phidget, 0, &value));
     
     [self addValue:[NSNumber numberWithDouble:time] values:@{IDENTIFIER: [NSNumber numberWithDouble:value]}];
+    
+    [self changeXAxisRange:hostView withNewValue:time];
 }
+
+
 
 -(void)configurePlot:(CPTGraphHostingView*)hostView
 {
@@ -81,6 +85,8 @@
         
         plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(-2.0f)
                                                         length:CPTDecimalFromDouble(10.0)];
+        
+//        [self changeXAxisRange:hostView withNewValue:10.0];
         
         double length = fabs(yMax) + fabs(yMin);
         plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(yMin)
