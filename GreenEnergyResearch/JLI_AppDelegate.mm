@@ -12,6 +12,7 @@
 #import "JLI_PhidgetHardwareTemperatureSensor.h"
 #import "JLI_PhidgetHardwareAccelerometer.h"
 #import "JLI_PhidgetHardwareInterfaceKit.h"
+#import "TestFlight.h"
 
 NSString *LocalErrorCatcher (int errorCode)
 {
@@ -275,6 +276,10 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
 }
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // start of your application:didFinishLaunchingWithOptions // ...
+    [TestFlight takeOff:@"3081811f-0ddf-48aa-8b1a-b4b87bbeb140"];
+    // The rest of your application:didFinishLaunchingWithOptions method// ...
+    
     startDate = [NSDate date];
     
     [self initWebCam];

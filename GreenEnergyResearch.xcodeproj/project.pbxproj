@@ -38,6 +38,8 @@
 		C1DBA42C197341370000AFCE /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DBA42A197341370000AFCE /* UIViewController+MJPopupViewController.m */; };
 		C1DBA431197342A80000AFCE /* GraphEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DBA42F197342A80000AFCE /* GraphEditViewController.m */; };
 		C1E209DB1972E91B003423CF /* JLI_GraphEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E209DA1972E91B003423CF /* JLI_GraphEditorViewController.m */; };
+		CD1F66F819BCF459009863F7 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1F66F719BCF459009863F7 /* libTestFlight.a */; };
+		CD1F66FA19BCF475009863F7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1F66F919BCF475009863F7 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +180,11 @@
 		C1DBA42F197342A80000AFCE /* GraphEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphEditViewController.m; sourceTree = "<group>"; };
 		C1E209D91972E91B003423CF /* JLI_GraphEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLI_GraphEditorViewController.h; sourceTree = "<group>"; };
 		C1E209DA1972E91B003423CF /* JLI_GraphEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLI_GraphEditorViewController.m; sourceTree = "<group>"; };
+		CD1F66F419BCF447009863F7 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestFlight.h; path = TestFlightSDK3/TestFlight.h; sourceTree = "<group>"; };
+		CD1F66F519BCF447009863F7 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TestFlight+AsyncLogging.h"; path = "TestFlightSDK3/TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		CD1F66F619BCF447009863F7 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TestFlight+ManualSessions.h"; path = "TestFlightSDK3/TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		CD1F66F719BCF459009863F7 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTestFlight.a; path = TestFlightSDK3/libTestFlight.a; sourceTree = "<group>"; };
+		CD1F66F919BCF475009863F7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +192,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1F66FA19BCF475009863F7 /* libz.dylib in Frameworks */,
+				CD1F66F819BCF459009863F7 /* libTestFlight.a in Frameworks */,
 				C196D62B18E1B7AE000CE33B /* AddressBook.framework in Frameworks */,
 				C196D62918E1AC75000CE33B /* MessageUI.framework in Frameworks */,
 				C1B1819618CE499800456FD1 /* QuartzCore.framework in Frameworks */,
@@ -226,6 +235,9 @@
 		C1B180FA18CE361200456FD1 = {
 			isa = PBXGroup;
 			children = (
+				CD1F66F419BCF447009863F7 /* TestFlight.h */,
+				CD1F66F519BCF447009863F7 /* TestFlight+AsyncLogging.h */,
+				CD1F66F619BCF447009863F7 /* TestFlight+ManualSessions.h */,
 				C1B1810C18CE361200456FD1 /* GreenEnergyResearch */,
 				C1B1810518CE361200456FD1 /* Frameworks */,
 				C1B1810418CE361200456FD1 /* Products */,
@@ -244,6 +256,8 @@
 		C1B1810518CE361200456FD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD1F66F919BCF475009863F7 /* libz.dylib */,
+				CD1F66F719BCF459009863F7 /* libTestFlight.a */,
 				C196D62A18E1B7AE000CE33B /* AddressBook.framework */,
 				C196D62818E1AC75000CE33B /* MessageUI.framework */,
 				C1B1819518CE499800456FD1 /* QuartzCore.framework */,
@@ -668,6 +682,7 @@
 					"$(PROJECT_DIR)/phidgetiphone/iphoneos",
 					"$(PROJECT_DIR)/phidgetiphone/iphonesimulator",
 					"$(SRCROOT)/CorePlot_1.4/Binaries/iOS",
+					"$(PROJECT_DIR)/TestFlightSDK3",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				"OTHER_LDFLAGS[sdk=iphoneos*]" = (
@@ -707,6 +722,7 @@
 					"$(PROJECT_DIR)/phidgetiphone/iphoneos",
 					"$(PROJECT_DIR)/phidgetiphone/iphonesimulator",
 					"$(SRCROOT)/CorePlot_1.4/Binaries/iOS",
+					"$(PROJECT_DIR)/TestFlightSDK3",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				"OTHER_LDFLAGS[sdk=iphoneos*]" = (
