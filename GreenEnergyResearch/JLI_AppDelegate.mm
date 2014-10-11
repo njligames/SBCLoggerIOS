@@ -217,19 +217,12 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
     
     if(isPortrait)
     {
-        
         scaleRatio = windowWidth / viewWidth;
-//        scaleRatio = 0.25;
     }
     else
     {
-        //        scaleRatio =  viewWidth / windowWidth;
         scaleRatio = windowWidth / viewWidth;
-//        scaleRatio = 0.33;
     }
-    
-    
-    //    CGFloat viewWidth = _webView.bounds.size.width;
     
     
     

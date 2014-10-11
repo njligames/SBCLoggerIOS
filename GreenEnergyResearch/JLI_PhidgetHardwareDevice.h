@@ -61,6 +61,7 @@
 
 -(NSNumber*)yRecordedValue:(int)index identifier:(NSString*)identifier;
 -(NSNumber*)xRecordedValue:(int)index;
+-(NSString*)dateRecordedValue:(int)index;
 
 -(NSNumber*)yValue:(int)index identifier:(NSString*)identifier;
 -(NSNumber*)xValue:(int)index;

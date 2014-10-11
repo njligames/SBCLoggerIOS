@@ -101,7 +101,7 @@
         NSDecimalNumber *doubleDecimal = [[NSDecimalNumber alloc] initWithDouble:(yMax - yMin) / 10];
 
         y.majorIntervalLength = [doubleDecimal decimalValue];
-        y.minorTicksPerInterval       = 0;
+        y.minorTicksPerInterval       = 1;
         
         if([val isEqualToString:@""])
         {
@@ -146,11 +146,14 @@
 
 -(NSString*)getCSVFileContent
 {
-    NSMutableString *ret = [NSMutableString stringWithFormat:@"TIME, %@\n", IDENTIFIER];
+    NSMutableString *ret = [NSMutableString stringWithFormat:@"RTC, TIME, %@\n", IDENTIFIER];
     NSString *temp;
     for(int i = 0; i < [recordedMutableArray count]; i++)
     {
-        temp = [NSString stringWithFormat:@"%@, %@\n", [self xRecordedValue:i], [self yRecordedValue:i identifier:IDENTIFIER]];
+        temp = [NSString stringWithFormat:@"%@, %@, %@\n",
+                [self dateRecordedValue:i],
+                [self xRecordedValue:i],
+                [self yRecordedValue:i identifier:IDENTIFIER]];
         
         [ret appendString:temp];
     }

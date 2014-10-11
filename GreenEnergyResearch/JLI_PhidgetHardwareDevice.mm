@@ -163,6 +163,13 @@
     return [d objectForKey:@"time"];
 }
 
+-(NSString*)dateRecordedValue:(int)index
+{
+    NSDictionary *d = [recordedMutableArray objectAtIndex:index];
+    
+    return [d objectForKey:@"actualtime"];
+}
+
 -(NSNumber*)yValue:(int)index identifier:(NSString*)identifier
 {
     NSDictionary *d = [mutableArray objectAtIndex:index];
@@ -181,9 +188,17 @@
 
 -(void)addValue:(NSNumber*)time values:(NSDictionary*)values
 {
+    NSDate *currDate = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"dd/MM/YYYY HH:mm:ss"];
+    NSString *dateString = [dateFormatter stringFromDate:currDate];
+//    NSLog(@"%@",dateString);
+    
     NSDictionary *dict = [[NSDictionary alloc] initWithObjectsAndKeys:
                           values,@"values",
-                          time,@"time", nil];
+                          time,@"time",
+                          dateString,@"actualtime",nil];
+    
     [mutableArray addObject:dict];
     
     if(recording)

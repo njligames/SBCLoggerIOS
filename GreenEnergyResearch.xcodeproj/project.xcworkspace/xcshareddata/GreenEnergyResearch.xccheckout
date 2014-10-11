@@ -14,7 +14,7 @@
 		<string>https://bitbucket.org/jamesfolk/greenenergyresearch-ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>GreenEnergyResearch.xcodeproj/project.xcworkspace</string>
+	<string>GreenEnergyResearch.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>288D404FFF43FA30075701A231206C29698BA000</key>

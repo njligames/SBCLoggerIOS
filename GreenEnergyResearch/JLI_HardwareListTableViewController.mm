@@ -206,7 +206,7 @@
     
     if(indexPath.row == 0)
     {
-        cell.textLabel.text = @"web cam";
+        cell.textLabel.text = @"Web Camera";
     }
     else
     {

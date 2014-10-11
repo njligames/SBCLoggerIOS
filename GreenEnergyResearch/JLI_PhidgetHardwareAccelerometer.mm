@@ -103,7 +103,7 @@ const char *const IDENTIFIERS[3] = {"X AXIS", "Y AXIS", "Z AXIS"};
     
     CPTXYAxis *y = axisSet.yAxis;
     y.majorIntervalLength         = CPTDecimalFromString(@"1.0");
-    y.minorTicksPerInterval       = 0;
+    y.minorTicksPerInterval       = 1;
     
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -164,12 +164,13 @@ const char *const IDENTIFIERS[3] = {"X AXIS", "Y AXIS", "Z AXIS"};
 
 -(NSString*)getCSVFileContent
 {
-    NSMutableString *ret = [NSMutableString stringWithFormat:@"TIME, %s, %s, %s\n", IDENTIFIERS[0], IDENTIFIERS[1], IDENTIFIERS[2]];
+    NSMutableString *ret = [NSMutableString stringWithFormat:@"RTC, TIME, %s, %s, %s\n", IDENTIFIERS[0], IDENTIFIERS[1], IDENTIFIERS[2]];
     
     NSString *temp;
     for(int i = 0; i < [recordedMutableArray count]; i++)
     {
-        temp = [NSString stringWithFormat:@"%@, %@, %@, %@\n",
+        temp = [NSString stringWithFormat:@"%@, %@, %@, %@, %@\n",
+                [self dateRecordedValue:i],
                 [self xRecordedValue:i],
                 [self yRecordedValue:i identifier:[NSString stringWithUTF8String:IDENTIFIERS[0]]],
                 [self yRecordedValue:i identifier:[NSString stringWithUTF8String:IDENTIFIERS[1]]],
