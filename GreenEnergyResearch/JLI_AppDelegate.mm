@@ -153,7 +153,7 @@ int serverDisconnectCallback(CPhidgetManagerHandle handle, void *context)
 
 int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const char *errorDescription)
 {
-    NSLog(@"%s", errorDescription);
+    NSLog(@"(%d) - %s", errorCode, errorDescription);
     
     JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
     
