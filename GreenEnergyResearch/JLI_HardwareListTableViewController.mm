@@ -212,7 +212,7 @@
     {
         JLI_AppDelegate *appDelegate = (JLI_AppDelegate *)[[UIApplication sharedApplication] delegate];
         
-        cell.textLabel.text = [[appDelegate getPhidgetHardware:indexPath.row - 1] getDeviceName];
+        cell.textLabel.text = [[appDelegate getPhidgetHardwareIndex:indexPath.row - 1] getDeviceName];
     }
     
     return cell;
@@ -245,7 +245,7 @@
         [[segue destinationViewController] setPhidgetGraphDrawInterval:[[appDelegate pollInterval] doubleValue]];
         [[segue destinationViewController] setPhidgetPollInterval:[[appDelegate pollInterval] doubleValue]];
         
-        id object = [appDelegate getPhidgetHardware:indexPath.row];
+        id object = [appDelegate getPhidgetHardwareIndex:indexPath.row];
         [[segue destinationViewController] setPhidgetHardware:object];
     }
     
@@ -316,7 +316,7 @@
             newController.phidgetGraphDrawInterval = [[appDelegate pollInterval] doubleValue];
             newController.phidgetPollInterval = [[appDelegate pollInterval] doubleValue];
             
-            id object = [appDelegate getPhidgetHardware:index - 1];
+            id object = [appDelegate getPhidgetHardwareIndex:index - 1];
             newController.phidgetHardware = object;
             
             UIBarButtonItem *button = self.navigationItem.rightBarButtonItems[0];
@@ -359,7 +359,7 @@
             [vc setPhidgetGraphDrawInterval:[[appDelegate pollInterval] doubleValue]];
             [vc setPhidgetPollInterval:[[appDelegate pollInterval] doubleValue]];
             
-            id object = [appDelegate getPhidgetHardware:index - 1];
+            id object = [appDelegate getPhidgetHardwareIndex:index - 1];
             [vc setPhidgetHardware:object];
             
             [self.navigationController pushViewController:vc animated:YES];

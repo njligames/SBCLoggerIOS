@@ -12,7 +12,10 @@
 #import "JLI_PhidgetHardwareTemperatureSensor.h"
 #import "JLI_PhidgetHardwareAccelerometer.h"
 #import "JLI_PhidgetHardwareInterfaceKit.h"
+#import "JLI_PhidgetHardwareSpatial.h"
 #import "TestFlight.h"
+#import "JLI_DeviceCollectionViewController.h"
+#import "JLI_ServerChooseViewController.h"
 
 NSString *LocalErrorCatcher (int errorCode)
 {
@@ -117,36 +120,74 @@ NSString *LocalErrorCatcher (int errorCode)
     return ret;
 }
 
-int gotAttach(CPhidgetHandle phid, void *context)
+//int gotAttach(CPhidgetHandle phid, void *context)
+//{
+//    [(__bridge id)context performSelector:@selector(deviceAttach:)
+//                               withObject:[NSValue valueWithPointer:phid]];
+//    
+//    return 0;
+//}
+//
+//int gotDetach(CPhidgetHandle phid, void *context)
+//{
+//    [(__bridge id)context performSelector:@selector(deviceRemoved:)
+//                               withObject:[NSValue valueWithPointer:phid]];
+//    
+//    return 0;
+//}
+
+int deviceAttachedCallback(CPhidgetHandle handle, void *ctx)
 {
-    [(__bridge id)context performSelector:@selector(deviceAttach:)
-                               withObject:[NSValue valueWithPointer:phid]];
+    id context = (__bridge id)ctx;
+    
+    if([context respondsToSelector:@selector(deviceAttached:)])
+    {
+        [context performSelectorOnMainThread:@selector(deviceAttached:)
+                                               withObject:[NSValue valueWithPointer:handle]
+                                            waitUntilDone:NO];
+    }
     
     return 0;
 }
 
-int gotDetach(CPhidgetHandle phid, void *context)
+int deviceDetachedCallback(CPhidgetHandle handle, void *ctx)
 {
-    [(__bridge id)context performSelector:@selector(deviceRemoved:)
-                               withObject:[NSValue valueWithPointer:phid]];
+    id context = (__bridge id)ctx;
+    
+    if([context respondsToSelector:@selector(deviceDetached:)])
+    {
+        [context performSelectorOnMainThread:@selector(deviceDetached:)
+                                  withObject:[NSValue valueWithPointer:handle]
+                               waitUntilDone:NO];
+    }
     
     return 0;
 }
 
-int serverConnectCallback(CPhidgetManagerHandle handle, void *context)
+int serverConnectCallback(CPhidgetManagerHandle handle, void *ctx)
 {
-    [(__bridge id)context performSelectorOnMainThread:@selector(setHardwareLister:)
-                                           withObject:[NSValue valueWithPointer:handle]
-                                        waitUntilDone:NO];
+    id context = (__bridge id)ctx;
+    
+    if([context respondsToSelector:@selector(serverConnected:)])
+    {
+        [context performSelectorOnMainThread:@selector(serverConnected:)
+                                  withObject:[NSValue valueWithPointer:handle]
+                               waitUntilDone:NO];
+    }
     
     return 0;
 }
 
-int serverDisconnectCallback(CPhidgetManagerHandle handle, void *context)
+int serverDisconnectCallback(CPhidgetManagerHandle handle, void *ctx)
 {
-    [(__bridge id)context performSelectorOnMainThread:@selector(setServerChooser:)
-                                           withObject:[NSValue valueWithPointer:handle]
-                                        waitUntilDone:NO];
+    id context = (__bridge id)ctx;
+    
+    if([context respondsToSelector:@selector(serverDisconnected:)])
+    {
+        [context performSelectorOnMainThread:@selector(serverDisconnected:)
+                                  withObject:[NSValue valueWithPointer:handle]
+                               waitUntilDone:NO];
+    }
     
     return 0;
 }
@@ -178,8 +219,9 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
 @interface JLI_AppDelegate ()
 {
     CPhidgetManagerHandle phidMan;
-    UIViewController *viewController;
     
+    JLI_DeviceCollectionViewController *collectionViewController;
+    JLI_ServerChooseViewController *serverViewController;
 }
 
 
@@ -188,7 +230,8 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
 
 @implementation JLI_AppDelegate
 
-@synthesize phidgetHardwareArray;
+//@synthesize phidgetHardwareArray;
+@synthesize phidgetHardwareDictionary;
 @synthesize pollInterval;
 @synthesize startDate;
 
@@ -281,10 +324,17 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
     // The rest of your application:didFinishLaunchingWithOptions method// ...
     
     startDate = [NSDate date];
-    
-    [self initWebCam];
-    
+//
+//    [self initWebCam];
+//    
     self.masterIsHidden = YES;
+    
+    
+    
+    UIViewController *currentViewController = ((UINavigationController*)self.window.rootViewController).visibleViewController;
+    
+    serverViewController = [currentViewController.storyboard instantiateViewControllerWithIdentifier:@"server_chooser"];
+    collectionViewController = [currentViewController.storyboard instantiateViewControllerWithIdentifier:@"hardware_chooser"];
     
     // Override point for customization after application launch.
     return YES;
@@ -319,37 +369,37 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
 
 #pragma mark Phidget Event Handling Functions
 
-- (void)deviceAttach:(NSValue *)phid
-{
-    CPhidget_DeviceClass deviceClass;
-    CPhidget_getDeviceClass((CPhidgetHandle)[phid pointerValue], &deviceClass);
-    
-    if(PHIDCLASS_INTERFACEKIT == deviceClass)
-    {
-        for(int i = 0; i < 8; ++i)
-            [self addHardware:phid index:[NSNumber numberWithInt:i]];
-    }
-    else
-    {
-        [self addHardware:phid index:0];
-    }
-    
-    
-}
-
-- (void)deviceRemoved:(NSValue *)phid
-{
-    [self removeHardware:phid];
-}
+//- (void)deviceAttach:(NSValue *)phid
+//{
+//    CPhidget_DeviceClass deviceClass;
+//    CPhidget_getDeviceClass((CPhidgetHandle)[phid pointerValue], &deviceClass);
+//    
+//    if(PHIDCLASS_INTERFACEKIT == deviceClass)
+//    {
+////        for(int i = 0; i < 8; ++i)
+////            [self addHardware:phid index:[NSNumber numberWithInt:i]];
+//    }
+//    else
+//    {
+////        [self addHardware:phid index:0];
+//    }
+//    
+//    
+//}
+//
+//- (void)deviceRemoved:(NSValue *)phid
+//{
+////    [self removeHardware:phid];
+//}
 
 #pragma mark Phidget server connect
 
 - (void)connectToServer:(NSString*)server port:(NSString*)port password:(NSString*)password
 {
     LocalErrorCatcher(CPhidgetManager_create(&phidMan));
-	
-	LocalErrorCatcher(CPhidgetManager_set_OnAttach_Handler(phidMan, gotAttach, (__bridge void*)self));
-	LocalErrorCatcher(CPhidgetManager_set_OnDetach_Handler(phidMan, gotDetach, (__bridge void*)self));
+
+	LocalErrorCatcher(CPhidgetManager_set_OnAttach_Handler(phidMan, deviceAttachedCallback, (__bridge void*)self));
+	LocalErrorCatcher(CPhidgetManager_set_OnDetach_Handler(phidMan, deviceDetachedCallback, (__bridge void*)self));
 	
     LocalErrorCatcher(CPhidgetManager_set_OnServerConnect_Handler(phidMan, serverConnectCallback, (__bridge void*)self));
     LocalErrorCatcher(CPhidgetManager_set_OnServerDisconnect_Handler(phidMan, serverDisconnectCallback, (__bridge void*)self));
@@ -370,83 +420,65 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
     [activityIndicator startAnimating];
     
     [statusLabel setText:@"Connecting..."];
-    
-    
-//    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"GreenEnergy Research"
-//                                                      message:@"WHATUP"
-//                                                     delegate:self
-//                                            cancelButtonTitle:@"OK"
-//                                            otherButtonTitles:nil];
-//    
-//    [message show];
 }
 
--(void)setServerChooser:(NSValue *)phidHandle
-{
-    phidgetHardwareArray = nil;
-    
-    UIViewController *currentViewController = ((UINavigationController*)self.window.rootViewController).visibleViewController;
-    
-    [self.window setRootViewController:[currentViewController.storyboard instantiateViewControllerWithIdentifier:@"server_chooser"]];
-}
 
--(void)setHardwareLister:(NSValue *)phidHandle
+- (void)deviceAttached:(NSValue *)handle
 {
-    phidgetHardwareArray = [[NSMutableArray alloc] init];
+    id phidget = [JLI_AppDelegate createPhidget:handle];
     
-    UIViewController *currentViewController = ((UINavigationController*)self.window.rootViewController).visibleViewController;
-    
-    [self.window setRootViewController:[currentViewController.storyboard instantiateViewControllerWithIdentifier:@"hardware_chooser"]];
-}
-
-- (void)updateHardware:(NSNotification *)notif
-{
-    
-//    JLI_HardwareListTableViewController *vc = [notif object];
-//    [vc reloadTable];
-}
-
--(void)addHardware:(NSValue*)phid index:(NSNumber*)index
-{
-//    JLI_PhidgetHardwareDevice *p = [[JLI_PhidgetHardwareDevice alloc] initWithPhidget:phid password:@"admin"];
-    id p = [JLI_AppDelegate createPhidget:phid];
-    
-    [p setValue:index forKey:@"currentIndex"];
-    
-    if(p != nil)
+    if(phidget != nil)
     {
-        [phidgetHardwareArray addObject:p];
+        NSNumber *index = @0;
         
+        [phidget setValue:index forKey:@"currentIndex"];
         
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"com.jamesfolk.greenenergyresearch.updatehardware" object:self];
-        
-//        UIViewController *currentViewController = ((UINavigationController*)self.window.rootViewController).visibleViewController;
-//        
-//        [[NSNotificationCenter defaultCenter] postNotificationName:@"com.jamesfolk.greenenergyresearch.updatehardware" object:currentViewController];
+        NSString *key = [NSString stringWithFormat:@"%lu", (unsigned long)[handle hash]];
+        [phidgetHardwareDictionary setValue:phidget forKey:key];
     }
 }
 
--(void)removeHardware:(NSValue*)phid
+- (void)deviceDetached:(NSValue *)handle
 {
-    JLI_PhidgetHardwareDevice *p = [[JLI_PhidgetHardwareDevice alloc] initWithPhidget:phid password:@"admin"];
+    NSString *key = [NSString stringWithFormat:@"%lu", (unsigned long)[handle hash]];
+    [phidgetHardwareDictionary removeObjectForKey:key];
     
-    [phidgetHardwareArray removeObject:p];
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"com.jamesfolk.greenenergyresearch.updatehardware" object:self];
-    
-//    UIViewController *currentViewController = ((UINavigationController*)self.window.rootViewController).visibleViewController;
+//    JLI_PhidgetHardwareDevice *p = [[JLI_PhidgetHardwareDevice alloc] initWithPhidget:handle password:@"admin"];
 //    
-//    [[NSNotificationCenter defaultCenter] postNotificationName:@"com.jamesfolk.greenenergyresearch.updatehardware" object:currentViewController];
+//    [phidgetHardwareArray removeObject:p];
+//    
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"com.jamesfolk.greenenergyresearch.deviceDetached" object:self];
+}
+
+-(void)serverConnected:(NSValue *)phidHandle
+{
+    phidgetHardwareDictionary = [NSMutableDictionary new];
+    
+    [self.window setRootViewController:collectionViewController];
+}
+
+-(void)serverDisconnected:(NSValue *)phidHandle
+{
+    phidgetHardwareDictionary = nil;
+    
+    [self.window setRootViewController:serverViewController];
 }
 
 -(NSUInteger)getHardwareCount
 {
-    return [phidgetHardwareArray count];
+    return [phidgetHardwareDictionary count];
 }
 
--(JLI_PhidgetHardwareDevice*)getPhidgetHardware:(NSInteger)index
+-(JLI_PhidgetHardwareDevice*)getPhidgetHardwareIndex:(NSInteger)index
 {
-    return [phidgetHardwareArray objectAtIndex:index];
+    NSArray* allKeys = [phidgetHardwareDictionary allKeys];
+    return [phidgetHardwareDictionary objectForKey:[allKeys objectAtIndex:index]];
+}
+
+-(JLI_PhidgetHardwareDevice*)getPhidgetHardwareHandle:(NSValue*)handle
+{
+    NSString *key = [NSString stringWithFormat:@"%lu", (unsigned long)[handle hash]];
+    return [phidgetHardwareDictionary objectForKey:key];
 }
 
 
@@ -524,10 +556,12 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
             break;
         case PHIDCLASS_SPATIAL:
         {
+            phidgetHardwareDevice = [[JLI_PhidgetHardwareSpatial alloc] initWithPhidget:phid password:@"admin"];
         }
             break;
         case PHIDCLASS_STEPPER:
         {
+            phidgetHardwareDevice = nil;
         }
             break;
         case PHIDCLASS_TEMPERATURESENSOR:
@@ -678,6 +712,116 @@ int errorEventHandler (CPhidgetHandle device, void *usrptr, int errorCode, const
     }
 }
 
+- (NSString*)phidgetHardwareName:(NSInteger)index
+{
+    JLI_PhidgetHardwareDevice *device = [self getPhidgetHardwareIndex:index];
+    NSString *str = [device getDeviceName];
+    
+    return [str stringByReplacingOccurrencesOfString:@"Phidget "
+                                          withString:@""];
+}
+
+- (UIImage *)phidgetHardwareIcon:(NSInteger)index
+{
+    JLI_PhidgetHardwareDevice *device = [self getPhidgetHardwareIndex:index];
+    
+    switch([device getDeviceId])
+    {
+            //Current
+        case PHIDID_ACCELEROMETER_3AXIS:
+            return [UIImage imageNamed:@"1059.png"];
+        case PHIDID_ADVANCEDSERVO_1MOTOR:
+            return [UIImage imageNamed:@"1066.png"];
+        case PHIDID_ADVANCEDSERVO_8MOTOR:
+            return [UIImage imageNamed:@"1061.png"];
+        case PHIDID_ANALOG_4OUTPUT:
+            return [UIImage imageNamed:@"1002.png"];
+        case PHIDID_BIPOLAR_STEPPER_1MOTOR:
+            return [UIImage imageNamed:@"1063.png"];
+        case PHIDID_BRIDGE_4INPUT:
+            return [UIImage imageNamed:@"1046.png"];
+        case PHIDID_ENCODER_1ENCODER_1INPUT:
+            return [UIImage imageNamed:@"1052.png"];
+        case PHIDID_ENCODER_HS_1ENCODER:
+            return [UIImage imageNamed:@"1057.png"];
+        case PHIDID_ENCODER_HS_4ENCODER_4INPUT:
+            return [UIImage imageNamed:@"1047.png"];
+        case PHIDID_FREQUENCYCOUNTER_2INPUT:
+            return [UIImage imageNamed:@"1054.png"];
+        case PHIDID_GPS:
+            return [UIImage imageNamed:@"1040.png"];
+        case PHIDID_INTERFACEKIT_0_0_4:
+            return [UIImage imageNamed:@"1014.png"];
+        case PHIDID_INTERFACEKIT_0_0_8:
+            return [UIImage imageNamed:@"1017.png"];
+        case PHIDID_INTERFACEKIT_0_16_16:
+            return [UIImage imageNamed:@"1012.png"];
+        case PHIDID_INTERFACEKIT_2_2_2:
+            return [UIImage imageNamed:@"1011.png"];
+        case PHIDID_INTERFACEKIT_8_8_8:
+            return [UIImage imageNamed:@"1018.png"];
+        case PHIDID_INTERFACEKIT_8_8_8_w_LCD:
+            return [UIImage imageNamed:@"1200.png"];
+        case PHIDID_IR:
+            return [UIImage imageNamed:@"1055.png"];
+        case PHIDID_LED_64_ADV:
+            return [UIImage imageNamed:@"1031.png"];
+        case PHIDID_LINEAR_TOUCH:
+            return [UIImage imageNamed:@"1015.png"];
+        case PHIDID_MOTORCONTROL_1MOTOR:
+            return [UIImage imageNamed:@"1065.png"];
+        case PHIDID_MOTORCONTROL_HC_2MOTOR:
+            return [UIImage imageNamed:@"1064.png"];
+        case PHIDID_RFID_2OUTPUT:
+            return [UIImage imageNamed:@"1023.png"];
+        case PHIDID_ROTARY_TOUCH:
+            return [UIImage imageNamed:@"1016.png"];
+        case PHIDID_SPATIAL_ACCEL_3AXIS:
+            return [UIImage imageNamed:@"1049.png"];
+        case PHIDID_SPATIAL_ACCEL_GYRO_COMPASS:
+            return [UIImage imageNamed:@"1056.png"];
+        case PHIDID_TEMPERATURESENSOR:
+            return [UIImage imageNamed:@"1051.png"];
+        case PHIDID_TEMPERATURESENSOR_4:
+            return [UIImage imageNamed:@"1048.png"];
+        case PHIDID_TEMPERATURESENSOR_IR:
+            return [UIImage imageNamed:@"1045.png"];
+        case PHIDID_TEXTLCD_2x20_w_8_8_8:
+            return [UIImage imageNamed:@"1203.png"];
+        case PHIDID_TEXTLCD_ADAPTER:
+            return [UIImage imageNamed:@"1204.png"];
+        case PHIDID_UNIPOLAR_STEPPER_4MOTOR:
+            return [UIImage imageNamed:@"1062.png"];
+            
+            //Old
+        case PHIDID_ACCELEROMETER_2AXIS:
+            return [UIImage imageNamed:@"1053.png"];
+        case PHIDID_LED_64:
+            return [UIImage imageNamed:@"1030.png"];
+        case PHIDID_MOTORCONTROL_LV_2MOTOR_4INPUT:
+            return [UIImage imageNamed:@"1060.png"];
+        case PHIDID_PHSENSOR:
+            return [UIImage imageNamed:@"1058.png"];
+        case PHIDID_SERVO_1MOTOR:
+            return [UIImage imageNamed:@"1000.png"];
+        case PHIDID_SERVO_4MOTOR:
+            return [UIImage imageNamed:@"1001.png"];
+            
+            //Really Old
+        case PHIDID_INTERFACEKIT_0_8_8_w_LCD:
+        case PHIDID_INTERFACEKIT_4_8_8:
+        case PHIDID_RFID:
+        case PHIDID_SERVO_1MOTOR_OLD:
+        case PHIDID_SERVO_4MOTOR_OLD:
+        case PHIDID_TEXTLCD_2x20:
+        case PHIDID_TEXTLCD_2x20_w_0_8_8:
+        case PHIDID_TEXTLED_1x8:
+        case PHIDID_TEXTLED_4x8:
+        case PHIDID_WEIGHTSENSOR:
+        default:
+            return [UIImage imageNamed:@"0000.png"];
+    }
+}
 
 
 @end

@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		725B1B9D002DF71C6B6246B7 /* libPods-GreenEnergyResearch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A22CCED2EAD0FEF972619C68 /* libPods-GreenEnergyResearch.a */; };
 		C10FB25118DA04D70071FF01 /* JLI_PhidgetHardwareAccelerometer.mm in Sources */ = {isa = PBXBuildFile; fileRef = C10FB25018DA04D70071FF01 /* JLI_PhidgetHardwareAccelerometer.mm */; };
 		C13DF17918D0E1D4003286A3 /* JLI_HardwareListTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C13DF17818D0E1D4003286A3 /* JLI_HardwareListTableViewController.mm */; };
 		C13DF17C18D0E284003286A3 /* JLI_PlotViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C13DF17B18D0E284003286A3 /* JLI_PlotViewController.mm */; };
 		C13DF18118D2552A003286A3 /* JLI_PhidgetHardwareDevice.mm in Sources */ = {isa = PBXBuildFile; fileRef = C13DF18018D2552A003286A3 /* JLI_PhidgetHardwareDevice.mm */; };
 		C174A4C9194CEEF600286CFA /* JLI_WebCamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C174A4C8194CEEF600286CFA /* JLI_WebCamViewController.m */; };
+		C17959211D50FA0D00BEC511 /* JLI_DeviceCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C17959201D50FA0D00BEC511 /* JLI_DeviceCollectionViewController.m */; };
+		C179592A1D538A6E00BEC511 /* JLI_PhidgetHardwareSpatial.mm in Sources */ = {isa = PBXBuildFile; fileRef = C17959291D538A6D00BEC511 /* JLI_PhidgetHardwareSpatial.mm */; };
 		C18B4565199FC28C0097FB71 /* GraphEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C18B4564199FC28C0097FB71 /* GraphEditViewController.xib */; };
 		C196D62918E1AC75000CE33B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C196D62818E1AC75000CE33B /* MessageUI.framework */; };
 		C196D62B18E1B7AE000CE33B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C196D62A18E1B7AE000CE33B /* AddressBook.framework */; };
@@ -53,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A36E142888C46E78EE04632 /* Pods-GreenEnergyResearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenEnergyResearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GreenEnergyResearch/Pods-GreenEnergyResearch.debug.xcconfig"; sourceTree = "<group>"; };
+		A22CCED2EAD0FEF972619C68 /* libPods-GreenEnergyResearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GreenEnergyResearch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10FB24F18DA04D70071FF01 /* JLI_PhidgetHardwareAccelerometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLI_PhidgetHardwareAccelerometer.h; sourceTree = "<group>"; };
 		C10FB25018DA04D70071FF01 /* JLI_PhidgetHardwareAccelerometer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JLI_PhidgetHardwareAccelerometer.mm; sourceTree = "<group>"; };
 		C13DF17718D0E1D4003286A3 /* JLI_HardwareListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLI_HardwareListTableViewController.h; sourceTree = "<group>"; };
@@ -63,6 +68,10 @@
 		C13DF18018D2552A003286A3 /* JLI_PhidgetHardwareDevice.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JLI_PhidgetHardwareDevice.mm; sourceTree = "<group>"; };
 		C174A4C7194CEEF600286CFA /* JLI_WebCamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLI_WebCamViewController.h; sourceTree = "<group>"; };
 		C174A4C8194CEEF600286CFA /* JLI_WebCamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLI_WebCamViewController.m; sourceTree = "<group>"; };
+		C179591F1D50FA0D00BEC511 /* JLI_DeviceCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLI_DeviceCollectionViewController.h; sourceTree = "<group>"; };
+		C17959201D50FA0D00BEC511 /* JLI_DeviceCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLI_DeviceCollectionViewController.m; sourceTree = "<group>"; };
+		C17959281D538A6D00BEC511 /* JLI_PhidgetHardwareSpatial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLI_PhidgetHardwareSpatial.h; sourceTree = "<group>"; };
+		C17959291D538A6D00BEC511 /* JLI_PhidgetHardwareSpatial.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JLI_PhidgetHardwareSpatial.mm; sourceTree = "<group>"; };
 		C18B4564199FC28C0097FB71 /* GraphEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GraphEditViewController.xib; sourceTree = "<group>"; };
 		C18B4566199FF5C70097FB71 /* SplitViewButtonHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitViewButtonHandler.h; sourceTree = "<group>"; };
 		C196D62818E1AC75000CE33B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -185,6 +194,7 @@
 		CD1F66F619BCF447009863F7 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TestFlight+ManualSessions.h"; path = "TestFlightSDK3/TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		CD1F66F719BCF459009863F7 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTestFlight.a; path = TestFlightSDK3/libTestFlight.a; sourceTree = "<group>"; };
 		CD1F66F919BCF475009863F7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CE6B86CADAF838F902A2679C /* Pods-GreenEnergyResearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenEnergyResearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-GreenEnergyResearch/Pods-GreenEnergyResearch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +211,7 @@
 				C1B1810B18CE361200456FD1 /* UIKit.framework in Frameworks */,
 				C1B1810718CE361200456FD1 /* Foundation.framework in Frameworks */,
 				C1B1814518CE494B00456FD1 /* libCorePlot-CocoaTouch.a in Frameworks */,
+				725B1B9D002DF71C6B6246B7 /* libPods-GreenEnergyResearch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +228,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A85D078BE07D2A4B5AAF5343 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A36E142888C46E78EE04632 /* Pods-GreenEnergyResearch.debug.xcconfig */,
+				CE6B86CADAF838F902A2679C /* Pods-GreenEnergyResearch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C19C2F2E18D79074006F7D3C /* JLI_PhidgetHardware */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +248,8 @@
 				C19C2F3318D797EF006F7D3C /* JLI_PhidgetHardwareInterfaceKit.mm */,
 				C10FB24F18DA04D70071FF01 /* JLI_PhidgetHardwareAccelerometer.h */,
 				C10FB25018DA04D70071FF01 /* JLI_PhidgetHardwareAccelerometer.mm */,
+				C17959281D538A6D00BEC511 /* JLI_PhidgetHardwareSpatial.h */,
+				C17959291D538A6D00BEC511 /* JLI_PhidgetHardwareSpatial.mm */,
 			);
 			name = JLI_PhidgetHardware;
 			sourceTree = "<group>";
@@ -241,6 +263,7 @@
 				C1B1810C18CE361200456FD1 /* GreenEnergyResearch */,
 				C1B1810518CE361200456FD1 /* Frameworks */,
 				C1B1810418CE361200456FD1 /* Products */,
+				A85D078BE07D2A4B5AAF5343 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -266,6 +289,7 @@
 				C1B1810818CE361200456FD1 /* CoreGraphics.framework */,
 				C1B1810A18CE361200456FD1 /* UIKit.framework */,
 				C1B1812818CE361200456FD1 /* XCTest.framework */,
+				A22CCED2EAD0FEF972619C68 /* libPods-GreenEnergyResearch.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -298,6 +322,8 @@
 				C1E209DA1972E91B003423CF /* JLI_GraphEditorViewController.m */,
 				C1D5CE2719A1172C0054F7E8 /* UINavigationController+JLI_ServerChooserNavigationController.h */,
 				C1D5CE2819A1172C0054F7E8 /* UINavigationController+JLI_ServerChooserNavigationController.m */,
+				C179591F1D50FA0D00BEC511 /* JLI_DeviceCollectionViewController.h */,
+				C17959201D50FA0D00BEC511 /* JLI_DeviceCollectionViewController.m */,
 			);
 			path = GreenEnergyResearch;
 			sourceTree = "<group>";
@@ -427,9 +453,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1B1813818CE361200456FD1 /* Build configuration list for PBXNativeTarget "GreenEnergyResearch" */;
 			buildPhases = (
+				3F069A0E8FB93E00B80D86D3 /* [CP] Check Pods Manifest.lock */,
 				C1B180FF18CE361200456FD1 /* Sources */,
 				C1B1810018CE361200456FD1 /* Frameworks */,
 				C1B1810118CE361200456FD1 /* Resources */,
+				FA3865C30ECF6D16A8853D33 /* [CP] Embed Pods Frameworks */,
+				5A34492CE862BBB1382EED45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -517,6 +546,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F069A0E8FB93E00B80D86D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5A34492CE862BBB1382EED45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GreenEnergyResearch/Pods-GreenEnergyResearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA3865C30ECF6D16A8853D33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GreenEnergyResearch/Pods-GreenEnergyResearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C1B180FF18CE361200456FD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -528,6 +605,7 @@
 				C196D62E18E1DBB5000CE33B /* MotionJpegImageView.mm in Sources */,
 				C1DBA42C197341370000AFCE /* UIViewController+MJPopupViewController.m in Sources */,
 				C19C2F3418D797EF006F7D3C /* JLI_PhidgetHardwareInterfaceKit.mm in Sources */,
+				C179592A1D538A6E00BEC511 /* JLI_PhidgetHardwareSpatial.mm in Sources */,
 				C1B1814318CE42CD00456FD1 /* JLI_ServerChooseViewController.mm in Sources */,
 				C10FB25118DA04D70071FF01 /* JLI_PhidgetHardwareAccelerometer.mm in Sources */,
 				C174A4C9194CEEF600286CFA /* JLI_WebCamViewController.m in Sources */,
@@ -535,6 +613,7 @@
 				C1DBA42B197341370000AFCE /* MJPopupBackgroundView.m in Sources */,
 				C1E209DB1972E91B003423CF /* JLI_GraphEditorViewController.m in Sources */,
 				C1DBA431197342A80000AFCE /* GraphEditViewController.m in Sources */,
+				C17959211D50FA0D00BEC511 /* JLI_DeviceCollectionViewController.m in Sources */,
 				C1B1811318CE361200456FD1 /* main.m in Sources */,
 				C13DF17918D0E1D4003286A3 /* JLI_HardwareListTableViewController.mm in Sources */,
 				C13DF17C18D0E284003286A3 /* JLI_PlotViewController.mm in Sources */,
@@ -664,6 +743,7 @@
 		};
 		C1B1813918CE361200456FD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A36E142888C46E78EE04632 /* Pods-GreenEnergyResearch.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = armv7;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -704,6 +784,7 @@
 		};
 		C1B1813A18CE361200456FD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE6B86CADAF838F902A2679C /* Pods-GreenEnergyResearch.release.xcconfig */;
 			buildSettings = {
 				ARCHS = armv7;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

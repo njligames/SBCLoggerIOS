@@ -29,7 +29,8 @@ extern NSString *LocalErrorCatcher (int errorCode);
     UILabel *statusLabel;
 }
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) NSMutableArray *phidgetHardwareArray;
+//@property (strong, nonatomic) NSMutableArray *phidgetHardwareArray;
+@property (strong, nonatomic) NSMutableDictionary *phidgetHardwareDictionary;
 @property (strong, nonatomic) NSNumber *pollInterval;
 @property (strong, nonatomic) NSDate *startDate;
 @property ( nonatomic) BOOL masterIsHidden;
@@ -39,13 +40,19 @@ extern NSString *LocalErrorCatcher (int errorCode);
 
 - (void)connectToServer:(NSString*)server port:(NSString*)port password:(NSString*)password;
 
--(void)setServerChooser:(NSValue *)phidHandle;
--(void)setHardwareLister:(NSValue *)phidHandle;
+//-(void)setServerChooser:(NSValue *)phidHandle;
+//-(void)setHardwareLister:(NSValue *)phidHandle;
 
--(void)addHardware:(NSValue*)phid;
--(void)removeHardware:(NSValue*)phid;
+- (void)deviceAttached:(NSValue *)handle;
+-(void)deviceDetached:(NSValue *)handle;
+-(void)serverConnected:(NSValue *)phidHandle;
+-(void)serverDisconnected:(NSValue *)phidHandle;
+
+//-(void)addHardware:(NSValue*)phid;
+//-(void)removeHardware:(NSValue*)phid;
 -(NSUInteger)getHardwareCount;
--(JLI_PhidgetHardwareDevice*)getPhidgetHardware:(NSInteger)index;
+-(JLI_PhidgetHardwareDevice*)getPhidgetHardwareIndex:(NSInteger)index;
+-(JLI_PhidgetHardwareDevice*)getPhidgetHardwareHandle:(NSValue*)handle;
 
 +(JLI_PhidgetHardwareDevice*)createPhidget:(NSValue*)phid;
 
@@ -57,5 +64,8 @@ extern NSString *LocalErrorCatcher (int errorCode);
 - (CGRect)updateViewRatio;
 - (CGRect)updateViewRatio:(UIInterfaceOrientation)toInterfaceOrientation;
 
+
+- (NSString*)phidgetHardwareName:(NSInteger)index;
+- (UIImage *)phidgetHardwareIcon:(NSInteger)index;
 
 @end
